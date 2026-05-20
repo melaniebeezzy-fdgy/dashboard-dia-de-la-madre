@@ -4,9 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard Día de la Madre</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -38,20 +43,59 @@
         },
       };
     </script>
-    <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
     <style>
-      html { scroll-behavior: smooth; }
-      body { background: #E8E8E8; color: #0E2841; font-family: "Poppins", ui-sans-serif, system-ui, sans-serif; }
-      * { letter-spacing: 0; }
-      .thin-scrollbar::-webkit-scrollbar { height: 8px; width: 8px; }
-      .thin-scrollbar::-webkit-scrollbar-thumb { background: #467886; border-radius: 999px; }
-      .recharts-wrapper text { font-size: 9px; }
-      .recharts-legend-item-text { font-size: 10px; }
-      .recharts-tooltip-wrapper { font-size: 10px; }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: #e8e8e8;
+        color: #0e2841;
+        font-family: "Poppins", ui-sans-serif, system-ui, sans-serif;
+      }
+
+      * {
+        letter-spacing: 0;
+      }
+
+      .thin-scrollbar::-webkit-scrollbar {
+        height: 8px;
+        width: 8px;
+      }
+
+      .thin-scrollbar::-webkit-scrollbar-thumb {
+        background: #467886;
+        border-radius: 999px;
+      }
+
+      .recharts-wrapper text {
+        font-size: 9px;
+      }
+
+      .recharts-legend-item-text {
+        font-size: 10px;
+      }
+
+      .recharts-tooltip-wrapper {
+        font-size: 10px;
+      }
     </style>
   </head>
+
   <body>
     <div id="root"></div>
-    <script type="text/babel" data-type="module" src="/src/app.jsx"></script>
+
+    <!-- IMPORTANTE:
+         Se cambió de:
+         <script type="text/babel" data-type="module" src="/src/app.jsx"></script>
+
+         A:
+         <script type="module" src="/src/app.jsx"></script>
+
+         Esto permite que Vite compile correctamente en producción y evita
+         que la página quede en blanco en Render.
+    -->
+    <script type="module" src="/src/app.jsx"></script>
   </body>
 </html>
