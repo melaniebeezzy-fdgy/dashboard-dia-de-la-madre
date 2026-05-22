@@ -1,7 +1,7 @@
-import React from "react";
-import { createRoot } from "react-dom/client";
-import * as Recharts from "recharts";
-import Papa from "papaparse";
+import React from "https://esm.sh/react@18.3.1";
+import { createRoot } from "https://esm.sh/react-dom@18.3.1/client";
+import * as Recharts from "https://esm.sh/recharts@2.15.4?deps=react@18.3.1,react-dom@18.3.1";
+import Papa from "https://esm.sh/papaparse@5.4.1";
 
 const {
   ResponsiveContainer,
@@ -23,14 +23,15 @@ const {
 } = Recharts;
 
 const MAIN_SHEET_ID = "1MTVbU3MSIqEFqUcme_Xk2IEPkBIG4OcdWx05zBeBgBc";
-const SUGGESTED_MEP_ID = "1d1TNvKUz9-QsRPpDxHnvq9YWw7UmVRhpDwRe-eOSJzY";
+const SUGGESTED_MEP_ID = "1AMOmyjfj-9INhEwEIl-3EpSwhxUlPTk88H6BklO4OQo";
 const MOTHERS_DAY_2026 = "2026-05-10";
 const MOTHERS_DAY_2025 = "2025-05-11";
+const DATA_VERSION = "mex-20260521-14";
 
 const DEFAULT_SHEETS = [
-  { key: "mep", label: "MEP", sheet: "MEP", gid: "" },
+  { key: "mep", label: "MEP", sheet: "", gid: "", localPath: "/data/mep.csv", keepDuplicates: true },
   { key: "ddmrp", label: "DDMRP", sheet: "", gid: "", localPath: "/data/ddmrp.csv", keepDuplicates: true },
-  { key: "orders", label: "Orders", sheet: "", gid: "215821120" },
+  { key: "orders", label: "Orders", sheet: "", gid: "", localPath: "/data/orders.csv", keepDuplicates: true },
   { key: "ventas", label: "GMV", sheet: "", gid: "", localPath: "/data/gmv.csv", keepDuplicates: true },
   { key: "comparison", label: "Orders Comparison", sheet: "", gid: "", localPath: "/data/orders-comparison.csv" },
   { key: "protocolos", label: "Protocolos", sheet: "", gid: "", localPath: "/data/protocolos.csv", keepDuplicates: true },
@@ -84,6 +85,25 @@ function normalizeText(value) {
     .trim()
     .toLowerCase()
     .replace(/\b\w/g, (char) => char.toUpperCase());
+}
+
+function normalizeCountry(value) {
+  const text = String(value ?? "").trim();
+  if (!text) return "Sin dato";
+  const normalized = normalizeKey(text).toUpperCase();
+  if (normalized === "COLOMBIA") return "COL";
+  if (normalized === "MEXICO" || normalized === "MEXICO") return "MEX";
+  return normalized;
+}
+
+function normalizeCity(value) {
+  const text = normalizeText(value);
+  const key = normalizeKey(text);
+  if (key === "ciudad de ma c xico" || key === "ciudad de ma xico" || key === "ciudad de mexico" || key === "zona centro") {
+    return "Ciudad de México";
+  }
+  if (key === "merida") return "Merida";
+  return text;
 }
 
 function normalizeSku(value) {
@@ -158,7 +178,15 @@ function isBeverageProduct(row, schema) {
 
 function parseDateKey(value) {
   if (value == null || value === "") return "";
-  if (typeof value === "number" || /^\d+(\.\d+)?$/.test(String(value).trim())) return "";
+  if (typeof value === "number" || /^\d+(\.\d+)?$/.test(String(value).trim())) {
+    const serial = toNumber(value);
+    if (serial > 30000 && serial < 60000) {
+      const utc = Date.UTC(1899, 11, 30) + serial * 86400000;
+      const date = new Date(utc);
+      return `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, "0")}-${String(date.getUTCDate()).padStart(2, "0")}`;
+    }
+    return "";
+  }
   const text = String(value).trim();
   const iso = text.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
   if (iso) return `${iso[1]}-${String(iso[2]).padStart(2, "0")}-${String(iso[3]).padStart(2, "0")}`;
@@ -369,6 +397,7 @@ function aggregate(rows, schema, dimensions, measures = {}) {
   const map = new Map();
   rows.forEach((row) => {
     const values = dimensions.map((dimension) => {
+      if (dimension === "city") return normalizeCity(getValue(row, schema, "city"));
       if (dimension === "hour") return parseHour(getValue(row, schema, "hour") || getValue(row, schema, "date"));
       if (dimension === "period") {
         const direct = getValue(row, schema, "period");
@@ -622,7 +651,7 @@ function useDashboardData() {
     async function loadOne(spreadsheetId, config) {
       try {
         const text = config.localPath
-          ? await fetchWithTimeout(config.localPath, {}, 10000).then((response) => {
+          ? await fetchWithTimeout(`${config.localPath}?v=${DATA_VERSION}`, {}, 10000).then((response) => {
               if (!response.ok) throw new Error(`${config.label}: ${response.status}`);
               return response.text();
             })
@@ -676,9 +705,11 @@ function buildModel(data, filters) {
   ).size;
   const protocolosRows = protocolos.rows
     .map((row) => ({
+      country: normalizeCountry(getValue(row, protocolos.schema, "country")),
       kitchen: normalizeText(getValue(row, protocolos.schema, "kitchen")),
       protocols: toNumber(getValue(row, protocolos.schema, "protocols")),
     }))
+    .filter((row) => !filters.country || row.country === filters.country)
     .filter((row) => row.kitchen !== "Sin dato")
     .sort((a, b) => b.protocols - a.protocols);
   PROTOCOL_KITCHENS.clear();
@@ -687,16 +718,29 @@ function buildModel(data, filters) {
   });
 
   const filterRows = (source, schema) => source.filter((row) => {
-    const city = normalizeText(getValue(row, schema, "city"));
+    const country = normalizeCountry(getValue(row, schema, "country"));
+    const city = normalizeCity(getValue(row, schema, "city"));
     const kitchen = normalizeText(getValue(row, schema, "kitchen"));
     const sku = normalizeText(getValue(row, schema, "sku"));
     const period = normalizeText(getValue(row, schema, "period") || inferPeriod(parseHour(getValue(row, schema, "hour") || getValue(row, schema, "date"))));
     const hour = parseHour(getValue(row, schema, "hour") || getValue(row, schema, "date"));
-    return (!filters.city || city === filters.city)
+    return (!filters.country || country === filters.country)
+      && (!filters.city || city === filters.city)
       && (!filters.kitchen || kitchen === filters.kitchen)
       && (!filters.sku || sku === filters.sku)
       && (!filters.period || period === filters.period)
       && (!filters.hour || hour === filters.hour);
+  });
+
+  const filterSuggestedMepRows = (source, schema) => source.filter((row) => {
+    const country = normalizeCountry(getValue(row, schema, "country"));
+    const city = normalizeCity(getValue(row, schema, "city"));
+    const kitchen = normalizeText(getValue(row, schema, "kitchen"));
+    const sku = normalizeText(getValue(row, schema, "sku"));
+    return (!filters.country || country === filters.country)
+      && (!filters.city || city === filters.city)
+      && (!filters.kitchen || kitchen === filters.kitchen)
+      && (!filters.sku || sku === filters.sku);
   });
 
   const orderRows = filterRows(orders.rows, orders.schema);
@@ -720,7 +764,7 @@ function buildModel(data, filters) {
   const total = {
     gmv: salesByKitchen.reduce((sum, item) => sum + item.gmv, 0),
     orders: opsByKitchen.reduce((sum, item) => sum + item.orders, 0) || salesByKitchen.reduce((sum, item) => sum + item.orders, 0),
-    units: aggregate(ddmrpRows.length ? ddmrpRows : mepRows, ddmrpRows.length ? ddmrp.schema : mep.schema, ["sku"], { countRowsAsOrders: true }).reduce((sum, item) => sum + item.units, 0),
+    units: aggregate(mepRows, mep.schema, ["sku"], { countRowsAsOrders: true }).reduce((sum, item) => sum + item.units, 0),
     rtwt: median(opsByKitchen.map((item) => item.rtwt)),
     cooking: median(opsByKitchen.map((item) => item.cooking)),
     rtWait: median(opsByKitchen.map((item) => item.rtWait)),
@@ -733,7 +777,10 @@ function buildModel(data, filters) {
     acc.orders += item.orders; acc.rtwt += item.rtwt; acc.cooking += item.cooking; acc.count += 1; return acc;
   }, { orders: 0, rtwt: 0, cooking: 0, count: 0 });
   const orderVariation = prevTotal.orders ? ((total.orders - prevTotal.orders) / prevTotal.orders) * 100 : null;
-  const timeVariation = prevTotal.count ? (((total.rtwt - prevTotal.rtwt / prevTotal.count) / (prevTotal.rtwt / prevTotal.count || 1)) * 100) : null;
+  const prevRtwtAvg = prevTotal.count ? prevTotal.rtwt / prevTotal.count : 0;
+  const prevCookingAvg = prevTotal.count ? prevTotal.cooking / prevTotal.count : 0;
+  const rtwtVariation = prevRtwtAvg ? ((total.rtwt - prevRtwtAvg) / prevRtwtAvg) * 100 : null;
+  const cookingVariation = prevCookingAvg ? ((total.cooking - prevCookingAvg) / prevCookingAvg) * 100 : null;
 
   const byHourCurrent = aggregate(orderRows, orders.schema, ["hour"], { orderSet: new Set() }).sort((a, b) => a.hour.localeCompare(b.hour));
   const byHourPrev = aggregate(prevRows, comparison.schema, ["hour"], { orderSet: new Set() }).sort((a, b) => a.hour.localeCompare(b.hour));
@@ -781,7 +828,8 @@ function buildModel(data, filters) {
     .sort((a, b) => b.orders - a.orders)
     .slice(0, 5);
 
-  const mepComparison = computeMepComparison(suggestedMep.rows, suggestedMep.schema, ddmrpRows, ddmrp.schema);
+  const suggestedMepRows = filterSuggestedMepRows(suggestedMep.rows, suggestedMep.schema);
+  const mepComparison = computeMepComparison(suggestedMepRows, suggestedMep.schema, ddmrpRows, ddmrp.schema);
   const mepKitchenMap = new Map();
   mepComparison.forEach((row) => {
     const key = [row.city, row.kitchen].join("||");
@@ -799,8 +847,9 @@ function buildModel(data, filters) {
     diff: item.real - item.suggested,
     compliance: item.suggested ? (item.real / item.suggested) * 100 : null,
     accuracy: item.suggested ? Math.max(0, (1 - item.absoluteDeviation / item.suggested) * 100) : null,
+    signedDeviationPercent: item.suggested ? ((item.real - item.suggested) / item.suggested) * 100 : null,
     deviationPercent: item.suggested ? (item.absoluteDeviation / item.suggested) * 100 : null,
-  })).sort((a, b) => b.deviationPercent - a.deviationPercent);
+  })).sort((a, b) => Math.abs(b.signedDeviationPercent || 0) - Math.abs(a.signedDeviationPercent || 0));
 
   const medians = {
     orders: median(kitchenCombined.map((item) => item.orders)),
@@ -837,9 +886,10 @@ function buildModel(data, filters) {
   const timeGrowthByKitchen = [...kitchenCombined].sort((a, b) => ((b.rtwtGrowth || 0) + (b.cookingGrowth || 0)) - ((a.rtwtGrowth || 0) + (a.cookingGrowth || 0)));
 
   const filterOptions = {
-    cities: [...new Set([...orders.rows, ...ventas.rows].map((row) => normalizeText(getValue(row, orders.schema, "city") || getValue(row, ventas.schema, "city"))).filter((value) => value !== "Sin dato"))].sort(),
-    kitchens: [...new Set([...orders.rows, ...ventas.rows].map((row) => normalizeText(getValue(row, orders.schema, "kitchen") || getValue(row, ventas.schema, "kitchen"))).filter((value) => value !== "Sin dato"))].sort(),
-    skus: [...new Set([...mep.rows, ...ddmrp.rows].map((row) => normalizeText(getValue(row, mep.schema, "sku") || getValue(row, ddmrp.schema, "sku"))).filter((value) => value !== "Sin dato"))].sort(),
+    countries: [...new Set([orders, ventas, mep, ddmrp, comparison, suggestedMep].flatMap((source) => source.rows.map((row) => normalizeCountry(getValue(row, source.schema, "country")))).filter((value) => value !== "Sin dato"))].sort(),
+    cities: [...new Set([orders, ventas, ddmrp].flatMap((source) => filterRows(source.rows, source.schema).map((row) => normalizeCity(getValue(row, source.schema, "city")))).filter((value) => value !== "Sin dato"))].sort(),
+    kitchens: [...new Set([orders, ventas, ddmrp, suggestedMep].flatMap((source) => filterRows(source.rows, source.schema).map((row) => normalizeText(getValue(row, source.schema, "kitchen")))).filter((value) => value !== "Sin dato"))].sort(),
+    skus: [...new Set([mep, ddmrp, suggestedMep].flatMap((source) => filterRows(source.rows, source.schema).map((row) => normalizeText(getValue(row, source.schema, "sku")))).filter((value) => value !== "Sin dato"))].sort(),
     periods: ["Desayuno", "Almuerzo", "Cena", "Noche"],
     hours: [...new Set(orders.rows.map((row) => parseHour(getValue(row, orders.schema, "hour") || getValue(row, orders.schema, "date"))).filter((value) => value !== "Sin hora"))].sort(),
   };
@@ -851,7 +901,8 @@ function buildModel(data, filters) {
   return {
     total,
     orderVariation,
-    timeVariation,
+    rtwtVariation,
+    cookingVariation,
     topCity,
     topKitchen,
     topSku,
@@ -1047,11 +1098,12 @@ function DataTable({ rows, columns, filename }) {
 
 function App() {
   const { status, data, warnings, errors, reload } = useDashboardData();
-  const [filters, setFilters] = React.useState({ city: "", kitchen: "", sku: "", period: "", hour: "" });
+  const [filters, setFilters] = React.useState({ country: "COL", city: "", kitchen: "", sku: "", period: "", hour: "" });
   const model = React.useMemo(() => buildModel(data, filters), [data, filters]);
 
   const updateFilter = (key, value) => setFilters((current) => ({ ...current, [key]: value }));
-  const clearFilters = () => setFilters({ city: "", kitchen: "", sku: "", period: "", hour: "" });
+  const updateCountry = (country) => setFilters({ country, city: "", kitchen: "", sku: "", period: "", hour: "" });
+  const clearFilters = () => setFilters((current) => ({ country: current.country, city: "", kitchen: "", sku: "", period: "", hour: "" }));
 
   return (
     <div className="min-h-screen">
@@ -1069,7 +1121,20 @@ function App() {
       </header>
 
       <div className="sticky top-0 z-20 border-b border-line bg-white/95 backdrop-blur">
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-2 px-4 py-2 md:grid-cols-6">
+        <div className="mx-auto max-w-7xl px-4 py-2">
+          <div className="mb-2 flex flex-wrap items-center gap-2">
+            <span className="text-[11px] font-bold uppercase text-muted">Pais</span>
+            {["COL", "MEX"].map((country) => (
+              <button
+                key={country}
+                onClick={() => updateCountry(country)}
+                className={`rounded px-3 py-1.5 text-xs font-bold ${filters.country === country ? "bg-blue text-white" : "border border-line bg-mist text-ink"}`}
+              >
+                {country}
+              </button>
+            ))}
+          </div>
+          <div className="grid grid-cols-2 gap-2 md:grid-cols-6">
           {[
             ["city", "Ciudad", model.filterOptions.cities],
             ["kitchen", "Cocina", model.filterOptions.kitchens],
@@ -1086,10 +1151,11 @@ function App() {
             </label>
           ))}
           <button onClick={clearFilters} className="mt-4 rounded border border-line bg-mist px-3 py-1.5 text-xs font-semibold text-ink">Limpiar</button>
+          </div>
         </div>
       </div>
 
-      {(warnings.length > 0 || errors.length > 0) && (
+      {false && (warnings.length > 0 || errors.length > 0) && (
         <details className="mx-auto max-w-7xl px-4 py-2 text-xs text-ink">
           <summary className="cursor-pointer rounded-md border border-warn bg-[#F5EFF3] px-3 py-2 font-bold">
             Advertencias de carga ({errors.length + warnings.length})
@@ -1106,8 +1172,8 @@ function App() {
           <Card title="GMV total" value={formatCurrency(model.total.gmv)} subtitle="Día de la Madre" />
           <Card title="Órdenes totales" value={formatNumber(model.total.orders)} subtitle={`Vs domingo anterior: ${formatPercent(model.orderVariation)}`} />
           <Card title="Unidades vendidas" value={formatNumber(model.total.units)} subtitle={`Ticket promedio: ${formatCurrency(model.total.ticket)}`} />
-          <Card title="RTWT promedio" value={`${formatNumber(model.total.rtwt, 1)} min`} subtitle={`Variación tiempos: ${formatPercent(model.timeVariation)}`} />
-          <Card title="Cooking time promedio" value={`${formatNumber(model.total.cooking, 1)} min`} />
+          <Card title="RTWT promedio" value={`${formatNumber(model.total.rtwt, 1)} min`} subtitle={`Variación RTWT: ${formatPercent(model.rtwtVariation)}`} />
+          <Card title="Cooking time promedio" value={`${formatNumber(model.total.cooking, 1)} min`} subtitle={`Variación cooking: ${formatPercent(model.cookingVariation)}`} />
           <Card title="Espera RT en cocina" value={`${formatNumber(model.total.rtWait, 1)} min`} />
           <Card title="Top ciudad por venta" value={model.topCity?.city || "N/D"} subtitle={formatCurrency(model.topCity?.gmv)} />
           <Card title="Top SKU vendido" value={model.topSku?.sku || "N/D"} subtitle={`${formatNumber(model.topSku?.units)} unidades`} />
@@ -1337,7 +1403,11 @@ function App() {
                 <XAxis type="number" tickFormatter={(value) => `${formatNumber(value, 0)}%`} />
                 <YAxis type="category" dataKey="kitchen" width={96} tick={<KitchenAxisTick />} interval={0} />
                 <Tooltip formatter={(value) => `${formatNumber(value, 1)}%`} />
-                <Bar dataKey="deviationPercent" name="Desviación general" fill="#96607D" />
+                <Bar dataKey="signedDeviationPercent" name="Real - sugerido" radius={[0, 5, 5, 0]}>
+                  {model.mepByKitchen.map((row) => (
+                    <Cell key={row.kitchen} fill={(row.signedDeviationPercent || 0) >= 0 ? "#156082" : "#96607D"} />
+                  ))}
+                </Bar>
               </BarChart>
             </ResponsiveContainer>
           </ChartBox>

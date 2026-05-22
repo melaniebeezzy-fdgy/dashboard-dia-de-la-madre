@@ -23,7 +23,7 @@ function safeScriptJson(value) {
 async function main() {
   const [indexHtml, appSource] = await Promise.all([
     fs.readFile(path.join(root, "index.html"), "utf8"),
-    fs.readFile(path.join(root, "src/app.jsx"), "utf8"),
+    fs.readFile(path.join(root, "src", "app.jsx"), "utf8"),
   ]);
 
   const staticCsv = {};
@@ -68,11 +68,19 @@ async function main() {
       })();
     </script>`;
 
+  const babelScript = '<script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>';
   const inlineApp = `<script type="text/babel" data-type="module">\n${appSource.replace(/<\/script/gi, "<\\/script")}\n</script>`;
-  const standalone = indexHtml
-    .replace('<script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>', '<script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>\n' + staticLoader)
-    .replace('<script type="text/babel" data-type="module" src="/src/app.jsx"></script>', inlineApp)
-    .replace("<title>Dashboard DÃ­a de la Madre</title>", "<title>Dashboard Día de la Madre - estático</title>");
+  let standalone = indexHtml
+    .replace(/<!-- IMPORTANTE:[\s\S]*?-->\s*/g, "")
+    .replace(/<script\s+type="module"\s+src="\/src\/app\.jsx"><\/script>/g, inlineApp)
+    .replace(/<script\s+type="text\/babel"\s+data-type="module"\s+src="\/src\/app\.jsx"><\/script>/g, inlineApp)
+    .replace("<title>Dashboard Día de la Madre</title>", "<title>Dashboard Día de la Madre - estático</title>");
+
+  if (standalone.includes(babelScript)) {
+    standalone = standalone.replace(babelScript, `${babelScript}\n${staticLoader}`);
+  } else {
+    standalone = standalone.replace("</head>", `${babelScript}\n${staticLoader}\n</head>`);
+  }
 
   await fs.mkdir(outDir, { recursive: true });
   await fs.writeFile(outFile, standalone, "utf8");
