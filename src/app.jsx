@@ -26,7 +26,7 @@ const MAIN_SHEET_ID = "1MTVbU3MSIqEFqUcme_Xk2IEPkBIG4OcdWx05zBeBgBc";
 const SUGGESTED_MEP_ID = "1AMOmyjfj-9INhEwEIl-3EpSwhxUlPTk88H6BklO4OQo";
 const MOTHERS_DAY_2026 = "2026-05-10";
 const MOTHERS_DAY_2025 = "2025-05-11";
-const DATA_VERSION = "mex-20260521-14";
+const DATA_VERSION = "mex-20260521-15";
 
 const DEFAULT_SHEETS = [
   { key: "mep", label: "MEP", sheet: "", gid: "", localPath: "/data/mep.csv", keepDuplicates: true },
@@ -1071,14 +1071,14 @@ function InsideBarValue({ x, y, width, height, value }) {
   );
 }
 
-function DataTable({ rows, columns, filename }) {
+function DataTable({ rows, columns, filename, maxHeightClass = "max-h-72" }) {
   return (
     <div className="rounded-md border border-line bg-white shadow-soft">
       <div className="flex items-center justify-between border-b border-line px-3 py-2">
         <p className="text-xs font-semibold text-ink">{rows.length} registros</p>
         <button onClick={() => downloadCsv(filename, rows)} className="rounded bg-ink px-3 py-1.5 text-xs font-semibold text-white">Descargar CSV</button>
       </div>
-      <div className="thin-scrollbar max-h-72 overflow-auto">
+      <div className={`thin-scrollbar ${maxHeightClass} overflow-auto`}>
         <table className="w-full min-w-[900px] text-left text-xs">
           <thead className="sticky top-0 bg-slate-100 text-xs uppercase text-muted">
             <tr>{columns.map((column) => <th key={column.key} className="px-2 py-1.5">{column.label}</th>)}</tr>
@@ -1396,11 +1396,11 @@ function App() {
 
       <Section title="MEP Sugerido vs Venta Real">
         <div className="grid gap-3 lg:grid-cols-2">
-          <ChartBox title="Desviación MEP por cocina">
+          <ChartBox title="Desviación MEP por cocina" className="h-80">
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={model.mepByKitchen} layout="vertical" margin={{ left: 8, right: 20 }}>
+              <BarChart data={model.mepByKitchen} layout="vertical" margin={{ top: 4, right: 20, bottom: 0, left: 8 }}>
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis type="number" tickFormatter={(value) => `${formatNumber(value, 0)}%`} />
+                <XAxis type="number" height={22} tickFormatter={(value) => `${formatNumber(value, 0)}%`} />
                 <YAxis type="category" dataKey="kitchen" width={96} tick={<KitchenAxisTick />} interval={0} />
                 <Tooltip formatter={(value) => `${formatNumber(value, 1)}%`} />
                 <Bar dataKey="signedDeviationPercent" name="Real - sugerido" radius={[0, 5, 5, 0]}>
@@ -1413,6 +1413,7 @@ function App() {
           </ChartBox>
           <DataTable
             filename="mep_sugerido_vs_real.csv"
+            maxHeightClass="max-h-80"
             rows={model.mepComparison.sort((a, b) => Math.abs(b.diff) - Math.abs(a.diff)).slice(0, 120)}
             columns={[
               { key: "kitchen", label: "Cocina" },
