@@ -20,13 +20,14 @@ const {
   Cell,
   LabelList,
   ComposedChart,
+  ReferenceDot,
 } = Recharts;
 
 const MAIN_SHEET_ID = "1MTVbU3MSIqEFqUcme_Xk2IEPkBIG4OcdWx05zBeBgBc";
 const SUGGESTED_MEP_ID = "1AMOmyjfj-9INhEwEIl-3EpSwhxUlPTk88H6BklO4OQo";
 const MOTHERS_DAY_2026 = "2026-05-10";
 const MOTHERS_DAY_2025 = "2025-05-11";
-const DATA_VERSION = "mex-20260521-15";
+const DATA_VERSION = "mex-20260526-if-24";
 
 const DEFAULT_SHEETS = [
   { key: "mep", label: "MEP", sheet: "", gid: "", localPath: "/data/mep.csv", keepDuplicates: true },
@@ -35,6 +36,8 @@ const DEFAULT_SHEETS = [
   { key: "ventas", label: "GMV", sheet: "", gid: "", localPath: "/data/gmv.csv", keepDuplicates: true },
   { key: "comparison", label: "Orders Comparison", sheet: "", gid: "", localPath: "/data/orders-comparison.csv" },
   { key: "protocolos", label: "Protocolos", sheet: "", gid: "", localPath: "/data/protocolos.csv", keepDuplicates: true },
+  { key: "infull", label: "IF", sheet: "", gid: "", localPath: "/data/if.csv", keepDuplicates: true },
+  { key: "quejas", label: "Quejas", sheet: "", gid: "", localPath: "/data/quejas.csv", keepDuplicates: true },
 ];
 
 const SUGGESTED_SHEETS = [
@@ -49,7 +52,7 @@ const FIELD_ALIASES = {
   sku: ["sku", "id sku", "product sku", "item sku", "plu"],
   product: ["description", "name", "producto", "product", "item", "nombre producto", "product name", "descripcion", "descripción"],
   period: ["periodo", "period", "daypart", "franja", "momento"],
-  hour: ["hora", "hour", "created hour", "order hour", "time slot", "franja horaria"],
+  hour: ["hora", "hour", "created hour", "order hour", "order_received_at_local", "time slot", "franja horaria"],
   date: ["order_day", "order day", "day", "fecha", "date", "created date", "order date", "dia", "día"],
   orderId: ["order id", "order_id", "id orden", "orden", "pedido", "id pedido"],
   orders: ["Total orders", "total_orders", "total orders", "orders", "ordenes", "órdenes", "total ordenes", "total órdenes"],
@@ -62,6 +65,13 @@ const FIELD_ALIASES = {
   suggestedType: ["mep_classification", "tipo", "clasificacion", "clasificación", "categoria", "categoría", "mep", "segmento"],
   suggestedQty: ["suggested_units", "sugerido", "mep sugerido", "cantidad sugerida", "qty sugerido", "unidades sugeridas", "forecast", "projection"],
   protocols: ["Protocolos activos", "protocolos activos", "protocolos", "active protocols"],
+  inFullNoi: ["# In Full noi", "in full noi", "infull noi", "ordenes sin quejas", "ordenes sin queja"],
+  comment: ["comments", "comment", "comentarios", "comentario"],
+  complaint: ["complaint", "queja", "quejas"],
+  reason: ["reason", "rating_tag", "reason_category", "motivo"],
+  reasonArea: ["reason_area", "area", "responsable"],
+  provider: ["provider_name", "provider", "plataforma"],
+  rating: ["rating", "calificacion", "calificación"],
 };
 
 const COLORS = ["#156082", "#0F9ED5", "#96607D", "#C19EB1", "#467886", "#153D64", "#345964", "#0B769F"];
@@ -112,6 +122,10 @@ function normalizeSku(value) {
   const numeric = Number(raw.replace(",", "."));
   if (Number.isFinite(numeric) && Number.isInteger(numeric)) return String(numeric);
   return normalizeKey(raw).replace(/\s+/g, "");
+}
+
+function kitchenMatchKey(value) {
+  return normalizeKey(value).replace(/^\d+\s+/, "");
 }
 
 function hasProtocolKitchen(value) {
@@ -456,6 +470,259 @@ function aggregate(rows, schema, dimensions, measures = {}) {
   }));
 }
 
+function aggregateInFull(rows, schema, dimensions, kitchenCityMap = new Map()) {
+  const map = new Map();
+  rows.forEach((row) => {
+    const values = dimensions.map((dimension) => {
+      if (dimension === "city") {
+        const direct = getValue(row, schema, "city");
+        const kitchen = normalizeText(getValue(row, schema, "kitchen"));
+        return direct ? normalizeCity(direct) : (kitchenCityMap.get(kitchen) || "Sin dato");
+      }
+      if (dimension === "hour") return parseHour(getValue(row, schema, "hour") || getValue(row, schema, "date"));
+      return normalizeText(getValue(row, schema, dimension));
+    });
+    const key = values.join("||");
+    if (!map.has(key)) {
+      const item = {};
+      dimensions.forEach((dimension, index) => {
+        item[dimension] = values[index];
+      });
+      item.orders = 0;
+      item.inFullNoi = 0;
+      map.set(key, item);
+    }
+    const item = map.get(key);
+    item.orders += toNumber(getValue(row, schema, "orders"));
+    item.inFullNoi += toNumber(getValue(row, schema, "inFullNoi"));
+  });
+  return [...map.values()].map((item) => ({
+    ...item,
+    inFull: item.orders ? (item.inFullNoi / item.orders) * 100 : 0,
+  }));
+}
+
+function buildInFullComparison(rows, schema, kitchenCityMap) {
+  const dayTotals = aggregateInFull(rows, schema, ["date"], kitchenCityMap)
+    .filter((item) => item.date !== "Sin dato" && item.orders > 0)
+    .sort((a, b) => (toNumber(b.date) - toNumber(a.date)) || b.orders - a.orders);
+  const currentDay = dayTotals[0]?.date || "";
+  const previousDay = dayTotals.find((item) => item.date !== currentDay)?.date || "";
+  const currentRows = rows.filter((row) => normalizeText(getValue(row, schema, "date")) === currentDay);
+  const previousRows = rows.filter((row) => normalizeText(getValue(row, schema, "date")) === previousDay);
+  const currentTotal = aggregateInFull(currentRows, schema, [], kitchenCityMap)[0] || { orders: 0, inFullNoi: 0, inFull: 0 };
+  const previousTotal = aggregateInFull(previousRows, schema, [], kitchenCityMap)[0] || { orders: 0, inFullNoi: 0, inFull: 0 };
+  const previousKitchen = new Map(
+    aggregateInFull(previousRows, schema, ["city", "kitchen"], kitchenCityMap).map((item) => [item.kitchen, item])
+  );
+  const byKitchen = aggregateInFull(currentRows, schema, ["city", "kitchen"], kitchenCityMap)
+    .filter((item) => item.kitchen !== "Sin dato")
+    .map((item) => {
+      const previous = previousKitchen.get(item.kitchen) || { inFull: null, orders: 0 };
+      const hasPrevious = previous.orders > 0 && Number.isFinite(previous.inFull);
+      const delta = hasPrevious ? item.inFull - previous.inFull : null;
+      return {
+        ...item,
+        prevInFull: hasPrevious ? previous.inFull : null,
+        prevOrders: previous.orders || 0,
+        inFullDelta: delta,
+        inFullVariation: hasPrevious ? ((item.inFull - previous.inFull) / previous.inFull) * 100 : null,
+      };
+    })
+    .sort((a, b) => a.inFull - b.inFull || b.orders - a.orders);
+  const byBrand = aggregateInFull(currentRows, schema, ["brand"], kitchenCityMap)
+    .filter((item) => item.brand !== "Sin dato")
+    .sort((a, b) => a.inFull - b.inFull || b.orders - a.orders)
+    .slice(0, 12);
+  const previousHour = new Map(aggregateInFull(previousRows, schema, ["hour"], kitchenCityMap).map((item) => [item.hour, item]));
+  const hourKeys = [...new Set([
+    ...aggregateInFull(currentRows, schema, ["hour"], kitchenCityMap).map((item) => item.hour),
+    ...previousHour.keys(),
+  ])].filter((hour) => hour !== "Sin hora").sort();
+  const currentHour = new Map(aggregateInFull(currentRows, schema, ["hour"], kitchenCityMap).map((item) => [item.hour, item]));
+  const byHour = hourKeys.map((hour) => ({
+    hour,
+    inFull: currentHour.get(hour)?.inFull || 0,
+    prevInFull: previousHour.get(hour)?.inFull || 0,
+    orders: currentHour.get(hour)?.orders || 0,
+    prevOrders: previousHour.get(hour)?.orders || 0,
+  }));
+  const worstCurrent = byHour.filter((item) => item.orders > 0).sort((a, b) => a.inFull - b.inFull)[0];
+  const worstPrevious = byHour.filter((item) => item.prevOrders > 0).sort((a, b) => a.prevInFull - b.prevInFull)[0];
+  const detail = aggregateInFull(currentRows, schema, ["city", "kitchen", "brand", "hour"], kitchenCityMap)
+    .sort((a, b) => a.inFull - b.inFull || b.orders - a.orders);
+  return {
+    currentDay,
+    previousDay,
+    total: currentTotal,
+    previousTotal,
+    totalDelta: previousTotal.inFull ? currentTotal.inFull - previousTotal.inFull : null,
+    totalVariation: previousTotal.inFull ? ((currentTotal.inFull - previousTotal.inFull) / previousTotal.inFull) * 100 : null,
+    byKitchen,
+    byBrand,
+    byHour,
+    worstCurrent,
+    worstPrevious,
+    detail,
+  };
+}
+
+function classifyComplaint(row, schema) {
+  const comment = String(getValue(row, schema, "comment") || "").trim();
+  const reasonArea = normalizeKey(getValue(row, schema, "reasonArea"));
+  const rating = toNumber(getValue(row, schema, "rating"));
+  const text = normalizeKey([
+    comment,
+    getValue(row, schema, "reason"),
+    getValue(row, schema, "reasonArea"),
+  ].join(" "));
+  const has = (terms) => terms.some((term) => text.includes(term));
+  if (reasonArea.includes("pase")) {
+    return { category: "Error de empaque: faltante o incorrecto", owner: "Empaque" };
+  }
+  if (!comment && rating > 0 && rating <= 3) {
+    return { category: "Calificación baja sin comentario", owner: "Por revisar" };
+  }
+  if (has(["cancel", "cancelado", "cancelada", "no llego", "nunca llego", "no recibi", "no recibio", "no entreg", "missing order"])) {
+    return { category: "Pedido no entregado / cancelado", owner: "Delivery / plataforma" };
+  }
+  if (has(["delivery late", "out time", "tarde", "demora", "espera", "tiempo", "excesivo", "retras", "late"])) {
+    return { category: "Tiempos / entrega tarde", owner: "Delivery u operación" };
+  }
+  if (has(["pase", "missing item", "faltante", "falto", "falta", "incompleto", "completeness", "no venia", "wrong item", "equivocado", "incorrecto", "distinto", "diferente", "no pedi", "no pedí", "cambiaron", "accuracy"])) {
+    return { category: "Error de empaque: faltante o incorrecto", owner: "Empaque" };
+  }
+  if (has(["frio", "fria", "helado", "helada", "temperatura", "wrong temperature", "cold"])) {
+    return { category: "Temperatura", owner: "Cocina / delivery" };
+  }
+  if (has(["derram", "batido", "destrozado", "aplastado", "roto", "rota", "regad", "damage item", "damage packaging", "bolsa rota"])) {
+    return { category: "Producto dañado en traslado", owner: "Delivery / empaque" };
+  }
+  if (has(["quality", "calidad", "malo", "mala", "feo", "horrible", "sabor", "quemado", "crudo", "duro", "seco", "bad quality"])) {
+    return { category: "Calidad / sabor del producto", owner: "Cocina" };
+  }
+  if (has(["packaging", "empaque", "bolsa", "cubiertos", "servilleta", "tapa", "sellado", "envase"])) {
+    return { category: "Empaque e insumos", owner: "Empaque" };
+  }
+  if (has(["presentacion", "presentación", "imagen", "presentation", "porcion", "porción", "pequeno", "pequeño", "poco"])) {
+    return { category: "Presentación / porción", owner: "Cocina" };
+  }
+  if (has(["caro", "precio", "costoso", "valor", "cobro", "pague", "pagué", "promocion", "promoción"])) {
+    return { category: "Precio / expectativa de valor", owner: "Comercial / producto" };
+  }
+  if (has(["nota", "instruccion", "instrucción", "request", "sin ", "extra", "topping", "toping", "topings"])) {
+    return { category: "Instrucciones no cumplidas", owner: "Cocina / empaque" };
+  }
+  if (has(["atencion", "atención", "soporte", "servicio", "respuesta", "ayuda", "reembolso", "devolucion", "devolución"])) {
+    return { category: "Soporte / atención al cliente", owner: "Soporte / plataforma" };
+  }
+  if (has(["rappi", "didi", "ubereats", "domiciliario", "repartidor", "driver", "delivery"])) {
+    return { category: "Experiencia delivery", owner: "Delivery" };
+  }
+  if (rating > 0 && rating <= 3) {
+    return { category: "Calificación baja", owner: "Por revisar" };
+  }
+  return { category: "Comentario general de experiencia", owner: "Por revisar" };
+}
+
+function groupComplaintRows(rows, key) {
+  const map = new Map();
+  rows.forEach((item) => {
+    const value = item[key] || "Sin dato";
+    if (value === "Sin dato") return;
+    if (!map.has(value)) map.set(value, { [key]: value, complaints: 0, owners: new Map() });
+    const target = map.get(value);
+    target.complaints += 1;
+    target.owners.set(item.owner, (target.owners.get(item.owner) || 0) + 1);
+  });
+  return [...map.values()].map((item) => ({
+    ...item,
+    owner: [...item.owners.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] || "Por revisar",
+    share: rows.length ? (item.complaints / rows.length) * 100 : 0,
+  })).sort((a, b) => b.complaints - a.complaints);
+}
+
+function buildWordCloud(rows) {
+  const signals = [
+    { phrase: "pedido llegó tarde", patterns: [/llego tarde|llegó tarde|demoro mucho|demoró mucho|tardo mucho|tardó mucho|tiempo de espera|espera fue excesivo|delivery late|out time|retras/g] },
+    { phrase: "producto llegó frío", patterns: [/llego frio|llegó frio|llego fría|llegó fría|venia frio|venía frío|vino frio|vino frío|helado|helada|wrong temperature|cold/g] },
+    { phrase: "producto faltante", patterns: [/falto|faltó|faltante|no venia|no venía|missing item|incompleto|no llego completo/g] },
+    { phrase: "producto incorrecto", patterns: [/producto equivocado|producto incorrecto|wrong item|no pedi|no pedí|mandaron otro|cambiaron/g] },
+    { phrase: "producto dañado", patterns: [/destrozado|batido|derramado|regado|aplastado|roto|damage item/g] },
+    { phrase: "empaque dañado", patterns: [/bolsa rota|empaque roto|tapa rota|damage packaging|mal empacado|mal empaque/g] },
+    { phrase: "mala calidad", patterns: [/mala calidad|mal sabor|sabor malo|horrible|feo|muy malo|bad quality|quemado|crudo|duro|seco/g] },
+    { phrase: "porción pequeña", patterns: [/poca porcion|poca porción|muy pequeno|muy pequeño|porcion pequena|porción pequeña|poca cantidad|muy poco/g] },
+    { phrase: "mala presentación", patterns: [/mala presentacion|mala presentación|bad presentation|no tiene nada que ver|imagen|presentacion/g] },
+    { phrase: "instrucciones no cumplidas", patterns: [/no siguieron instrucciones|no leyeron nota|restaurant missed request|sin toping|sin topping|sin salsa|pedido sin/g] },
+    { phrase: "pedido no entregado", patterns: [/no entreg|nunca llego|nunca llegó|no recibi|no recibí|missing order/g] },
+    { phrase: "problema con repartidor", patterns: [/domiciliario|repartidor|driver|rappi|didi|ubereats|delivery/g] },
+    { phrase: "soporte no resolvió", patterns: [/soporte|reembolso|devolucion|devolución|no respond|atencion|atención|ayuda/g] },
+    { phrase: "precio no justifica", patterns: [/caro|costoso|precio|valor|pague|pagué|no vale/g] },
+  ];
+  const counts = new Map();
+  rows.forEach((item) => {
+    const text = normalizeKey([item.comment, item.reason, item.reasonArea].join(" "));
+    signals.forEach(({ phrase, patterns }) => {
+      if (patterns.some((pattern) => pattern.test(text))) counts.set(phrase, (counts.get(phrase) || 0) + 1);
+    });
+  });
+  const values = [...counts.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 18);
+  const max = values[0]?.[1] || 1;
+  return values.map(([word, count], index) => ({
+    word,
+    count,
+    size: index === 0 ? 42 : 12 + Math.round(Math.pow(count / max, 0.75) * 24),
+  }));
+}
+
+function summarizeComplaints(rows) {
+  return {
+    total: rows.length,
+    categories: groupComplaintRows(rows, "category"),
+    brands: groupComplaintRows(rows, "brand").slice(0, 10),
+    kitchens: groupComplaintRows(rows, "kitchen").slice(0, 10),
+    wordCloud: buildWordCloud(rows),
+    samples: rows
+      .filter((item) => item.comment)
+      .sort((a, b) => b.complaint - a.complaint)
+      .slice(0, 80),
+  };
+}
+
+function buildComplaintAnalysis(rows, schema, filters, kitchenCityMap = new Map()) {
+  const complaintRows = rows
+    .map((row) => {
+      const kitchen = normalizeText(getValue(row, schema, "kitchen"));
+      const kitchenKey = kitchenMatchKey(kitchen);
+      return {
+        row,
+        country: normalizeCountry(getValue(row, schema, "country")),
+        city: kitchenCityMap.get(kitchen) || kitchenCityMap.get(kitchenKey) || "Sin dato",
+        kitchen,
+        kitchenKey,
+        brand: normalizeText(getValue(row, schema, "brand")),
+        hour: parseHour(getValue(row, schema, "hour") || getValue(row, schema, "date")),
+        comment: String(getValue(row, schema, "comment") || "").trim(),
+        complaint: toNumber(getValue(row, schema, "complaint")),
+        rating: toNumber(getValue(row, schema, "rating")),
+        provider: normalizeText(getValue(row, schema, "provider")),
+        reason: String(getValue(row, schema, "reason") || "").trim(),
+        reasonArea: String(getValue(row, schema, "reasonArea") || "").trim(),
+        ...classifyComplaint(row, schema),
+      };
+    })
+    .filter((item) => (item.complaint > 0 || item.comment) && item.category)
+    .filter((item) => (!filters.country || item.country === filters.country)
+      && (!filters.city || item.city === filters.city || item.city === "Sin dato")
+      && (!filters.kitchen || item.kitchen === filters.kitchen || item.kitchenKey === kitchenMatchKey(filters.kitchen))
+      && (!filters.brand || item.brand === filters.brand)
+      && (!filters.hour || item.hour === filters.hour));
+
+  return { rows: complaintRows, ...summarizeComplaints(complaintRows) };
+}
+
 async function fetchCsv(spreadsheetId, sheetConfig) {
   const params = new URLSearchParams({ spreadsheetId });
   if (sheetConfig.gid) params.set("gid", sheetConfig.gid);
@@ -698,6 +965,8 @@ function buildModel(data, filters) {
   const ddmrp = data.ddmrp || { rows: [], schema: {} };
   const comparison = data.comparison || { rows: [], schema: {} };
   const protocolos = data.protocolos || { rows: [], schema: {} };
+  const infull = data.infull || { rows: [], schema: {} };
+  const quejas = data.quejas || { rows: [], schema: {} };
   const comparisonUsable = Boolean(comparison.schema.orders || comparison.schema.cooking || comparison.schema.rtwt || comparison.schema.rtWait);
   const suggestedMep = data.suggestedMep || { rows: [], schema: {} };
   const suggestedMepKitchenCount = new Set(
@@ -721,14 +990,43 @@ function buildModel(data, filters) {
     const country = normalizeCountry(getValue(row, schema, "country"));
     const city = normalizeCity(getValue(row, schema, "city"));
     const kitchen = normalizeText(getValue(row, schema, "kitchen"));
+    const brand = normalizeText(getValue(row, schema, "brand"));
     const sku = normalizeText(getValue(row, schema, "sku"));
     const period = normalizeText(getValue(row, schema, "period") || inferPeriod(parseHour(getValue(row, schema, "hour") || getValue(row, schema, "date"))));
     const hour = parseHour(getValue(row, schema, "hour") || getValue(row, schema, "date"));
     return (!filters.country || country === filters.country)
       && (!filters.city || city === filters.city)
       && (!filters.kitchen || kitchen === filters.kitchen)
+      && (!filters.brand || brand === filters.brand || brand === "Sin dato")
       && (!filters.sku || sku === filters.sku)
       && (!filters.period || period === filters.period)
+      && (!filters.hour || hour === filters.hour);
+  });
+
+  const kitchenCityMap = new Map();
+  [orders, ventas, mep, ddmrp].forEach((source) => {
+    source.rows.forEach((row) => {
+      const kitchen = normalizeText(getValue(row, source.schema, "kitchen"));
+      const city = normalizeCity(getValue(row, source.schema, "city"));
+      if (kitchen !== "Sin dato" && city !== "Sin dato" && !kitchenCityMap.has(kitchen)) {
+        kitchenCityMap.set(kitchen, city);
+      }
+      if (kitchen !== "Sin dato" && city !== "Sin dato" && !kitchenCityMap.has(kitchenMatchKey(kitchen))) {
+        kitchenCityMap.set(kitchenMatchKey(kitchen), city);
+      }
+    });
+  });
+
+  const filterInFullRows = (source, schema) => source.filter((row) => {
+    const country = normalizeCountry(getValue(row, schema, "country"));
+    const kitchen = normalizeText(getValue(row, schema, "kitchen"));
+    const city = normalizeCity(getValue(row, schema, "city") || kitchenCityMap.get(kitchen));
+    const brand = normalizeText(getValue(row, schema, "brand"));
+    const hour = parseHour(getValue(row, schema, "hour") || getValue(row, schema, "date"));
+    return (!filters.country || country === filters.country)
+      && (!filters.city || city === filters.city)
+      && (!filters.kitchen || kitchen === filters.kitchen)
+      && (!filters.brand || brand === filters.brand)
       && (!filters.hour || hour === filters.hour);
   });
 
@@ -744,6 +1042,7 @@ function buildModel(data, filters) {
   });
 
   const orderRows = filterRows(orders.rows, orders.schema);
+  const inFullRows = filterInFullRows(infull.rows, infull.schema);
   const salesRowsAllDates = ventas.rows.length ? filterRows(ventas.rows, ventas.schema) : orderRows;
   const salesRows = ventas.rows.length
     ? selectCurrentGmvRows(salesRowsAllDates, ventas.schema)
@@ -819,6 +1118,11 @@ function buildModel(data, filters) {
     .filter((item) => item.product !== "Sin dato")
     .sort((a, b) => b.units - a.units)
     .slice(0, 10);
+  const morningProductWorst = aggregate(morningRows, mep.schema, ["sku", "product"], { countRowsAsOrders: true })
+    .filter((item) => item.product !== "Sin dato" && item.units > 0)
+    .filter((item) => filters.country !== "MEX" || !["smashed deluxe burger combo", "salsa de miel picante"].includes(normalizeKey(item.product)))
+    .sort((a, b) => a.units - b.units)
+    .slice(0, 10);
   const morningOrderRows = orderRows.filter((row) => {
     const hour = hourNumber(getValue(row, orders.schema, "hour") || getValue(row, orders.schema, "date"));
     return hour >= 7 && hour <= 11;
@@ -827,6 +1131,13 @@ function buildModel(data, filters) {
     .filter((item) => item.brand !== "Sin dato")
     .sort((a, b) => b.orders - a.orders)
     .slice(0, 5);
+  const morningBrandWorst = aggregate(morningOrderRows, orders.schema, ["brand"], { orderSet: new Set() })
+    .filter((item) => item.brand !== "Sin dato" && item.orders > 0)
+    .sort((a, b) => a.orders - b.orders)
+    .slice(0, 5);
+
+  const inFullComparison = buildInFullComparison(inFullRows, infull.schema, kitchenCityMap);
+  const complaints = buildComplaintAnalysis(quejas.rows, quejas.schema, filters, kitchenCityMap);
 
   const suggestedMepRows = filterSuggestedMepRows(suggestedMep.rows, suggestedMep.schema);
   const mepComparison = computeMepComparison(suggestedMepRows, suggestedMep.schema, ddmrpRows, ddmrp.schema);
@@ -850,6 +1161,7 @@ function buildModel(data, filters) {
     signedDeviationPercent: item.suggested ? ((item.real - item.suggested) / item.suggested) * 100 : null,
     deviationPercent: item.suggested ? (item.absoluteDeviation / item.suggested) * 100 : null,
   })).sort((a, b) => Math.abs(b.signedDeviationPercent || 0) - Math.abs(a.signedDeviationPercent || 0));
+  const inFullKitchenMap = new Map(inFullComparison.byKitchen.map((row) => [row.kitchen, row]));
 
   const medians = {
     orders: median(kitchenCombined.map((item) => item.orders)),
@@ -860,16 +1172,32 @@ function buildModel(data, filters) {
 
   const diagnosis = kitchenCombined.map((item) => {
     const mepItem = mepByKitchen.find((row) => row.kitchen === item.kitchen) || {};
+    const inFullItem = inFullKitchenMap.get(item.kitchen) || {};
     const rtwtAbsPenalty = clamp(Math.max(0, (item.rtwt / (medians.rtwt || 1)) - 1) * 22, 0, 28);
     const cookingAbsPenalty = clamp(Math.max(0, (item.cooking / (medians.cooking || 1)) - 1) * 22, 0, 28);
     const rtwtGrowthPenalty = clamp(Math.max(0, item.rtwtGrowth || 0) * 0.12, 0, 14);
     const cookingGrowthPenalty = clamp(Math.max(0, item.cookingGrowth || 0) * 0.12, 0, 14);
     const waitPenalty = clamp(Math.max(0, (item.rtWait / (medians.rtwt || 1)) - 0.8) * 8, 0, 8);
+    const mepShortfallPenalty = Number.isFinite(mepItem.signedDeviationPercent)
+      ? clamp(Math.max(0, mepItem.signedDeviationPercent) * 0.05, 0, 6)
+      : 0;
+    const mepInaccuracyPenalty = Number.isFinite(mepItem.accuracy)
+      ? clamp(Math.max(0, 100 - mepItem.accuracy) * 0.12, 0, 12)
+      : 0;
+    const inFullPenalty = Number.isFinite(inFullItem.inFull)
+      ? clamp(Math.max(0, 95 - inFullItem.inFull) * 1.2, 0, 18)
+      : 0;
     const highVolume = item.orders >= medians.orders;
     const controlledTimes = item.rtwt <= medians.rtwt && item.cooking <= medians.cooking;
     const volumeCredit = highVolume && controlledTimes
       ? clamp((item.orders / (medians.orders || 1)) * 7, 0, 16)
       : clamp((item.orders / (medians.orders || 1)) * 2, 0, 5);
+    const mepWasShort = mepItem.signedDeviationPercent > 0;
+    const strongExecutionWithShortMep = mepWasShort && inFullItem.inFull >= 95 && controlledTimes;
+    const weakExecutionWithShortMep = mepWasShort && (inFullItem.inFull < 90 || item.rtwt > medians.rtwt || item.cooking > medians.cooking);
+    const resilienceCredit = strongExecutionWithShortMep
+      ? clamp(Math.max(0, mepItem.signedDeviationPercent) * 0.18, 0, 14)
+      : 0;
     const score = clamp(Math.round(
       100
       - rtwtAbsPenalty
@@ -877,21 +1205,46 @@ function buildModel(data, filters) {
       - rtwtGrowthPenalty
       - cookingGrowthPenalty
       - waitPenalty
+      - mepShortfallPenalty
+      - mepInaccuracyPenalty
+      - inFullPenalty
       + volumeCredit
+      + resilienceCredit
     ), 0, 100);
     const classification = classifyKitchen(item, medians, mepByKitchen);
-    return { ...item, voleoScore: score, mepCompliance: mepItem.compliance, mepAccuracy: mepItem.accuracy, classification: classification.type, color: classification.color, comment: classification.comment };
+    const diagnosticSignals = [];
+    if (mepItem.signedDeviationPercent > 15 && strongExecutionWithShortMep) diagnosticSignals.push("MEP sugerido quedó corto, pero la cocina mantuvo buen InFull y tiempos: buena gestión pese a una planeación exigente.");
+    else if (mepItem.signedDeviationPercent > 15 && weakExecutionWithShortMep) diagnosticSignals.push("MEP sugerido quedó corto y la operación se deterioró; el bajo sugerido probablemente aumentó la presión sobre cocina e InFull.");
+    else if (mepItem.signedDeviationPercent > 15) diagnosticSignals.push("MEP sugerido quedó corto frente a la venta real; interpretar desempeño considerando esa presión adicional.");
+    if (mepItem.signedDeviationPercent < -15) diagnosticSignals.push("MEP sugerido quedó por encima de la venta real; posible sobrepreparación.");
+    if (Number.isFinite(mepItem.accuracy) && mepItem.accuracy < 75) diagnosticSignals.push("Exactitud MEP baja, revisar planeación por SKU.");
+    if (Number.isFinite(inFullItem.inFull) && inFullItem.inFull < 90) diagnosticSignals.push("InFull bajo: la operación absorbió peor el volumen o generó más quejas.");
+    if (mepItem.signedDeviationPercent > 0 && inFullItem.inFull >= 95 && controlledTimes) diagnosticSignals.push("Buena respuesta aun con MEP subestimado.");
+    const comment = [classification.comment, ...diagnosticSignals].filter(Boolean).join(" ");
+    return {
+      ...item,
+      voleoScore: score,
+      mepCompliance: mepItem.compliance,
+      mepAccuracy: mepItem.accuracy,
+      mepDeviation: mepItem.signedDeviationPercent,
+      inFull: inFullItem.inFull,
+      inFullDelta: inFullItem.inFullDelta,
+      classification: classification.type,
+      color: classification.color,
+      comment,
+    };
   }).sort((a, b) => b.gmv - a.gmv);
   const rtwtByKitchenOrdered = [...kitchenCombined].sort((a, b) => a.orders - b.orders);
   const timeGrowthByKitchen = [...kitchenCombined].sort((a, b) => ((b.rtwtGrowth || 0) + (b.cookingGrowth || 0)) - ((a.rtwtGrowth || 0) + (a.cookingGrowth || 0)));
 
   const filterOptions = {
-    countries: [...new Set([orders, ventas, mep, ddmrp, comparison, suggestedMep].flatMap((source) => source.rows.map((row) => normalizeCountry(getValue(row, source.schema, "country")))).filter((value) => value !== "Sin dato"))].sort(),
+    countries: [...new Set([orders, ventas, mep, ddmrp, comparison, suggestedMep, infull, quejas].flatMap((source) => source.rows.map((row) => normalizeCountry(getValue(row, source.schema, "country")))).filter((value) => value !== "Sin dato"))].sort(),
     cities: [...new Set([orders, ventas, ddmrp].flatMap((source) => filterRows(source.rows, source.schema).map((row) => normalizeCity(getValue(row, source.schema, "city")))).filter((value) => value !== "Sin dato"))].sort(),
-    kitchens: [...new Set([orders, ventas, ddmrp, suggestedMep].flatMap((source) => filterRows(source.rows, source.schema).map((row) => normalizeText(getValue(row, source.schema, "kitchen")))).filter((value) => value !== "Sin dato"))].sort(),
+    kitchens: [...new Set([orders, ventas, ddmrp, suggestedMep, infull].flatMap((source) => filterRows(source.rows, source.schema).map((row) => normalizeText(getValue(row, source.schema, "kitchen")))).filter((value) => value !== "Sin dato"))].sort(),
+    brands: [...new Set([orders, mep, infull, quejas].flatMap((source) => filterRows(source.rows, source.schema).map((row) => normalizeText(getValue(row, source.schema, "brand")))).filter((value) => value !== "Sin dato"))].sort(),
     skus: [...new Set([mep, ddmrp, suggestedMep].flatMap((source) => filterRows(source.rows, source.schema).map((row) => normalizeText(getValue(row, source.schema, "sku")))).filter((value) => value !== "Sin dato"))].sort(),
     periods: ["Desayuno", "Almuerzo", "Cena", "Noche"],
-    hours: [...new Set(orders.rows.map((row) => parseHour(getValue(row, orders.schema, "hour") || getValue(row, orders.schema, "date"))).filter((value) => value !== "Sin hora"))].sort(),
+    hours: [...new Set([orders, infull].flatMap((source) => source.rows.map((row) => parseHour(getValue(row, source.schema, "hour") || getValue(row, source.schema, "date")))).filter((value) => value !== "Sin hora"))].sort(),
   };
 
   const topCity = aggregate(salesRows, ventas.rows.length ? ventas.schema : orders.schema, ["city"], { orderSet: new Set() }).sort((a, b) => b.gmv - a.gmv)[0];
@@ -918,6 +1271,19 @@ function buildModel(data, filters) {
     skuRanking,
     morningProductTop,
     morningBrandTop,
+    morningProductWorst,
+    morningBrandWorst,
+    inFullTotal: inFullComparison.total,
+    inFullPreviousTotal: inFullComparison.previousTotal,
+    inFullTotalDelta: inFullComparison.totalDelta,
+    inFullTotalVariation: inFullComparison.totalVariation,
+    inFullByKitchen: inFullComparison.byKitchen,
+    inFullByBrand: inFullComparison.byBrand,
+    inFullByHour: inFullComparison.byHour,
+    inFullWorstCurrent: inFullComparison.worstCurrent,
+    inFullWorstPrevious: inFullComparison.worstPrevious,
+    inFullDetail: inFullComparison.detail,
+    complaints,
     mepComparison,
     mepByKitchen,
     suggestedMepKitchenCount,
@@ -1053,6 +1419,40 @@ function CompactAxisTick({ x, y, payload }) {
   );
 }
 
+function ProductAxisTick({ x, y, payload }) {
+  const label = String(payload?.value || "");
+  const shouldFit = label.length > 34;
+  return (
+    <text
+      x={x}
+      y={y + 3}
+      textAnchor="end"
+      textLength={shouldFit ? 210 : undefined}
+      lengthAdjust={shouldFit ? "spacingAndGlyphs" : undefined}
+      className="fill-muted text-[6px] font-medium"
+    >
+      {label}
+    </text>
+  );
+}
+
+function BrandAxisTick({ x, y, payload }) {
+  const label = String(payload?.value || "");
+  const shouldFit = label.length > 24;
+  return (
+    <text
+      x={x}
+      y={y + 3}
+      textAnchor="end"
+      textLength={shouldFit ? 142 : undefined}
+      lengthAdjust={shouldFit ? "spacingAndGlyphs" : undefined}
+      className="fill-muted text-[6px] font-medium"
+    >
+      {label}
+    </text>
+  );
+}
+
 function InsideBarName({ x, y, width, height, value }) {
   if (x == null || y == null || !value) return null;
   return (
@@ -1068,6 +1468,64 @@ function InsideBarValue({ x, y, width, height, value }) {
     <text x={x + width - 6} y={y + height / 2 + 3} textAnchor="end" className="fill-white text-[8px] font-bold">
       {formatNumber(value)}
     </text>
+  );
+}
+
+function OutsideBarValue({ x, y, width, height, value }) {
+  if (x == null || y == null || !Number.isFinite(Number(value))) return null;
+  return (
+    <text x={x + width + 6} y={y + height / 2 + 3} textAnchor="start" className="fill-ink text-[8px] font-bold">
+      {formatNumber(value)}
+    </text>
+  );
+}
+
+function InFullKitchenLabel({ x, y, width, height, value, payload, row }) {
+  const item = row || payload;
+  if (x == null || y == null || !item) return null;
+  const delta = item.inFullDelta;
+  const deltaText = Number.isFinite(delta) ? `${delta >= 0 ? "+" : ""}${formatNumber(delta, 1)} pp` : "N/D";
+  const barWidth = Number(width) || 0;
+  if (barWidth < 72) return null;
+  return (
+    <g>
+      <text x={x + 7} y={y + height / 2 + 3} textAnchor="start" className="fill-[#F5CFE0] text-[7px] font-bold">
+        {formatPercent(item.prevInFull, 1)}
+      </text>
+      <text
+        x={x + width - 54}
+        y={y + height / 2 + 3}
+        textAnchor="end"
+        fill={Number.isFinite(delta) && delta > 0 ? "#0F9ED5" : "#E8E8E8"}
+        className="text-[6px] font-bold"
+      >
+        {deltaText}
+      </text>
+      <text x={x + width - 7} y={y + height / 2 + 3} textAnchor="end" className="fill-white text-[8px] font-bold">
+        {formatPercent(value, 1)}
+      </text>
+    </g>
+  );
+}
+
+function WorstHourMarker({ point, valueKey, color, label }) {
+  if (!point?.hour || !Number.isFinite(Number(point[valueKey]))) return null;
+  return (
+    <ReferenceDot
+      x={point.hour}
+      y={point[valueKey]}
+      r={4}
+      fill={color}
+      stroke="#ffffff"
+      strokeWidth={2}
+      label={{
+        value: `${label} ${formatPercent(point[valueKey], 1)}`,
+        position: "bottom",
+        fill: color,
+        fontSize: 9,
+        fontWeight: 700,
+      }}
+    />
   );
 }
 
@@ -1096,14 +1554,126 @@ function DataTable({ rows, columns, filename, maxHeightClass = "max-h-72" }) {
   );
 }
 
+function ComplaintsView({ model, onBack }) {
+  const [selectedCategory, setSelectedCategory] = React.useState("");
+  const complaintRows = selectedCategory
+    ? model.complaints.rows.filter((row) => row.category === selectedCategory)
+    : model.complaints.rows;
+  const complaints = React.useMemo(() => summarizeComplaints(complaintRows), [complaintRows]);
+  return (
+    <div>
+      <Section
+        title="Análisis de Quejas"
+        action={<button onClick={onBack} className="rounded bg-ink px-3 py-1.5 text-xs font-semibold text-white">Volver al dashboard</button>}
+      >
+        <div className="mb-3 grid gap-3 md:grid-cols-3">
+          <Card title="Quejas analizadas" value={formatNumber(model.complaints.total)} subtitle="Comentarios clasificados automáticamente" />
+          <Card title="Categoría seleccionada" value={selectedCategory || "Todas"} subtitle={selectedCategory ? `${formatNumber(complaints.total)} quejas filtradas` : "Haz clic en una barra para filtrar"} />
+          <Card title="Marca más mencionada" value={complaints.brands[0]?.brand || "N/D"} subtitle={`${formatNumber(complaints.brands[0]?.complaints)} quejas`} />
+        </div>
+        {selectedCategory && (
+          <button onClick={() => setSelectedCategory("")} className="mb-3 rounded border border-line bg-mist px-3 py-1.5 text-xs font-semibold text-ink">Limpiar categoría</button>
+        )}
+        <div className="grid gap-3 lg:grid-cols-2">
+          <ChartBox title="Categorías de queja IA" className="h-80">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={model.complaints.categories} layout="vertical" margin={{ left: 8, right: 42 }}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis type="number" />
+                <YAxis type="category" dataKey="category" width={148} tick={<BrandAxisTick />} interval={0} />
+                <Tooltip formatter={(value) => formatNumber(value)} />
+                <Bar
+                  dataKey="complaints"
+                  name="Quejas"
+                  fill="#96607D"
+                  radius={[0, 5, 5, 0]}
+                  className="cursor-pointer"
+                  onClick={(row) => {
+                    const category = row?.category || row?.payload?.category;
+                    if (category) setSelectedCategory(category === selectedCategory ? "" : category);
+                  }}
+                >
+                  {model.complaints.categories.map((row) => (
+                    <Cell key={row.category} fill={row.category === selectedCategory ? "#0F9ED5" : "#96607D"} />
+                  ))}
+                  <LabelList dataKey="complaints" content={<OutsideBarValue />} />
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
+          </ChartBox>
+          <ChartBox title="Quejas por marca" className="h-80">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={complaints.brands} layout="vertical" margin={{ left: 8, right: 20 }}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis type="number" />
+                <YAxis type="category" dataKey="brand" width={148} tick={<BrandAxisTick />} interval={0} />
+                <Tooltip formatter={(value) => formatNumber(value)} />
+                <Bar dataKey="complaints" name="Quejas" fill="#156082" radius={[0, 5, 5, 0]}>
+                  <LabelList dataKey="complaints" content={<InsideBarValue />} />
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
+          </ChartBox>
+          <ChartBox title="Quejas por cocina" className="h-80">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={complaints.kitchens} layout="vertical" margin={{ left: 8, right: 20 }}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis type="number" />
+                <YAxis type="category" dataKey="kitchen" width={148} tick={<BrandAxisTick />} interval={0} />
+                <Tooltip formatter={(value) => formatNumber(value)} />
+                <Bar dataKey="complaints" name="Quejas" fill="#0B769F" radius={[0, 5, 5, 0]}>
+                  <LabelList dataKey="complaints" content={<InsideBarValue />} />
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
+          </ChartBox>
+          <DataTable
+            filename="analisis_quejas_comentarios.csv"
+            maxHeightClass="max-h-80"
+            rows={complaints.samples}
+            columns={[
+              { key: "country", label: "País" },
+              { key: "kitchen", label: "Cocina" },
+              { key: "brand", label: "Marca" },
+              { key: "category", label: "Categoría IA" },
+              { key: "owner", label: "Responsable probable" },
+              { key: "reasonArea", label: "Área sheet" },
+              { key: "comment", label: "Comentario" },
+            ]}
+          />
+          <div className="rounded-md border border-line bg-white p-3 shadow-soft lg:col-span-2">
+            <h3 className="mb-2 text-xs font-semibold text-ink">Word cloud de comentarios</h3>
+            <div className="flex min-h-[240px] flex-wrap items-center justify-center gap-x-6 gap-y-3 rounded bg-white px-8 py-5">
+              {complaints.wordCloud.map((item, index) => (
+                <span
+                  key={item.word}
+                  className="whitespace-nowrap font-bold leading-none"
+                  style={{
+                    fontSize: `${item.size}px`,
+                    color: ["#153D64", "#156082", "#0B769F", "#467886", "#96607D", "#345964"][index % 6],
+                  }}
+                  title={`${item.count} menciones`}
+                >
+                  {item.word}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Section>
+    </div>
+  );
+}
+
 function App() {
   const { status, data, warnings, errors, reload } = useDashboardData();
-  const [filters, setFilters] = React.useState({ country: "COL", city: "", kitchen: "", sku: "", period: "", hour: "" });
+  const [filters, setFilters] = React.useState({ country: "COL", city: "", kitchen: "", brand: "", sku: "", period: "", hour: "" });
+  const [activeView, setActiveView] = React.useState("dashboard");
   const model = React.useMemo(() => buildModel(data, filters), [data, filters]);
 
   const updateFilter = (key, value) => setFilters((current) => ({ ...current, [key]: value }));
-  const updateCountry = (country) => setFilters({ country, city: "", kitchen: "", sku: "", period: "", hour: "" });
-  const clearFilters = () => setFilters((current) => ({ country: current.country, city: "", kitchen: "", sku: "", period: "", hour: "" }));
+  const updateCountry = (country) => setFilters({ country, city: "", kitchen: "", brand: "", sku: "", period: "", hour: "" });
+  const clearFilters = () => setFilters((current) => ({ country: current.country, city: "", kitchen: "", brand: "", sku: "", period: "", hour: "" }));
 
   return (
     <div className="min-h-screen">
@@ -1134,12 +1704,13 @@ function App() {
               </button>
             ))}
           </div>
-          <div className="grid grid-cols-2 gap-2 md:grid-cols-6">
+          <div className="grid grid-cols-2 gap-2 md:grid-cols-7">
           {[
             ["city", "Ciudad", model.filterOptions.cities],
             ["kitchen", "Cocina", model.filterOptions.kitchens],
             ["hour", "Hora", model.filterOptions.hours],
             ["period", "Periodo", model.filterOptions.periods],
+            ["brand", "Marca", model.filterOptions.brands],
             ["sku", "SKU", model.filterOptions.skus],
           ].map(([key, label, options]) => (
             <label key={key} className="text-[11px] font-semibold uppercase text-muted">
@@ -1167,6 +1738,10 @@ function App() {
         </details>
       )}
 
+      {activeView === "complaints" ? (
+        <ComplaintsView model={model} onBack={() => setActiveView("dashboard")} />
+      ) : (
+      <>
       <Section title="Resumen Ejecutivo">
         <div className="grid gap-2 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-8">
           <Card title="GMV total" value={formatCurrency(model.total.gmv)} subtitle="Día de la Madre" />
@@ -1332,7 +1907,7 @@ function App() {
 
       <Section title="Voleo y Respuesta de Cocina">
         <div className="grid gap-3 lg:grid-cols-2">
-          <ChartBox title="Gestión del voleo bajo presión (peor a mejor)" className="h-[520px]">
+          <ChartBox title="Gestión del voleo con MEP e InFull (peor a mejor)" className="h-[520px]">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={[...model.diagnosis].sort((a, b) => a.voleoScore - b.voleoScore)} layout="vertical" margin={{ left: 6, right: 20 }}>
                 <CartesianGrid strokeDasharray="3 3" />
@@ -1365,12 +1940,12 @@ function App() {
 
       <Section title="Productos y SKUs">
         <div className="grid gap-3 lg:grid-cols-2">
-          <ChartBox title="Top 10 productos vendidos 7:00-11:00">
+          <ChartBox title="Top 10 productos vendidos 7:00-11:00" className="h-80">
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={model.morningProductTop} layout="vertical" margin={{ left: 20, right: 16 }}>
+              <BarChart data={model.morningProductTop} layout="vertical" margin={{ left: 4, right: 16 }}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis type="number" />
-                <YAxis type="category" dataKey="product" width={118} tick={<CompactAxisTick />} interval={0} />
+                <YAxis type="category" dataKey="product" width={230} tick={<ProductAxisTick />} interval={0} />
                 <Tooltip formatter={(value) => formatNumber(value)} />
                 <Bar dataKey="units" name="Unidades" fill="#0B769F" radius={[0, 5, 5, 0]}>
                   <LabelList dataKey="units" content={<InsideBarValue />} />
@@ -1378,14 +1953,40 @@ function App() {
               </BarChart>
             </ResponsiveContainer>
           </ChartBox>
-          <ChartBox title="Top 5 marcas por órdenes 7:00-11:00">
+          <ChartBox title="Top 5 marcas por órdenes 7:00-11:00" className="h-80">
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={model.morningBrandTop} layout="vertical" margin={{ left: 16, right: 16 }}>
+              <BarChart data={model.morningBrandTop} layout="vertical" margin={{ left: 4, right: 16 }}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis type="number" />
-                <YAxis type="category" dataKey="brand" width={102} tick={<CompactAxisTick />} interval={0} />
+                <YAxis type="category" dataKey="brand" width={158} tick={<BrandAxisTick />} interval={0} />
                 <Tooltip formatter={(value) => formatNumber(value)} />
                 <Bar dataKey="orders" name="Órdenes" fill="#156082" radius={[0, 5, 5, 0]}>
+                  <LabelList dataKey="orders" content={<InsideBarValue />} />
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
+          </ChartBox>
+          <ChartBox title="Bottom 10 productos vendidos 7:00-11:00" className="h-80">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={model.morningProductWorst} layout="vertical" margin={{ left: 4, right: 16 }}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis type="number" />
+                <YAxis type="category" dataKey="product" width={230} tick={<ProductAxisTick />} interval={0} />
+                <Tooltip formatter={(value) => formatNumber(value)} />
+                <Bar dataKey="units" name="Unidades" fill="#96607D" radius={[0, 5, 5, 0]}>
+                  <LabelList dataKey="units" content={<InsideBarValue />} />
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
+          </ChartBox>
+          <ChartBox title="Bottom 5 marcas por órdenes 7:00-11:00" className="h-80">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={model.morningBrandWorst} layout="vertical" margin={{ left: 4, right: 16 }}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis type="number" />
+                <YAxis type="category" dataKey="brand" width={158} tick={<BrandAxisTick />} interval={0} />
+                <Tooltip formatter={(value) => formatNumber(value)} />
+                <Bar dataKey="orders" name="Órdenes" fill="#C19EB1" radius={[0, 5, 5, 0]}>
                   <LabelList dataKey="orders" content={<InsideBarValue />} />
                 </Bar>
               </BarChart>
@@ -1430,6 +2031,151 @@ function App() {
         </div>
       </Section>
 
+      <Section
+        title="InFull"
+        action={<button onClick={() => setActiveView("complaints")} className="rounded bg-rose px-3 py-1.5 text-xs font-semibold text-white">Quejas</button>}
+      >
+        <div className="mb-3 grid gap-3 md:grid-cols-3">
+          <Card
+            title="InFull general"
+            value={formatPercent(model.inFullTotal.inFull)}
+            subtitle={(
+              <span>
+                <span>{formatNumber(model.inFullTotal.inFullNoi)} órdenes sin quejas / {formatNumber(model.inFullTotal.orders)} órdenes</span>
+                <br />
+                <span className="font-bold text-rose">Anterior: {formatPercent(model.inFullPreviousTotal.inFull)}</span>
+                <span> | </span>
+                <span className={model.inFullTotalDelta < 0 ? "font-bold text-rose" : "font-bold text-ok"}>
+                  {model.inFullTotalDelta < 0 ? "Cayó" : "Subió"} {formatNumber(Math.abs(model.inFullTotalDelta || 0), 1)} pp ({formatPercent(Math.abs(model.inFullTotalVariation || 0))})
+                </span>
+              </span>
+            )}
+          />
+          <Card
+            title="Cocina con menor InFull"
+            value={model.inFullByKitchen[0]?.kitchen || "N/D"}
+            subtitle={model.inFullByKitchen[0] ? `${formatPercent(model.inFullByKitchen[0].inFull)} | ${formatNumber(model.inFullByKitchen[0].orders)} órdenes` : ""}
+          />
+          <Card
+            title="Marca con menor InFull"
+            value={model.inFullByBrand[0]?.brand || "N/D"}
+            subtitle={model.inFullByBrand[0] ? `${formatPercent(model.inFullByBrand[0].inFull)} | ${formatNumber(model.inFullByBrand[0].orders)} órdenes` : ""}
+          />
+        </div>
+        <div className="grid gap-3 lg:grid-cols-2">
+          <ChartBox title="InFull por cocina (menor a mayor)" className="h-[520px]">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={model.inFullByKitchen} layout="vertical" margin={{ left: 32, right: 20 }}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis type="number" domain={[0, 100]} tickFormatter={(value) => `${formatNumber(value, 0)}%`} />
+                <YAxis type="category" dataKey="kitchen" width={96} tick={<KitchenAxisTick />} interval={0} />
+                <Tooltip formatter={(value) => formatPercent(value)} />
+                <Bar dataKey="inFull" name="InFull" radius={[0, 5, 5, 0]}>
+                  {model.inFullByKitchen.map((row) => (
+                    <Cell key={row.kitchen} fill={row.inFull >= 90 ? "#156082" : row.inFull >= 75 ? "#e8d2aeff" : "#C19EB1"} />
+                  ))}
+                  <LabelList
+                    dataKey="inFull"
+                    content={(props) => <InFullKitchenLabel {...props} row={model.inFullByKitchen[props.index]} />}
+                  />
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
+          </ChartBox>
+          <div className="grid gap-3">
+            <ChartBox title="InFull por hora" className="h-[252px]">
+              <ResponsiveContainer width="100%" height="100%">
+                <LineChart data={model.inFullByHour} margin={{ top: 16, left: 0, right: 16, bottom: 28 }}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="hour" />
+                  <YAxis domain={[0, 100]} tickFormatter={(value) => `${formatNumber(value, 0)}%`} />
+                  <Tooltip formatter={(value) => formatPercent(value)} />
+                  <Legend />
+                  <Line
+                    dataKey="inFull"
+                    name="Día de la Madre"
+                    stroke="#156082"
+                    strokeWidth={3}
+                    dot={false}
+                    activeDot={{ r: 5 }}
+                  />
+                  <Line
+                    dataKey="prevInFull"
+                    name="Domingo anterior"
+                    stroke="#96607D"
+                    strokeWidth={3}
+                    dot={false}
+                    activeDot={{ r: 5 }}
+                  />
+                  {model.inFullWorstCurrent?.hour && Number.isFinite(Number(model.inFullWorstCurrent.inFull)) && (
+                    <ReferenceDot
+                      x={model.inFullWorstCurrent.hour}
+                      y={model.inFullWorstCurrent.inFull}
+                      r={5}
+                      fill="#156082"
+                      stroke="#ffffff"
+                      strokeWidth={2}
+                      ifOverflow="visible"
+                      label={{
+                        value: `Peor día ${formatPercent(model.inFullWorstCurrent.inFull, 1)}`,
+                        position: "bottom",
+                        fill: "#156082",
+                        fontSize: 9,
+                        fontWeight: 700,
+                      }}
+                    />
+                  )}
+                  {model.inFullWorstPrevious?.hour && Number.isFinite(Number(model.inFullWorstPrevious.prevInFull)) && (
+                    <ReferenceDot
+                      x={model.inFullWorstPrevious.hour}
+                      y={model.inFullWorstPrevious.prevInFull}
+                      r={5}
+                      fill="#96607D"
+                      stroke="#ffffff"
+                      strokeWidth={2}
+                      ifOverflow="visible"
+                      label={{
+                        value: `Peor ant. ${formatPercent(model.inFullWorstPrevious.prevInFull, 1)}`,
+                        position: "bottom",
+                        fill: "#96607D",
+                        fontSize: 9,
+                        fontWeight: 700,
+                      }}
+                    />
+                  )}
+                </LineChart>
+              </ResponsiveContainer>
+            </ChartBox>
+            <ChartBox title="Marcas con menor InFull" className="h-[252px]">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={model.inFullByBrand} layout="vertical" margin={{ left: 8, right: 20 }}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis type="number" domain={[0, 100]} tickFormatter={(value) => `${formatNumber(value, 0)}%`} />
+                  <YAxis type="category" dataKey="brand" width={118} tick={<CompactAxisTick />} interval={0} />
+                  <Tooltip formatter={(value) => formatPercent(value)} />
+                  <Bar dataKey="inFull" name="InFull" fill="#0B769F" radius={[0, 5, 5, 0]} />
+                </BarChart>
+              </ResponsiveContainer>
+            </ChartBox>
+          </div>
+        </div>
+        <div className="mt-3">
+          <DataTable
+            filename="infull_por_cocina_marca_hora.csv"
+            rows={model.inFullDetail}
+            columns={[
+              { key: "city", label: "Ciudad" },
+              { key: "kitchen", label: "Cocina" },
+              { key: "brand", label: "Marca" },
+              { key: "hour", label: "Hora" },
+              { key: "inFullNoi", label: "Órdenes sin quejas", render: formatNumber },
+              { key: "orders", label: "Total órdenes", render: formatNumber },
+              { key: "inFull", label: "InFull", render: (value) => <StatusPill value={value} /> },
+            ]}
+          />
+        </div>
+      </Section>
+
       <Section title="Diagnóstico Final por Cocina">
         <DataTable
           filename="diagnostico_final_cocina.csv"
@@ -1445,11 +2191,17 @@ function App() {
             { key: "rtWait", label: "Espera RT", render: (value) => `${formatNumber(value, 1)} min` },
             { key: "voleoScore", label: "Score voleo", render: formatNumber },
             { key: "mepCompliance", label: "Cumplimiento MEP", render: (value) => <StatusPill value={value} /> },
+            { key: "mepAccuracy", label: "Exactitud MEP", render: (value) => <AccuracyPill value={value} /> },
+            { key: "mepDeviation", label: "Desv. MEP", render: formatPercent },
+            { key: "inFull", label: "InFull", render: formatPercent },
+            { key: "inFullDelta", label: "Var IF", render: (value) => Number.isFinite(value) ? `${value >= 0 ? "+" : ""}${formatNumber(value, 1)} pp` : "N/D" },
             { key: "classification", label: "Clasificación" },
             { key: "comment", label: "Comentario automático" },
           ]}
         />
       </Section>
+      </>
+      )}
     </div>
   );
 }

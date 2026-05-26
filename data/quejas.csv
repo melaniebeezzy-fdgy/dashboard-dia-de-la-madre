@@ -1,0 +1,1231 @@
+order_received_at_local,order_id,provider_order_id,provider_name,country,kitchen,brand,rating,comments,complaint,rating_tag,reason,reason_category,reason_area,# In Full,is infull
+11.0,KHaFoxsABwKFEcX4j,5764669954574057765,didi,MEX,San Nicolás,Foodhub,2.0,"yo no sé quién le puso que sin topings pero si no tienen ganas de elaborar un buen producto namas diga ,",1,Productos faltantes,ORDER_ACCURACY|ORDER_COMPLETENESS,MISSING_ITEM,PASE,0.0,1
+19.0,XCT25naq5WaAxaEEz,2.440166708E9,rappi,MEX,Coapa,LA PANQUEQUERIA,,"Vienen helados los hotcakes. El tiempo de espera fue excesivo ,",1,BAD_QUALITY|OUT_TIME,,DAMAGE_ITEM|DELIVERY_LATE|WRONG_TEMPERATURE,DELIVERY|QUALITY,0.0,1
+13.0,mg3YT5T8kuLBGFnJp,2.439975642E9,rappi,MEX,Del Valle,Brunch & Munch,,"viene todo destrozado y no tiene nada que ver con la imagen con el producto,",1,BAD_PACKAGING|BAD_QUALITY,,BAD_PRESENTATION|DAMAGE_PACKAGING,DELIVERY,0.0,1
+11.0,EqvM9o3tN5aeL6jP7,2.43991331E9,rappi,MEX,Santa Fe,Órale Desayunos,,"Viene todo batido , y con la bolsa rota,",1,BAD_PACKAGING|BAD_QUALITY,,DAMAGE_ITEM|DAMAGE_PACKAGING,DELIVERY|QUALITY,0.0,1
+11.0,eN6wX9cQYNHvpsHhB,2.439914342E9,rappi,MEX,Saltillo Centro,Órale Chilaquiles,,"Tuve que poner yo la nota arruinando la sorpresa,",1,"ORDER_ACCURACY, ORDER_ACCURACY|ORDER_COMPLETENESS",,"MISSING_ITEM, MISSING_ITEM","PASE, PASE",0.0,1
+10.0,RcJTnXw6bohcr8vxH,f1d48086-9768-4062-94c9-039e582a62ca,ubereats,MEX,Manacar,Órale Desayunos,1.0,"Trajeron la salsa verde que no pedí taché para el lugar sé que dice divorciados pero no hay otra opción para solo pedir salsa roja ,",1,restaurant_missed_request,ORDER_ACCURACY,WRONG_ITEM,PASE,0.0,1
+8.0,4WfY3FX3WvzkpMptJ,ef0adcbc-40ae-41f3-9d25-b197dfeff42e,ubereats,MEX,Doctores,Órale Desayunos,4.0,"Todo bien solo les falta un poco más de aguacate más crema para los chilaquiles porque casi no traían,",0,restaurant_perfectly_cooked|restaurant_creative_options|restaurant_classic|restaurant_fast_casual,HIGH_FOOD_QUALITY|VARIETY_MENU_OPTIONS,1.0,,,0
+14.0,6Aun2oXjgge9AG39d,2.440007947E9,rappi,MEX,San Jerónimo,Brunch & Munch,,"The product seems not fresh and has less product than advertised,",1,"BAD_QUALITY|ORDER_ACCURACY, BAD_QUALITY|ORDER_ACCURACY",,"DAMAGE_ITEM|MISSING_ITEM, DAMAGE_ITEM|MISSING_ITEM","QUALITY|PASE, QUALITY|PASE",0.0,1
+20.0,hYgRNXMaYEfKY3XJr,2.440173938E9,rappi,MEX,Coapa,Mr Beast Burger,,"tardó mucho y por lo mismo ya esta todo remojado y chicloso el pan, además de estar muy frío, muy mala experiencia ,",1,BAD_QUALITY|OUT_TIME,,DAMAGE_ITEM|DELIVERY_LATE|NOT_TASTY|WRONG_TEMPERATURE,DELIVERY|QUALITY,0.0,1
+20.0,FcWFESxgvHGMftWZG,eed0e888-cc37-4f87-b281-f86a3ac5efc7,ubereats,MEX,Tabachines,Honest Food,1.0,"Súper frío llego y muy chiquito ,",1,restaurant_too_slow|restaurant_not_worth_price,BAD_QUALITY|NOT_WORTH_PRICE|OUT_TIME,DELIVERY_LATE|SMALL_PORTIONS|WRONG_TEMPERATURE,DELIVERY|PRICING,0.0,1
+12.0,6EAAK5n4jYL7deKoJ,2.439952708E9,rappi,MEX,Jardines,Tender Lovers,,"Son menos Boneless,",1,NOT_WORTH_PRICE|ORDER_ACCURACY,,SMALL_PORTIONS|WRONG_ITEM,PRICING|PASE,0.0,1
+8.0,BnrXJcF2si6nfMb6c,b1a9ec37-4e26-4c9f-9335-7590985c2a58,ubereats,MEX,Doctores,LA PANQUEQUERIA,1.0,"Somos alérgicos a los frijoles y los huevos venían más frijoles que huevo y en ningún lado viene que trae eso no podemos comerlos pésima experiencia ,",1,restaurant_missed_request,ORDER_ACCURACY,MISSED_ORDER_NOTES,PASE,0.0,1
+19.0,3MQ8gRuZQ7Xx2ym9n,2.440149741E9,rappi,MEX,Polanco,Mr Beast Burger Turbo,,"solo me llego 2 piezas ,",1,ORDER_ACCURACY,,MISSING_ITEM,PASE,0.0,1
+9.0,pgRhHdg3THjoNHZkv,2.439883952E9,rappi,MEX,Lindavista,Brunch & Munch,,"solo llegó el huevo con la bebida, faltaron los chilaquiles ,",1,ORDER_ACCURACY|ORDER_COMPLETENESS,,MISSING_ITEM,PASE,0.0,1
+9.0,KmBMsZNJmn7h8vX3h,2.439886136E9,rappi,MEX,Lindavista,Órale Desayunos Turbo,,"Solo llegaron los chilaquiles y la fruta ,",1,ORDER_ACCURACY|ORDER_COMPLETENESS,,MISSING_ITEM,PASE,0.0,1
+15.0,r4DZyHXvw43PpZfuP,5764670081795687223,didi,MEX,San Ángel,Mr Beast Burger,5.0,"si está buena y la cantidad va de acuerdo con el precio, hamburguesa chica , costo chico, pero para mí estuvo bien ,",0,NOT_WORTH_PRICE,,SMALL_PORTIONS,PRICING,1.0,0
+13.0,5p9wmApMcT84FuwhC,2.43995835E9,rappi,MEX,Cumbres,Órale Desayunos,,"Se pidió sin cebolla y viene con cebolla ,",1,BAD_QUALITY|ORDER_ACCURACY,,NOT_TASTY|WRONG_ITEM,QUALITY|PASE,0.0,1
+10.0,2BZ7PqRbaMHpvN7HB,5764669953470955665,didi,MEX,Tlaquepaque,Brunch & Munch,3.0,"sabor a tocino,",1,Mala calidad de la comida,BAD_QUALITY,NOT_TASTY,QUALITY,0.0,1
+18.0,LMApNyC6yBHkJaKmh,2.440137871E9,rappi,MEX,Tlaquepaque,Chicken Tenders Hub,,"Sabía muy feo,",1,BAD_QUALITY,,DAMAGE_ITEM|NOT_TASTY,QUALITY,0.0,1
+17.0,MbEb5iCveRkGJGPcH,2.440110441E9,rappi,MEX,Del Valle,Mr Beast Burger,,"sabía muy desagradable ,",1,BAD_QUALITY,,DAMAGE_ITEM|NOT_TASTY,QUALITY,0.0,1
+12.0,9YNutneL8mYpd63k8,5764670148032135509,didi,MEX,Doctores,Mr Beast Burger,5.0,"sabe demasiado a cebolla ,",1,BAD_QUALITY,,NOT_TASTY,QUALITY,0.0,1
+21.0,iXE7riwGFq45FQqvT,2.440199057E9,rappi,MEX,Churubusco,Mr Beast Burger,1.0,"sabe demasiada insípida y rara y huele medio raro,",1,rrs_rest_quality_rate_1|Pésima calidad|damaged_item|unpleasant_taste,BAD_QUALITY,OTHER,QUALITY,0.0,1
+17.0,ajwG2LzDxSFMYE3rj,2.44008972E9,rappi,MEX,Volcanes,La Neta Burgers (Orale Burgers),,"recobi solo un aderezo,",1,ORDER_ACCURACY,,WRONG_ITEM,PASE,0.0,1
+16.0,WdzJSmWKdg3XwPaEZ,2.440071286E9,rappi,MEX,Santa Teresita,Que Chicken,,"Producto mal cocinado. Pasó mucho tiempo de espera después de estar cocinado y está frío ,",1,BAD_QUALITY,,DAMAGE_ITEM|RAW_OVERCOOKED,QUALITY,0.0,1
+18.0,byxD4x2bMqwaNpYpt,6bb572a1-1e1a-4c6e-b305-0152259d1443,ubereats,MEX,Volcanes,House of Salads,1.0,"Porciones súper pequeñas 
+ Pollo rostizado y descompuesto 
+ Horrible jamás pidan 
+ ,",1,restaurant_not_worth_price,BAD_QUALITY|NOT_WORTH_PRICE,DAMAGE_ITEM|SMALL_PORTIONS,PRICING|QUALITY,0.0,1
+13.0,Fb3pwrCpjrGQQnWmi,5764670033947066869,didi,MEX,Carretera Nacional,Pozórale,1.0,"pequeñas porciones de carne ,",1,Porciones pequeñas,NOT_WORTH_PRICE,SMALL_PORTIONS,PRICING,0.0,1
+11.0,ZbMjAGjNDgjmzCacm,3f6b9613-47d7-42bc-adf7-9fa0ede4ed96,ubereats,MEX,Doctores,Brunch & Munch,1.0,"Pedido incorrecto ,",1,restaurant_missed_request,ORDER_ACCURACY,MISSED_ORDER_NOTES,PASE,0.0,1
+20.0,LattfbC2ZP7ESF6GP,2.440192435E9,rappi,MEX,Santa Teresita,Tender Lovers,,"Pedí una hamburguesa y me llegó una pizza ,",1,ORDER_ACCURACY,,WRONG_ITEM,PASE,0.0,1
+20.0,SZqBfAvbd3zSXmdLz,2.440174651E9,rappi,MEX,Churubusco,Que Chicken,,"Pedí una hamburguesa y me llegó de un sabor que no era,",1,ORDER_ACCURACY,,WRONG_ITEM,PASE,0.0,1
+9.0,aGF9N4diFc5Gycbg3,2.439882652E9,rappi,MEX,Churubusco,Brunch & Munch,,"Pedí un croassant de frutos y llegó un pan aplastado ,",1,ORDER_ACCURACY,,WRONG_ITEM,PASE,0.0,1
+8.0,RWNyFooB3mJ6BJLJ7,2.439870978E9,rappi,MEX,Jardines del Valle,Brunch & Munch,,"pedi un croasant y llego un bowl de avena,",1,"ORDER_ACCURACY, ORDER_ACCURACY",,"WRONG_ITEM, WRONG_ITEM","PASE, PASE",0.0,1
+20.0,Wue9pQBNPe8pETr3g,2.440189616E9,rappi,MEX,Ciudad Judicial,Avocalia,"pedí un consome y se regó todo, no se transporto con cuidado, se mojo el empaque y se regó,",,1,BAD_PACKAGING|BAD_QUALITY,,DAMAGE_ITEM|SPILLED_PACKAGING,DELIVERY|QUALITY,0.0,1
+10.0,G2vaTYgTAkRtwo62Y,2.439895776E9,rappi,MEX,Lindavista,Órale Desayunos,,"Pedi un combo que incluía hot cakes y chilaquiles y no llegaron ,",1,ORDER_ACCURACY,,MISSING_ITEM,PASE,0.0,1
+11.0,YNpjn9CcEhNNkxmDA,5764670155112120596,didi,MEX,Tec,Órale Desayunos,1.0,"pedí pollo en vez de huevo,",1,Entregó el producto incorrecto|Productos faltantes,ORDER_ACCURACY,MISSING_ITEM|WRONG_ITEM,PASE,0.0,1
+17.0,AKuMJyT2ojnbsuMbr,5764670159742633130,didi,MEX,Jardines del Valle,Mr Beast Burger,2.0,"pedí papas signature y me enviaron papas a la francesa normales ,",1,ORDER_ACCURACY,,WRONG_ITEM,PASE,0.0,1
+11.0,7ByZ4A5SR6rARJGZt,78f0c1c7-461d-42b5-8037-5daae7f643ed,ubereats,MEX,Doctores,LA PANQUEQUERIA,2.0,"Pedí fruta extra en un hotcakes y no siguieron esas especificaciones ,",1,restaurant_missed_request,ORDER_ACCURACY,MISSED_ORDER_NOTES,PASE,0.0,1
+9.0,vfyqoc3vGqbhBhBN6,5764670080130547824,didi,MEX,Tlaquepaque,Brunch & Munch,3.0,"pedi dos huvos y solo viene uno mal servicio,",1,Productos faltantes|Porciones pequeñas|La tienda se demoró,ORDER_COMPLETENESS|OUT_TIME,DELIVERY_LATE|MISSING_ITEM,DELIVERY|PASE,0.0,1
+19.0,Co8wyQr384bs7Cg3i,2.440159158E9,rappi,MEX,La Calma,Foodhub,"Pedi dos combos de hamburguesas papas fritas y refresco, y solo llego una hamburguesa y refresco ,",,1,ORDER_ACCURACY,,WRONG_ITEM,PASE,0.0,1
+9.0,pBYbivCuSyJKdX7Jb,2.439881271E9,rappi,MEX,Coapa,Brunch & Munch,,"pedí con salsa verde y me llegó salsa roja,",1,BAD_QUALITY|ORDER_ACCURACY,,NOT_TASTY|WRONG_ITEM,QUALITY|PASE,0.0,1
+17.0,NPc6rPqaPxdvKJ5We,2.440105168E9,rappi,MEX,Volcanes,Mr Beast Burger,2.0,"pedi coca zero y me mandaron una normal,",1,rrs_rest_accuracy_rate_2|No fue lo que pedí|wrong_item|wrong_taste,ORDER_ACCURACY,WRONG_ITEM,PASE,0.0,1
+9.0,PgBpj8zw5cWAQGbLB,3b3409f1-5861-4bf6-902c-044504c375c7,ubereats,MEX,Pedregal,Órale Desayunos,3.0,"Pedí 5 chilaquiles y solo me trajeron 2 ,",1,restaurant_too_slow,ORDER_ACCURACY|OUT_TIME,DELIVERY_LATE|MISSING_ITEM,DELIVERY|PASE,0.0,1
+9.0,dbz2nXvYj6CJ87ifZ,e1c39bc8-e8c8-486d-a815-701de0cf01a6,ubereats,MEX,Churubusco,Brunch & Munch,3.0,"Para la sazón normalmente en la Ciudad de México para el precio no muy buenos sinceramente muy poca porción para 2 personas parecía individual
+ El combo . ,",1,restaurant_not_worth_price,NOT_WORTH_PRICE,SMALL_PORTIONS,PRICING,0.0,1
+9.0,vP5hjSvnBtJfKofTi,8d013776-d7a2-4de0-8985-acc0c9f1d93d,ubereats,MEX,San Nicolás,LA PANQUEQUERIA,5.0,"no venia mi nutella extra q pague ,",1,ORDER_ACCURACY,,MISSING_ITEM,PASE,0.0,1
+9.0,wrhXw2RjiAXTmKv4B,2.439886517E9,rappi,MEX,San Ángel,Brunch & Munch,,"no traen ni huevo ni salsa. ,",1,"ORDER_ACCURACY|ORDER_COMPLETENESS, ORDER_ACCURACY|ORDER_COMPLETENESS",,"MISSING_ITEM, MISSING_ITEM","PASE, PASE",0.0,1
+10.0,ah63AKe8PEbK73HDY,2.439895589E9,rappi,MEX,Lincoln,The Breakfast Club,,"no trae glaseado y no se ni de que son,",1,BAD_QUALITY|ORDER_ACCURACY,,NOT_TASTY|WRONG_ITEM,QUALITY|PASE,0.0,1
+10.0,fNwisH2GycrKBWynT,2.439907097E9,rappi,MEX,Cumbres,LA PANQUEQUERIA,,"No tiene carne ,",1,ORDER_ACCURACY,,MISSING_ITEM,PASE,0.0,1
+17.0,ggn6t5xE2HtEfpCyC,2.440092138E9,rappi,MEX,Carretera Nacional,La Neta Burgers (Orale Burgers),,"No son las que pedí ,",1,"ORDER_ACCURACY, ORDER_ACCURACY, ORDER_ACCURACY",,"WRONG_ITEM, WRONG_ITEM, WRONG_ITEM","PASE, PASE, PASE",0.0,1
+19.0,SzpmALGD4M94m47oT,2.440150246E9,rappi,MEX,Metepec,Chicken Tenders Hub,,"No quiero afectar al repartidor, pero llego todamojada mi hamburguesa ,",1,"BAD_PACKAGING|BAD_QUALITY, BAD_QUALITY",,"DAMAGE_ITEM, DAMAGE_ITEM","QUALITY, QUALITY",0.0,1
+12.0,EtHfcgSvbBFfYn6KA,2.439934165E9,rappi,MEX,La Calma,Órale Desayunos,,"no pusieron queso,",1,ORDER_ACCURACY,,MISSING_ITEM,PASE,0.0,1
+7.0,cZK7re7HqMNZq4uCD,2.439864931E9,rappi,MEX,Coapa,Brunch & Munch,,"no me mandaron los hotcakes,",1,ORDER_ACCURACY,,MISSING_ITEM,PASE,0.0,1
+11.0,kzXb7LFfTBPCgoPeC,2.439928099E9,rappi,MEX,Churubusco,Órale Desayunos,,"No me llegó mi bebida,",1,ORDER_ACCURACY|OUT_TIME,,MISSING_ITEM|NOT_DELIVERED,DELIVERY|PASE,0.0,1
+13.0,PWMNNSJWJvKJSiWWP,2.439972375E9,rappi,MEX,Esmeralda,Que Chicken,,"no me llegó el aderezo buffalo ranch ,",1,ORDER_ACCURACY,,MISSING_ITEM,PASE,0.0,1
+13.0,LGgXH4PqkcAXNvawc,2.439982781E9,rappi,MEX,Estadio,La Neta Burgers (Orale Burgers),,"no m llegó mi bebida,",1,ORDER_ACCURACY,,MISSING_ITEM,PASE,0.0,1
+15.0,y2CeyZSW89eYTu3wy,2.440049865E9,rappi,MEX,Montejo,House of Burgers,,"No lo pedi con queso, y esta bailado de queso ,",1,BAD_QUALITY|ORDER_ACCURACY,,NOT_TASTY|WRONG_ITEM,QUALITY|PASE,0.0,1
+16.0,f543E2eS6ao452Qq4,2.440066965E9,rappi,MEX,Del Valle,Green House,,"no llego mi bebida,",1,ORDER_ACCURACY|OUT_TIME,,MISSING_ITEM|NOT_DELIVERED,DELIVERY|PASE,0.0,1
+17.0,QDfiEtjC7egKZvzoP,2.440094155E9,rappi,MEX,La Calma,Don Gyros & Kebab,1.0,"No llegó lo que pedí !!!,",1,rrs_rest_accuracy_rate_1|No fue lo que pedí|missing_item|Not_arrived_bag_closed|False,ORDER_ACCURACY,WRONG_ITEM,PASE,0.0,1
+13.0,2dJRG9EcLiuwJByfN,2.439968545E9,rappi,MEX,Iztapalapa,Foodhub,"no llego lo principal ,",,1,ORDER_ACCURACY|OUT_TIME,,MISSING_ITEM|NOT_DELIVERED,DELIVERY|PASE,0.0,1
+9.0,xkaxGvoZxndiCi9uH,2.439887989E9,rappi,MEX,Cumbres,Brunch & Munch,,"no llego este producto,",1,"ORDER_ACCURACY|OUT_TIME, OUT_TIME, ORDER_ACCURACY|OUT_TIME, ORDER_ACCURACY|OUT_TIME, ORDER_ACCURACY|OUT_TIME",,"MISSING_ITEM|NOT_DELIVERED, NOT_DELIVERED, MISSING_ITEM|NOT_DELIVERED, MISSING_ITEM|NOT_DELIVERED, MISSING_ITEM|NOT_DELIVERED","DELIVERY|PASE, DELIVERY, DELIVERY|PASE, DELIVERY|PASE, DELIVERY|PASE",0.0,1
+13.0,DHod52NHhdJtybhFp,2.439970887E9,rappi,MEX,Estadio,Brunch & Munch,,"No llegó el producto, solo llegó el croissant ,",1,"ORDER_ACCURACY|OUT_TIME, ORDER_ACCURACY|OUT_TIME",,"MISSING_ITEM|NOT_DELIVERED, MISSING_ITEM|NOT_DELIVERED","DELIVERY|PASE, DELIVERY|PASE",0.0,1
+10.0,zFk84DAgpbhSy9qQ4,2.439892834E9,rappi,MEX,Cumbres,Brunch & Munch,,"No llego el pedido,",1,"ORDER_ACCURACY|OUT_TIME, ORDER_ACCURACY|OUT_TIME, ORDER_ACCURACY|OUT_TIME",,"NOT_DELIVERED|WRONG_ITEM, NOT_DELIVERED|WRONG_ITEM, NOT_DELIVERED|WRONG_ITEM","DELIVERY|PASE, DELIVERY|PASE, DELIVERY|PASE",0.0,1
+10.0,ugAGw3cQmKMjwJQBB,2.439896727E9,rappi,MEX,Lindavista,Brunch & Munch,,"No llegó el frech toast ,",1,ORDER_ACCURACY|ORDER_COMPLETENESS,,MISSING_ITEM,PASE,0.0,1
+18.0,WYGEHG7ZnePErmRLe,2.440139279E9,rappi,MEX,Canek,Tender Lovers,,"No llego completo ,",1,ORDER_ACCURACY,,WRONG_ITEM,PASE,0.0,1
+10.0,SaXtePGbjqT2NtHhx,2.439891246E9,rappi,MEX,Carretera Nacional,Órale Desayunos,,"No llegaron los chilaquiles, solamente la salsa,",1,ORDER_ACCURACY,,MISSING_ITEM,PASE,0.0,1
+17.0,BFEQzvfu6LqswEn6i,2.440109854E9,rappi,MEX,Tlaquepaque,La Neta Burgers (Orale Burgers),1.0,"NO LE PEDI QUESO Y SI LE PUSIERON,",1,wrong_item|totally_different_product,ORDER_ACCURACY,WRONG_ITEM,PASE,0.0,1
+15.0,76m7Z8SWwcvuQErjE,2.440022779E9,rappi,MEX,Pedregal,Honest Food,,"Não veio o brócolis ,",1,ORDER_ACCURACY|ORDER_COMPLETENESS,,MISSING_ITEM,PASE,0.0,1
+15.0,MMsXRzc8ogXBHeSBd,2.440044471E9,rappi,MEX,Tlaquepaque,Mr Beast Burger,,"Muy quemado ,",1,BAD_QUALITY,,DAMAGE_ITEM|RAW_OVERCOOKED,QUALITY,0.0,1
+13.0,rXFsdQb2B2E9riivF,5764669968276849091,didi,MEX,Ciudad Judicial,Avocalia,4.0,"muy poco pollo, sin acompañamientos como queso, chile y aguacate además (medio limon) :/,",1,NOT_WORTH_PRICE|ORDER_COMPLETENESS,,MISSING_ITEM|SMALL_PORTIONS,PRICING|PASE,0.0,1
+18.0,G3tv6ugmdcDG7fhRk,2.440143499E9,rappi,MEX,La Calma,Mr Beast Burger,,"muy pequeños,",1,NOT_WORTH_PRICE|ORDER_ACCURACY,,SMALL_PORTIONS|WRONG_ITEM,PRICING|PASE,0.0,1
+19.0,2YWrDf8XMQaXfxrrg,5764669993790801391,didi,MEX,Santa Teresita,Don Gyros & Kebab,1.0,"Muy mala la preparación, pedimos 2 pita veggie falafel y ninguno traía hummus, cebolla encurtida, pepino ni jitomate. ,",1,Mala calidad de la comida,BAD_QUALITY|ORDER_ACCURACY,MISSING_ITEM|NOT_TASTY,QUALITY|PASE,0.0,1
+12.0,pjLZQXsEKSDaQ9nEH,433afc9a-2d85-4b4e-94e8-d6adf757de8e,ubereats,MEX,San Jerónimo,Honest Food,1.0,"Muy mala la comida muy salado el pollo y pocas porciones para el precio. Casi 170 pesos por muy poco pollo muy poco arroz y muy poca lechuga y muy salado,",1,restaurant_not_tasty|restaurant_not_worth_price,BAD_QUALITY|NOT_WORTH_PRICE,NOT_TASTY|SMALL_PORTIONS,PRICING|QUALITY,0.0,1
+11.0,maBH7svkbYuKgrbup,2.439917367E9,rappi,MEX,Churubusco,Brunch & Munch,,"Muy diferente a lo que se ve en la foto ,",1,NOT_WORTH_PRICE|ORDER_ACCURACY,,SMALL_PORTIONS|WRONG_ITEM,PRICING|PASE,0.0,1
+8.0,kBJffZ55hN4DFLRJJ,0eb8d61b-ea10-4c74-b50a-17e63706318d,ubereats,MEX,Azcapotzalco,Brunch & Munch,5.0,"Muy bueno,",0,restaurant_hole-in-the-wall|restaurant_perfect_portions|restaurant_upscale|restaurant_sustainable_packaging|restaurant_unique_flavors|restaurant_fast_casual,HIGH_FOOD_QUALITY,1.0,,,0
+21.0,xRXhbSZ6mrwL8wRgh,fc75f874-2624-4cd6-aa2f-07142713ca88,ubereats,MEX,Santa Teresita,Que Chicken,5.0,"Muchas gracias por la sustitución muy rico todo :),",0,restaurant_store_accommodating|restaurant_reliable_service|restaurant_great_selection,HIGH_FOOD_QUALITY|ORDER_PRECISION|VARIETY_MENU_OPTIONS,1.0,,,0
+9.0,tomJEHknb4MHFWRW5,6da76711-05fc-4a4b-9824-64f6c445b6e9,ubereats,MEX,Polanco,Órale Desayunos,1.0,"Missing items. Refund policy not applicable.,",1,restaurant_missed_request|restaurant_poor_packaging,BAD_PACKAGING|ORDER_ACCURACY,MISSING_ITEM,PASE,0.0,1
+11.0,G9Nx65qJ3EderZ6bq,2.439930358E9,rappi,MEX,La Calma,La Panquequería Turbo,,"Mismo caso, con cebolla y sin crema y solo lo pedí con cilantro queso y crema ,",1,ORDER_ACCURACY,,MISSED_ORDER_NOTES|MISSING_ITEM,PASE,0.0,1
+10.0,jKWf3TqfDhzxWwHFu,2.43989496E9,rappi,MEX,Pedregal,Brunch & Munch,,"mi croissant llego deshecho,",1,BAD_PACKAGING|BAD_QUALITY,,BAD_PRESENTATION|DAMAGE_ITEM,DELIVERY|QUALITY,0.0,1
+10.0,ALArAdiG2pkNpEExi,2.439895092E9,rappi,MEX,Pedregal,Brunch & Munch,,"mi comida llego batida,",1,BAD_PACKAGING|BAD_QUALITY,,DAMAGE_ITEM|DAMAGE_PACKAGING,DELIVERY|QUALITY,0.0,1
+12.0,kwdcqtqzbECwX39ms,2.439933106E9,rappi,MEX,Tlaquepaque,Orale Chilaquiles Turbo,,"Mi burrito no tenía carne,",1,ORDER_ACCURACY,,MISSING_ITEM,PASE,0.0,1
+10.0,s3deAmacxwHQ5EcZk,5764670050556510390,didi,MEX,Satélite,Brunch & Munch,1.0,"me mandaron otra cosa ,",1,ORDER_ACCURACY,,WRONG_ITEM,PASE,0.0,1
+22.0,mynohN4wpYzYRupFC,2.440219298E9,rappi,MEX,La Calma,Que Chicken,,"me llego otro pedido,",1,"ORDER_ACCURACY|OUT_TIME, ORDER_ACCURACY|OUT_TIME",,"MISSING_ITEM|NOT_DELIVERED, MISSING_ITEM|NOT_DELIVERED","DELIVERY|PASE, DELIVERY|PASE",0.0,1
+8.0,yNG5jDYB7qNAPNgCH,2.439868992E9,rappi,MEX,Pedregal,LA PANQUEQUERIA,,"Me llegó miel en vez de nutella ,",1,ORDER_ACCURACY,,MISSING_ITEM,PASE,0.0,1
+14.0,MFokmMDoGosjkEPqY,5764670192651141668,didi,MEX,Coapa,Honest Food,1.0,"Me hizo daño la comida, tengo granos y ganas de vomitar, solo comí eso, es importante que los productos vengan frescos y en buena condicion,",1,Mala calidad de la comida,BAD_QUALITY,DAMAGE_ITEM,QUALITY,0.0,1
+12.0,k4TPxrvYXaup9nEWq,2.439942406E9,rappi,MEX,Estadio,Honest Food,4.0,"me faltó servilletas y cubiertos,",1,damaged_item|poorly_transported_edible,BAD_QUALITY,DAMAGE_ITEM,QUALITY,0.0,1
+17.0,Pkv7ExKSTvv7T35k8,2.440105131E9,rappi,MEX,Coapa,Mr Beast Burger,,"me enviaron otra cosa,",1,ORDER_ACCURACY,,WRONG_ITEM,PASE,0.0,1
+10.0,XCccX3Fuh7QFZ6fnu,5461bbe1-3960-45d0-976e-837c23af37ee,ubereats,MEX,Cumbres,Órale Desayunos,1.0,"Me enviaron chilaquiles verdes sin salsa verde.,",1,restaurant_too_slow|restaurant_not_worth_price,NOT_WORTH_PRICE|ORDER_ACCURACY|OUT_TIME,DELIVERY_LATE|WRONG_ITEM,DELIVERY|PASE,0.0,1
+16.0,uFWBgyQtx8BWq6dFS,2.440087233E9,rappi,MEX,San Ángel,Mr Beast Burger,,"me enviaron aros de cebolla en vez de mis boneles,",1,ORDER_ACCURACY,,WRONG_ITEM,PASE,0.0,1
+18.0,QdTsxbcS7LWsgx45y,2.440122109E9,rappi,MEX,Montejo,Honest Food,4.0,"Me dieron guacamole,",1,comment|Comentario|wrong_item|totally_different_product,ORDER_ACCURACY,WRONG_ITEM,PASE,0.0,1
+9.0,r5tDzQwSvT5i2j5KG,abb81da3-2029-4359-ab66-677079e3e778,ubereats,MEX,Canek,LA PANQUEQUERIA,2.0,"Me cobraron la nutela y no traía ,",1,restaurant_missed_request,ORDER_ACCURACY,MISSING_ITEM,PASE,0.0,1
+9.0,M2m6n2HEgbAYtSCx6,2.439889459E9,rappi,MEX,Manacar,Brunch & Munch,,"Mandaron un croissant diferente al ordenado ,",1,ORDER_ACCURACY,,WRONG_ITEM,PASE,0.0,1
+21.0,B5eAtq2dWsJA3GYez,4c1f20e5-7d69-4b38-a62f-090508683613,ubereats,MEX,Churubusco,Mr Beast Burger,1.0,"Los productos además de fríos estaban quemados las papas tan “doradas” que no se podían comer ,",1,restaurant_not_worth_price,BAD_QUALITY|NOT_WORTH_PRICE,RAW_OVERCOOKED|WRONG_TEMPERATURE,DELIVERY|QUALITY,0.0,1
+9.0,RbCRdqSrM7yq4dxHS,2.439882888E9,rappi,MEX,Churubusco,Brunch & Munch,,"Los pancakes llegaron fríos y duros, además de que saben a pura grasa. Cero recomendables :( ,",1,BAD_QUALITY,,DAMAGE_ITEM|NOT_TASTY|WRONG_TEMPERATURE,DELIVERY|QUALITY,0.0,1
+9.0,kL33oo8ixq4HDraBA,2.439882543E9,rappi,MEX,Santa Teresita,Brunch & Munch,,"los huevos tenían cáscara y los hot cake estaban crudos por dentro ,",1,BAD_QUALITY,,DAMAGE_ITEM|RAW_OVERCOOKED,QUALITY,0.0,1
+10.0,YyGZhSQgQCeSCyXSA,2.439902286E9,rappi,MEX,Churubusco,Brunch & Munch,,"Los chilaquiles vienen muy poca proporción y muy pequeña ,",1,NOT_WORTH_PRICE|ORDER_ACCURACY,,SMALL_PORTIONS|WRONG_ITEM,PRICING|PASE,0.0,1
+10.0,PWj44bBjD7NYcptv2,2.439909806E9,rappi,MEX,Volcanes,Brunch & Munch,,"Lo mismo que el comentario anterior EXTREMADAMENTE DULCES ,",1,BAD_QUALITY,,DAMAGE_ITEM|NOT_TASTY,QUALITY,0.0,1
+19.0,hoK9eHRfLJJQh5HdC,2.440163895E9,rappi,MEX,Tec,Chicken Tenders Hub,5.0,"Llego una chica vs el tamaño tipico grande,",1,comment|Comentario|missing_item|Not_arrived_bag_closed|False,ORDER_COMPLETENESS,MISSING_ITEM,PASE,0.0,1
+9.0,e9or2QGLQdzxoyqn4,2.439876534E9,rappi,MEX,Satélite,Brunch & Munch,,"Llego un pedido diferente ,",1,"ORDER_ACCURACY, ORDER_ACCURACY, ORDER_ACCURACY",,"WRONG_ITEM, WRONG_ITEM, WRONG_ITEM","PASE, PASE, PASE",0.0,1
+14.0,FodpZeFTa9diNvosj,2.439995674E9,rappi,MEX,Montejo,The Egg Spot,,"llego todo desparramado,",1,BAD_PACKAGING|BAD_QUALITY,,DAMAGE_ITEM|SPILLED_PACKAGING,DELIVERY|QUALITY,0.0,1
+19.0,HHJ55XTzRLrcN5m9i,2.440167962E9,rappi,MEX,Ciudad Judicial,Que Chicken,,"Llegó otra salsa,",1,ORDER_ACCURACY,,WRONG_ITEM,PASE,0.0,1
+12.0,eN4MTzLCgRLy2x7Pw,2.439954128E9,rappi,MEX,Esmeralda,Numa Cocina Mediterranea,,"llego diferente ,",1,ORDER_ACCURACY,,WRONG_ITEM,PASE,0.0,1
+9.0,jTJApCuhFvScsniGQ,2.439884717E9,rappi,MEX,Satélite,Brunch & Munch,,"Llego aplastado ,",1,BAD_PACKAGING|BAD_QUALITY,,BAD_PRESENTATION|DAMAGE_ITEM,DELIVERY|QUALITY,0.0,1
+17.0,vMWapE22tMj5yjmLP,2.440104796E9,rappi,MEX,Canek,Fonda Local,,"las tortillas tienen un aroma agrio y estan partidas como si fueran de dias,",1,BAD_QUALITY,,DAMAGE_ITEM|STRANGE_ITEM,QUALITY,0.0,1
+10.0,m9iY8nyJbRfuCyuKi,2f83f9e0-2e97-4fe7-96fc-679e70b11933,ubereats,MEX,Lindavista,Órale Desayunos,3.0,"Las sincronizadas están muy vacías casi no tiene relleno ,",1,NOT_WORTH_PRICE,,SMALL_PORTIONS,PRICING,0.0,1
+17.0,qHjZoSk9sz2rHwgys,2.440086358E9,rappi,MEX,Volcanes,Mr Beast Burger,1.0,"las papas no están bien cocidas y están completamente frías,",1,rrs_rest_quality_rate_1|Pésima calidad|damaged_item|raw_or_poor_condition,BAD_QUALITY,OTHER,QUALITY,0.0,1
+14.0,53rRJz59qEW5QKCAE,5764669978250904177,didi,MEX,Tlaquepaque,Mr Beast Burger,2.0,"las papas no eran más que pedí ,",1,Entregó el producto incorrecto,ORDER_ACCURACY,WRONG_ITEM,PASE,0.0,1
+19.0,rFNX7JgwtucCu7wFM,2.440154541E9,rappi,MEX,Volcanes,Que Chicken,1.0,"las papas frias y muy poco y Pequeñas,",1,rrs_rest_quality_rate_1|Pésima calidad|damaged_item|incorrect_temperature,BAD_QUALITY,OTHER,QUALITY,0.0,1
+19.0,jZ3kXMSFaXXkJkyNB,2.440154688E9,rappi,MEX,Cumbres,La Neta Burgers (Orale Burgers),,"las papas estaban todas tiradas,",1,BAD_QUALITY,,DAMAGE_ITEM,QUALITY,0.0,1
+17.0,DPamXBozisK7yaEad,2.440093653E9,rappi,MEX,Del Valle,Brunch & Munch,1.0,"Las galletas llegaron quemadas, duras y sin chispas de chocolate,",1,rrs_rest_quality_rate_1|Pésima calidad|damaged_item|raw_or_poor_condition,BAD_QUALITY,OTHER,QUALITY,0.0,1
+9.0,CH2r4EmpZg4easH9u,5764669994461888649,didi,MEX,Jardines del Valle,LA PANQUEQUERIA,2.0,"la salsa para chilaquiles rojos sabia como a plastico y tenia un olot feo,",1,Mala calidad de la comida,BAD_QUALITY,NOT_TASTY,QUALITY,0.0,1
+12.0,K3xdyLHvQmbtE68us,2.439935272E9,rappi,MEX,La Calma,The Egg Spot,,"La llema estaba totalmente cocida ,",1,BAD_QUALITY,,DAMAGE_ITEM|WRONG_TEMPERATURE,DELIVERY|QUALITY,0.0,1
+13.0,6CEMkPbEKDRT2qgZh,2.439973886E9,rappi,MEX,Tabachines,La Neta Burgers (Orale Burgers),,"la hamburguesa no tiene pollo, solo tiene queso,",1,ORDER_ACCURACY,,MISSING_ITEM,PASE,0.0,1
+11.0,iWdnXRjdrGmFwePQx,2.43992026E9,rappi,MEX,La Calma,Brunch & Munch,,"La fruta tiene hongo,",1,"BAD_QUALITY, BAD_QUALITY",,"DAMAGE_ITEM, DAMAGE_ITEM","QUALITY, QUALITY",0.0,1
+17.0,t4YPZFkaG3n88y6JC,2.440117682E9,rappi,MEX,Tec,House of Salads,1.0,"la crema de brócoli está echada a perder y sabe agria la ensalada me llegó caliente,",1,rrs_rest_quality_rate_1|Pésima calidad|damaged_item|raw_or_poor_condition,BAD_QUALITY,OTHER,QUALITY,0.0,1
+13.0,wrnFBS8Ysyomrri95,2.439976095E9,rappi,MEX,Doctores,Mr Beast Burger Turbo,,"La coca cola venía al tiempo, eso es intomable.,",1,"BAD_QUALITY, BAD_QUALITY",,"DAMAGE_ITEM|WRONG_TEMPERATURE, DAMAGE_ITEM|WRONG_TEMPERATURE","DELIVERY|QUALITY, DELIVERY|QUALITY",0.0,1
+16.0,uPDSeZxEv66bb3vHq,2.440084567E9,rappi,MEX,Volcanes,Mr Beast Burger,1.0,"la cebolla sabía hechada a perder y olía mal,",1,rrs_rest_quality_rate_1|Pésima calidad|missing_item|Not_arrived_bag_closed|False,"BAD_QUALITY, BAD_QUALITY","OTHER, OTHER","QUALITY, QUALITY",0.0,1
+17.0,iiKzTSQz9KPKC9nXS,2.440083299E9,rappi,MEX,Volcanes,Mr Beast Burger,,"La carne y los pepinillos tenian un sabor extraño pero sobretodo la hamburguesa venia muy dañada,",1,BAD_QUALITY,,DAMAGE_ITEM|NOT_TASTY|STRANGE_ITEM,QUALITY,0.0,1
+13.0,8Zbi3XpEL73AHCz4F,2.439966815E9,rappi,MEX,Iztapalapa,La Neta Burgers (Orale Burgers),,"La carne se sentía muy grasosa y en partes cruda ,",1,BAD_QUALITY,,DAMAGE_ITEM|RAW_OVERCOOKED,QUALITY,0.0,1
+9.0,feusmYZASHCmWuzhF,a5a5fed0-7df0-4229-a948-c0c9a1eebe9a,ubereats,MEX,La Calma,Órale Desayunos,4.0,"La carne no estaba bien cocida ,",1,BAD_QUALITY,,RAW_OVERCOOKED,QUALITY,0.0,1
+11.0,58Lc6xcispsWjqqpY,6d4c5c32-7469-4574-9277-d9f1af294362,ubereats,MEX,Santa Fe,Eggy by Chef Eva,3.0,"HELADA. LO QUE LE SIGUE DE HELADA LA COMIDA. ,",1,BAD_QUALITY,,WRONG_TEMPERATURE,DELIVERY,0.0,1
+20.0,M4oPMtiCsFviLF4w9,2.440176721E9,rappi,MEX,La Calma,Que Chicken,1.0,"había una cucaracha dentro de la bolsa del producto, tengo un video pero no puedo mandarlo,",1,rrs_rest_packaging_rate_1|Mala presentación|damaged_item|strange_objects_in_product,BAD_PACKAGING,BAD_PRESENTATION,DELIVERY,0.0,1
+10.0,m2nXrqmktWZhqeHq2,5764669958239879355,didi,MEX,Jardines del Valle,LA PANQUEQUERIA,5.0,"Excelente sabor, gracias por un excelente dia de las madres,",0,Well packaged|Exactly as ordered|Great food quality|Adequate portions,GOOD_PACKAGING|HIGH_FOOD_QUALITY|ORDER_PRECISION,1.0,,,0
+20.0,pGZeQZgHgwb3pHDcY,2.440180607E9,rappi,MEX,La Calma,Cocina Corrida turbo,,"Exacto la imagen no coincide para nada con lo que entregaron, además tardo demasiado a pesar de q era restaurante turbo se tardó más de 30minutos ,",1,ORDER_ACCURACY|OUT_TIME,,DELIVERY_LATE|WRONG_ITEM,DELIVERY|PASE,0.0,1
+19.0,FFexsebpLiZBeA9o6,2.440169201E9,rappi,MEX,Lincoln,LA PANQUEQUERIA,,"Estaban crudos. ,",1,BAD_QUALITY,,RAW_OVERCOOKED,QUALITY,0.0,1
+17.0,fwFbehkHQjeDiorDH,2.44009094E9,rappi,MEX,Ciudad Judicial,La Neta Burgers (Orale Burgers),,"estaba quemado el pan,",1,"BAD_QUALITY, BAD_QUALITY",,"DAMAGE_ITEM|RAW_OVERCOOKED|WRONG_TEMPERATURE, RAW_OVERCOOKED|WRONG_TEMPERATURE","DELIVERY|QUALITY, DELIVERY|QUALITY",0.0,1
+8.0,uchFgiPkPBzZnJXrv,2.439872407E9,rappi,MEX,Tabachines,Eggy by Chef Eva,,"Estaba echado a perder la fruta,",1,"BAD_QUALITY, BAD_QUALITY",,"DAMAGE_ITEM|WRONG_TEMPERATURE, DAMAGE_ITEM|WRONG_TEMPERATURE","DELIVERY|QUALITY, DELIVERY|QUALITY",0.0,1
+18.0,gqCBDdYaE3S6pMFyr,2.440146287E9,rappi,MEX,Del Valle,Mr Beast Burger,,"estaba demasiado salada,",1,BAD_QUALITY,,DAMAGE_ITEM|NOT_TASTY,QUALITY,0.0,1
+12.0,vw3NuFefRgprjYKwH,2.439953897E9,rappi,MEX,Canek,Don Gyros & Kebab,,"Esta todo asqueroso las papas tuve que tirarlas a la basura ,",1,BAD_QUALITY,,DAMAGE_ITEM|RAW_OVERCOOKED,QUALITY,0.0,1
+14.0,oRQDXvHg57ZFePZRn,2.439992274E9,rappi,MEX,Lincoln,Tender Lovers,,"está quemado sabe a quemado y está rancio el aceite ,",1,BAD_QUALITY,,DAMAGE_ITEM|NOT_TASTY|RAW_OVERCOOKED,QUALITY,0.0,1
+9.0,5wTWQw7EGqR7dwyLz,2.43988316E9,rappi,MEX,Churubusco,Brunch & Munch,,"está muy mal empacado llegó todo roto y muy pequeño ,",1,BAD_PACKAGING|NOT_WORTH_PRICE|ORDER_ACCURACY,,DAMAGE_PACKAGING|SMALL_PORTIONS|WRONG_ITEM,DELIVERY|PRICING|PASE,0.0,1
+13.0,WCte9vqMx3y7A4HJE,5764670184509997584,didi,MEX,Canek,Órale Chilaquiles,1.0,"es una burla la comida pedi pollo extra y de todo y trae muy poco para lo caro que esta ,",1,NOT_WORTH_PRICE,,SMALL_PORTIONS,PRICING,0.0,1
+11.0,pTDqK7ka5tBsyeXSv,2.439916267E9,rappi,MEX,Jardines del Valle,Brunch & Munch,,"En mi envío no venían los otros hot cakes que pedí y me los cobraron ,",1,ORDER_ACCURACY,,MISSING_ITEM,PASE,0.0,1
+21.0,4y7K54cKEvP2Wyp8p,5764670122367190690,didi,MEX,Montejo,LA PANQUEQUERIA,3.0,"en la descripción decía que mis pancakes tenían glaseado, cosa que no llegó ,",1,Productos faltantes,ORDER_ACCURACY|ORDER_COMPLETENESS,MISSING_ITEM,PASE,0.0,1
+9.0,PKzaALDLPrKZZN4et,2.439887098E9,rappi,MEX,Satélite,Brunch & Munch,,"EL producto no llego ,",1,"OUT_TIME, ORDER_ACCURACY|OUT_TIME, ORDER_ACCURACY|OUT_TIME",,"NOT_DELIVERED, MISSING_ITEM|NOT_DELIVERED, MISSING_ITEM|NOT_DELIVERED","DELIVERY, DELIVERY|PASE, DELIVERY|PASE",0.0,1
+14.0,KL2t9bn3CiLCufsRB,5764670090930881090,didi,MEX,Lindavista,Fonda Local,3.0,"El producto está echo dun desastre, todo está muy frío ,",1,Empaque dañado,BAD_PACKAGING|BAD_QUALITY,DAMAGE_PACKAGING|WRONG_TEMPERATURE,DELIVERY,0.0,1
+8.0,vikxTqGsdQCPFQYY6,5764669718904508404,didi,MEX,Doctores,Brunch & Munch,1.0,"el huevo no estaba cocido y los hoy cakes tampoco,",1,Mala calidad de la comida,BAD_QUALITY,RAW_OVERCOOKED,QUALITY,0.0,1
+10.0,DpRWcm4ipXdDjTYag,2.439900117E9,rappi,MEX,Tabachines,Eggy by Chef Eva,,"el huevo está crudo ,",1,BAD_QUALITY,,DAMAGE_ITEM|RAW_OVERCOOKED,QUALITY,0.0,1
+15.0,Tx9YkAvSuEpbQ6T5q,5764669993799189306,didi,MEX,Manacar,Avocalia,1.0,"El guacamole esta echado a perder. Todo lo demás está bien ,",1,Mala calidad de la comida,BAD_QUALITY,DAMAGE_ITEM,QUALITY,0.0,1
+17.0,jwuAAFphvtxv7ss6a,9e340890-33e4-415d-876b-da0fb6c41106,ubereats,MEX,Santa Fe,House of Salads,2.0,"el consomé está súper pobre no trae nada de verduras ni pollo. en la ensalada no me mandaron aderezo ,",1,restaurant_poor_packaging,BAD_PACKAGING|BAD_QUALITY|ORDER_ACCURACY,BAD_PRESENTATION|MISSING_ITEM,DELIVERY|PASE,0.0,1
+10.0,EWjhr8uiYME6EDv7q,2.439905133E9,rappi,MEX,Saltillo Centro,Órale Chilaquiles,,"El bowl no tiene fresas y está a la mitad,",1,ORDER_ACCURACY|ORDER_COMPLETENESS,,MISSING_ITEM,PASE,0.0,1
+18.0,tdq8BCdWiWECTpM3r,2.44012416E9,rappi,MEX,Tec,Honest Food,,"El arroz blanco estaba crudo y duro en los 3 bowls que pedí. ,",1,"BAD_QUALITY, BAD_QUALITY",,"RAW_OVERCOOKED, DAMAGE_ITEM|RAW_OVERCOOKED","QUALITY, QUALITY",0.0,1
+18.0,7MHrGkTN9Ya2p6jFJ,2.440136959E9,rappi,MEX,Estadio,Mr Beast Burger,,"dice ser de 2 carnes y solo tiene 1 y bastante chica ,",1,ORDER_ACCURACY|ORDER_COMPLETENESS,,MISSING_ITEM,PASE,0.0,1
+8.0,Keo9hCvCgbXwo95aQ,7b8422f3-f6d7-4799-9354-085d1721d123,ubereats,MEX,Carretera Nacional,Órale Desayunos,5.0,"Deliciosos los chilaquiles!!! ✨️,",0,restaurant_sustainable_packaging|restaurant_fresh_ingredients|restaurant_breakfast_standards|restaurant_perfectly_seasoned,HIGH_FOOD_QUALITY,1.0,,,0
+11.0,5LpomWw5ZT9hFyCdX,9eb9d516-a077-4f87-bf4d-69d6de0cfdbf,ubereats,MEX,Churubusco,Eggy by Chef Eva,5.0,"Delicioso todo lo que hacen ahí y muy bien hecho. Gracias,",0,restaurant_convenient|restaurant_store_accommodating|restaurant_sustainable_packaging|restaurant_reliable_service|restaurant_great_selection|restaurant_consistent,HIGH_FOOD_QUALITY|ORDER_PRECISION|VARIETY_MENU_OPTIONS,1.0,,,0
+10.0,NEgd9sK8A39LXh3j2,2.439894066E9,rappi,MEX,Canek,Brunch & Munch,,"Compré 6 desayunos y solo llegaron 5, dejaron a 1 persona sin comer ,",1,ORDER_ACCURACY,,MISSING_ITEM,PASE,0.0,1
+7.0,tq2vguFgo8CDyAm2P,2.439862939E9,rappi,MEX,Tec,Brunch & Munch,,"Cobran la mayor parte de los insumos y está bien, uno lo paga. por ejemplo el aguacate uno espera que sea una porción decente.,",1,NOT_WORTH_PRICE|ORDER_ACCURACY,,SMALL_PORTIONS|WRONG_ITEM,PRICING|PASE,0.0,1
+11.0,sQMQQ47MaRZnRxoq4,5764670089051832558,didi,MEX,Saltillo Centro,Brunch & Munch,1.0,"cambien la masa de los hotkakes ,",1,BAD_QUALITY,,OTHER,QUALITY,0.0,1
+10.0,RzyioM35TsGSP66Wz,2.439899308E9,rappi,MEX,Satélite,Brunch & Munch,,"Cambiaron varias veces el tiempo de entrega y las papas llegaron frías y chiclosas ,",1,BAD_QUALITY|OUT_TIME,,DAMAGE_ITEM|DELIVERY_LATE|WRONG_TEMPERATURE,DELIVERY|QUALITY,0.0,1
+16.0,Y2n2KjLA5PFG8MMXE,5764669997263684439,didi,MEX,Santa Catarina,Pozórale,5.0,"buen sabor, con mucho caldito,,",0,Bien empacado|Exactamente como lo pedí|Buena calidad de la comida|Precios razonables|Porciones adecuadas,GOOD_PACKAGING|HIGH_FOOD_QUALITY|NOT_WORTH_PRICE|ORDER_COMPLETENESS|ORDER_PRECISION,PRICING,,1.0,0
+9.0,3ZrpuAXmpHbsSz4rZ,edca5725-de10-4ccf-8292-58290559a18e,ubereats,MEX,San Ángel,Brunch & Munch,3.0,"Bastante malos masudos y sabe a todo menos a Nutella ,",1,restaurant_not_worth_price,BAD_QUALITY|NOT_WORTH_PRICE,NOT_TASTY,QUALITY,0.0,1
+21.0,g8iZpqD27A7vogj4N,5764670176213665426,didi,MEX,Tabachines,La Neta Burgers (Orale Burgers),5.0,"agreguen catsup bro porfa,",1,ORDER_ACCURACY,,MISSED_ORDER_NOTES,PASE,0.0,1
+16.0,uTYACAZ9qFBxg7FN7,2.440081616E9,rappi,MEX,Volcanes,Mr Beast Burger,,"agitado y se rrgo,",1,"BAD_PACKAGING|BAD_QUALITY, BAD_PACKAGING|BAD_QUALITY",,"DAMAGE_ITEM|SPILLED_PACKAGING, DAMAGE_ITEM|SPILLED_PACKAGING","DELIVERY|QUALITY, DELIVERY|QUALITY",0.0,1
+14.0,BD2Xb8HxroaDiebB3,5764670079916638805,didi,MEX,Lindavista,House of Salads,3.0,"a criterio la porcion de la ensalada es muy pequeña,",1,Porciones pequeñas,NOT_WORTH_PRICE,SMALL_PORTIONS,PRICING,0.0,1
+7.0,E9uHMofgYKEGmREZs,394411f8-7310-4d77-9d7c-342170cb7801,ubereats,MEX,Cumbres,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,tpg4tt9QP6FXEdd6t,42188493-72b4-4153-a04e-5278672fbdf8,ubereats,MEX,Pedregal,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,GzHAxgYLdW6J43LPA,0f3d5ce1-99b7-427d-bf08-a3143b1213c1,ubereats,MEX,Lindavista,Brunch & Munch,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+7.0,xDFdaFF75ieTHufDa,b371ac80-e6ce-4d2f-800a-152f99bd5e2b,ubereats,MEX,Satélite,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,xByn4BLihpDPaac5c,e28b8765-fcde-4671-8961-a81aaf2a5afe,ubereats,MEX,San Ángel,LA PANQUEQUERIA,5.0,0,,restaurant_great_selection,VARIETY_MENU_OPTIONS,1.0,,,0
+7.0,rJKFM83k9JzE4cN7H,2.439862625E9,rappi,MEX,San Nicolás,Avocalia Desayunos,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+7.0,z5o6XuLdjm6eSEkyK,8a1526a8-6b19-4eb0-adcf-5789408de19d,ubereats,MEX,San Jerónimo,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,ErsHe8HJafiYuYdLt,c0c2b4e1-f965-44c2-996e-a438e5164da8,ubereats,MEX,Doctores,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,EqTFZ8uMPReMmLANw,011f8e49-4ec6-421b-9b71-8f93c9ccc6f0,ubereats,MEX,San Nicolás,LA PANQUEQUERIA,5.0,0,,HIGH_FOOD_QUALITY,,1.0,,,0
+7.0,jxPP4gWqjDQJzHQNw,92643101-3af2-4a3d-8f75-bcb69dfb1096,ubereats,MEX,La Calma,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,fAJTWd848SpYkzoDZ,5764669855865311169,didi,MEX,Santa Fe,Foodhub,5.0,0,,Buena calidad de la comida|Menú variado|Porciones adecuadas|Bien empacado|Exactamente como lo pedí|Precios razonables,GOOD_PACKAGING|HIGH_FOOD_QUALITY|ORDER_PRECISION|VARIETY_MENU_OPTIONS,1.0,,,0
+7.0,kt6r4RLLrymfJyC3C,94284ce3-1ca4-48cc-8992-787aaa71978b,ubereats,MEX,Tec,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,umcXr5YZfG4vwZkdR,09a2072c-b611-45c3-92d5-b5a55ca3e0ff,ubereats,MEX,Lindavista,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,csFE5Wda66vDB7oWy,2.439863156E9,rappi,MEX,San Jerónimo,Brunch & Munch,2.0,1,,comment|Comentario,RATINGS,RATINGS,0.0,,1
+7.0,WYsRQpZiyuWsWqamL,bdee5595-f813-4793-ab19-b66750c8966b,ubereats,MEX,Canek,LA PANQUEQUERIA,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+7.0,tuuEQPAjEzN4RbLPs,15a70cfa-9681-43b7-96e1-f3291b993fb0,ubereats,MEX,Esmeralda,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,mRoSynNcWQHo5oovD,fa0003cb-8450-4954-b812-0c25e0ac5a2b,ubereats,MEX,Montejo,Eggy by Chef Eva,1.0,1,,restaurant_too_slow,OUT_TIME,DELIVERY_LATE,DELIVERY,0.0,1
+7.0,WMKMky65PybJn2N6D,f651b8e3-014c-438d-a708-e6e8b8e8362d,ubereats,MEX,Metepec,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,bSj7ZE7Zvgd5qiaY5,ce2b2561-3341-4856-9c2b-b2a67c160716,ubereats,MEX,Polanco,Brunch & Munch,1.0,1,,BAD_QUALITY,,NOT_TASTY,QUALITY,0.0,1
+7.0,qNWfAfp2Eyui73w9L,2.43986324E9,rappi,MEX,Montejo,Chemaquiles,4.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+7.0,z4nygajTdMReWmbo7,5764669784935436245,didi,MEX,Lincoln,Órale Desayunos,5.0,0,,Exactamente como lo pedí,ORDER_PRECISION,1.0,,,0
+7.0,E8KPgawkHSMiisMxf,a6b67d97-72f9-4b97-8a37-d0ff67757a4d,ubereats,MEX,Santa Fe,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,FQXDc5gaSzLFP2E2b,5764669762797899738,didi,MEX,Santa Teresita,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,wzNevz4C3epx2QukA,39bf3c19-9014-4834-927b-2d1a42c199fa,ubereats,MEX,Canek,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,WpzEx7MZ6mpMQCK8K,8f89ae31-4fa5-415c-8719-a05825aaca29,ubereats,MEX,Satélite,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,jhm3bKa3ZPZzXbStF,5764669778434265040,didi,MEX,Montejo,The Wrap Company MX,3.0,1,,Slow order preparation,OUT_TIME,DELIVERY_LATE,DELIVERY,0.0,1
+7.0,vny7CvqvHemKmzGzf,2.439863768E9,rappi,MEX,Santa Fe,Foodhub,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+7.0,Ms8BJi6xuA4C8Jgvm,2.439863617E9,rappi,MEX,Canek,The Breakfast Club,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+7.0,eYRTcfE2k6DmhPBhZ,5764669656874946514,didi,MEX,Canek,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,scrrMvMT8vi9qyzrf,2.439863839E9,rappi,MEX,Canek,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,ifAMArreCm7mjivGe,5764669678026821606,didi,MEX,Tec,Órale Desayunos,3.0,1,,RATINGS,,RATINGS,0.0,,1
+7.0,MHev8KnbHZpcL9sH9,876c778e-679c-43ce-a548-f3cf5e6777e2,ubereats,MEX,Doctores,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,HQYMBCYMwPGxmuACT,2.439863939E9,rappi,MEX,Saltillo Centro,Brunch & Munch,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+7.0,hbKwMpxNjTgmGx322,5764669855085170639,didi,MEX,San Ángel,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,n3PMBP5Gobs9DdY5F,6a9701c9-9ccc-45d7-a99b-bb558e64569b,ubereats,MEX,Churubusco,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,228jR4vDFeyNHeBBF,80d2513a-d647-4e67-bbff-313ad5d8fb96,ubereats,MEX,Coapa,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,No7EhLCZJWdYWuyBh,5764669650751262673,didi,MEX,Azcapotzalco,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,q3sjHT7zcdrkp4jTe,c85e20ec-c7e7-42dd-b9c9-ade2a15f5307,ubereats,MEX,Canek,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,ozwnjJs6EDrZxcJMJ,5764669899892920276,didi,MEX,Tec,Órale Desayunos,5.0,0,,Precios razonables|Exactamente como lo pedí|Porciones adecuadas|Menú variado|Buena calidad de la comida|Bien empacado,GOOD_PACKAGING|HIGH_FOOD_QUALITY|ORDER_COMPLETENESS|ORDER_PRECISION|VARIETY_MENU_OPTIONS,1.0,,,0
+7.0,mrvmz6wWxn4LnB2W8,4eb3b434-3f67-4ccc-95a6-a46c525613ba,ubereats,MEX,Churubusco,LA PANQUEQUERIA,5.0,0,,HIGH_FOOD_QUALITY,,1.0,,,0
+7.0,TPuZJTgjfxM6coEij,5764669895379849193,didi,MEX,Esmeralda,The Egg Spot,5.0,0,,Porciones adecuadas|Precios razonables|Menú variado|Bien empacado,GOOD_PACKAGING|ORDER_COMPLETENESS|VARIETY_MENU_OPTIONS,1.0,,,0
+7.0,iHCXjjYZeixxdsWeZ,5764669826362576845,didi,MEX,Tabachines,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,GEBC5tQStzeKKuMeJ,0fbcc8f9-f3a9-4957-85bf-75f84e4a3b48,ubereats,MEX,Esmeralda,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,ZSjY3JsRbpAFYBhdx,2.439864247E9,rappi,MEX,Coapa,Brunch & Munch,5.0,0,,rrs_rest_packaging_rate_5|Buena presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+7.0,4yuiX7yjDGDBoufkF,e192d304-2bf2-434b-8e95-a8143d34915b,ubereats,MEX,Tabachines,LA PANQUEQUERIA,5.0,0,,restaurant_sustainable_packaging|restaurant_reliable_service,GOOD_PACKAGING|ORDER_COMPLETENESS,1.0,,,0
+7.0,poWa5Wmwsic23W7pj,523981a3-cf33-4a18-aac2-22ed1ddb15e4,ubereats,MEX,Coapa,Avocalia Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,D7fjaHQwMrXgamSyg,38a93c62-302d-4445-a5b5-aeeb6bf9975e,ubereats,MEX,Tec,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,Jd2iTaNWYASFnEv5c,28584fe2-8fd7-4033-a791-4a150737d564,ubereats,MEX,Santa Fe,Eggy by Chef Eva,5.0,0,,"RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS",,1.0,0
+7.0,T9AmT3DkBkXMx2ufR,2.439864438E9,rappi,MEX,Canek,LA PANQUEQUERIA,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+7.0,9hmuky43YvqeQvMBP,3f9d94c3-3e22-41f2-8572-296beb8f589e,ubereats,MEX,Pedregal,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,uF6rAB7BSTQiKiatd,771c644e-7261-403f-88c6-72523b7fc2ef,ubereats,MEX,Coapa,Desayunos de la Abuela,4.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,epzgh8Aj9rde6qows,5764669834675687369,didi,MEX,Lincoln,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,TueJmdNsWFQe3ZvTq,5764669700294381540,didi,MEX,Doctores,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,Lunf6eDYQBhJe2s2Q,2.439864714E9,rappi,MEX,Volcanes,Freshlab,4.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+7.0,hHk2BkQGZwC6DnLAg,2.439864814E9,rappi,MEX,Pedregal,Brunch & Munch,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+7.0,8NJKGoE4rk7kb3SHx,6e796e2e-2858-4440-8e6c-655cb2686b0d,ubereats,MEX,Churubusco,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,5C2eQRrjKhy4SAGHS,3ea1d319-cec3-4fdb-9deb-848079cc5a5d,ubereats,MEX,Santa Fe,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,sh8ZmryNM5DPoAcdE,4d2a9591-3b09-4a4e-8495-8bf7655772a8,ubereats,MEX,San Nicolás,Brunch & Munch,1.0,1,,RATINGS,,RATINGS,0.0,,1
+7.0,zWR63swGTCuABLRbY,5764669772918755282,didi,MEX,Santa Teresita,Desayunos de la Abuela,5.0,0,,RATINGS,,RATINGS,1.0,,0
+7.0,qSJXpqLixb48mmEpC,2.439863849E9,rappi,MEX,Montejo,Brunch & Munch,3.0,1,,RATINGS,,RATINGS,0.0,,1
+7.0,NqAuhMSntJqPDeDXq,5f0fda8c-b253-44fd-807a-ea9f6688ed8f,ubereats,MEX,San Jerónimo,The Breakfast Club,5.0,0,,"RATINGS, RATINGS, RATINGS, RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS, RATINGS, RATINGS, RATINGS",,1.0,0
+7.0,GjvSHqAcQCebKH8dT,88bfad4c-3f23-4099-9d45-2d9afdfd5db5,ubereats,MEX,Esmeralda,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,GuZNzmCeKFdpxP2Kw,5764669808704557034,didi,MEX,San Nicolás,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,TS59RigAKXjwsdisL,4dec91a5-bf3e-4cd5-acda-c17ee50000ec,ubereats,MEX,Satélite,Eggy by Chef Eva,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,aemSj622WA74bnRhH,37f6b47e-06d2-4daa-b68b-7cef4c698a63,ubereats,MEX,La Calma,Brunch & Munch,1.0,1,,"RATINGS, BAD_QUALITY",,"RATINGS, NOT_TASTY",QUALITY,0.0,1
+8.0,2PAZH7FDTyoyndKSm,d5b6edba-77bd-46d0-b0cb-6e35eaa819ff,ubereats,MEX,Santa Fe,Brunch & Munch,5.0,0,,"RATINGS, RATINGS, HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,"RATINGS, RATINGS",,1.0,0
+8.0,zf6JaxvpBuX9yLMuQ,4488d899-472d-4dd3-b89f-e67e343227e2,ubereats,MEX,Tec,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,Rn45FZHBt6GuQcMKX,2.439865268E9,rappi,MEX,Churubusco,Desayunos de la Abuela,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,2R4g4C9PYiBrg4pcw,5d54556c-a11d-43f6-b209-151d53f04d56,ubereats,MEX,San Ángel,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,ngmRmZ5av2LnP4TMB,2a7e24eb-816d-4446-be71-ae4d2781ee5e,ubereats,MEX,Lindavista,Brunch & Munch,5.0,0,,"RATINGS, HIGH_FOOD_QUALITY",,RATINGS,1.0,,0
+8.0,Gcyk36NmHBwuDGQJA,9b6f1783-078b-4d80-94dd-062507f6f980,ubereats,MEX,Volcanes,LA PANQUEQUERIA,5.0,0,,restaurant_store_accommodating|restaurant_sustainable_packaging|restaurant_great_selection,VARIETY_MENU_OPTIONS,1.0,,,0
+8.0,HbswBek4wabLNTp2b,f0b39b90-8b4c-4004-801e-185f44f6aa6b,ubereats,MEX,Churubusco,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,tfqT3qwvNqFTbjKEF,b4aae363-62c5-4333-987c-a9de76b047ff,ubereats,MEX,Polanco,Brunch & Munch,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+8.0,QheZLCZN3xtFnXkeg,508fb6c8-af0c-45bc-8e58-114c5cf0e189,ubereats,MEX,Santa Fe,Brunch & Munch,1.0,1,,"RATINGS, BAD_QUALITY|NOT_WORTH_PRICE",,"RATINGS, SMALL_PORTIONS|WRONG_TEMPERATURE",DELIVERY|PRICING,0.0,1
+8.0,9eAdvM66QRMzG6b4P,5764669689817010169,didi,MEX,Tlaquepaque,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,Bu92Dm8qA3Ky9BuiJ,a94538da-ecf1-4ef6-b921-0b8f19c9a7ba,ubereats,MEX,Satélite,LA PANQUEQUERIA,5.0,0,,"RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS",,1.0,0
+8.0,QHxDbwBhG6RKvuEaF,5764669656958832575,didi,MEX,San Ángel,Desayunos de la Abuela,1.0,1,,Porciones pequeñas|La tienda se demoró|Mala calidad de la comida,BAD_QUALITY|NOT_WORTH_PRICE|OUT_TIME,DELIVERY_LATE|SMALL_PORTIONS,DELIVERY|PRICING,0.0,1
+8.0,GJEbntHZSEkj2Fpra,c3257390-bdea-40f1-8055-6b1db93970ef,ubereats,MEX,Pedregal,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,SygG2dWPss6nrAXFq,2.439866058E9,rappi,MEX,Polanco,Brunch & Munch,5.0,0,,rrs_rest_packaging_rate_5|Buena presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+8.0,hWqAwRBY4cGm9tQLC,5764669832276545518,didi,MEX,Saltillo Centro,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,WSmbqojK898mA95Si,2e4a3994-4e0a-4892-8eed-75114d0756eb,ubereats,MEX,Santa Catarina,LA PANQUEQUERIA,5.0,0,,restaurant_convenient|restaurant_store_accommodating|restaurant_sustainable_packaging|restaurant_reliable_service|restaurant_great_selection,VARIETY_MENU_OPTIONS,1.0,,,0
+8.0,XAD4mB63b8KiRiadP,7848e42d-e15d-4ce1-83af-896bafeaa4e9,ubereats,MEX,Santa Fe,Brunch & Munch,5.0,0,,"RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS",,1.0,0
+8.0,6it3WeWkZEZ8KH6xX,1255ce0e-c908-4427-bdd1-35cd7db801ab,ubereats,MEX,Tlaquepaque,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,poMfeDpWY7p9JicNk,6051fbc5-5c17-40da-b29b-1685fd136e8b,ubereats,MEX,Metepec,Órale Desayunos,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+8.0,uA4fdhDhTbqmWWrJZ,90f3b6ad-a86c-47ab-b608-13a6b97b05fa,ubereats,MEX,Tec,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,H65TnbGym3u9rbDjo,c2aaa8c6-3e3d-4098-b13e-77a36c0d3128,ubereats,MEX,Churubusco,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,9BWaGCWwcBY7ir4ke,5764669783228354554,didi,MEX,Tlaquepaque,The Wrap Company MX,4.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,tgSsXtjhi9d5PjFMd,9c3c252d-32bb-422d-9ebc-ddf01f7f3c94,ubereats,MEX,Cumbres,Brunch & Munch,1.0,1,,RATINGS,,RATINGS,0.0,,1
+8.0,aZonZpbC5f44qqaJ8,63eb4f4f-a667-4743-a94a-79cb3a79e93c,ubereats,MEX,Pedregal,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,HtWSpmBDdji7TLJNi,2.439866876E9,rappi,MEX,Samara,Desayunos de la Abuela,1.0,1,,comment|Comentario,RATINGS,RATINGS,0.0,,1
+8.0,kGbLcY3DSTaYtPWG8,391c73a2-e853-468a-b1e4-b9a42d01b735,ubereats,MEX,Metepec,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,ZH5p8QfyFPmtxMWmc,03a9627c-03b5-443d-904a-daedde5959b6,ubereats,MEX,Doctores,The Breakfast Club,5.0,0,,"RATINGS, RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS, RATINGS",,1.0,0
+8.0,9wZqMGX5TndBjckMJ,07b84c8e-c60e-4f67-8e49-5cd42c932f04,ubereats,MEX,Montejo,Brunch & Munch,3.0,1,,RATINGS,,RATINGS,0.0,,1
+8.0,CWdPy2er9SxWaBhAq,05815d34-356b-446a-9348-08b8c2ffdcbb,ubereats,MEX,Tlaquepaque,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,T8qACNTjZ55JbNKaB,7edbc5b6-79a9-4158-9f48-60ecd23ada19,ubereats,MEX,San Ángel,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,KfzXmqs5RMoH4967a,5764669732535996402,didi,MEX,Coapa,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,fZxYbAanKxomkKS7P,cfd9a2bd-f0ea-4cea-a5ea-e008a1fec07f,ubereats,MEX,Carretera Nacional,The Breakfast Club,5.0,0,,restaurant_convenient|restaurant_store_accommodating|restaurant_sustainable_packaging|restaurant_reliable_service|restaurant_consistent,QUICK_DELIVERY,1.0,,,0
+8.0,oxKqG4jZF6kGuYmyf,5aeba0e4-3746-401b-b04d-7bc4c8e44ac2,ubereats,MEX,Churubusco,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,SwuyvLa6hZ9YvjZiE,14fe6e71-110a-4914-b86e-1b27dfb410d1,ubereats,MEX,Tec,Órale Desayunos,5.0,0,,"RATINGS, RATINGS",,"RATINGS, RATINGS",,1.0,0
+8.0,cPXjM3FAw8YZK7PQ7,2.439867736E9,rappi,MEX,San Nicolás,Brunch & Munch,5.0,0,,rrs_rest_accuracy_rate_5|Justo lo que pedí,ORDER_PRECISION,ORDER_PRECISION,,1.0,0
+8.0,Fq3274mo4JCB7KSNw,a15307f7-b599-4809-8f4e-52123fa4b3b3,ubereats,MEX,Coapa,LA PANQUEQUERIA,5.0,1,,"RATINGS, RATINGS, HIGH_FOOD_QUALITY",,"RATINGS, RATINGS, SMALL_PORTIONS",PRICING,0.0,1
+8.0,6vZHHdbnFJscsTrGD,5764669693663186932,didi,MEX,Tec,Pozórale,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,Qsx29RRWqave4JmFi,2.439867952E9,rappi,MEX,Tlaquepaque,Brunch & Munch,5.0,0,,rrs_rest_packaging_rate_5|Buena presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+8.0,LTygRNuWzDZo3AuDK,e414cf07-4ae3-4b1a-8ded-16196a92735d,ubereats,MEX,Cumbres,Brunch & Munch,1.0,1,,"BAD_PACKAGING|BAD_QUALITY, BAD_QUALITY, BAD_QUALITY",,"BAD_PRESENTATION|NOT_TASTY|WRONG_TEMPERATURE, SMALL_PORTIONS, NOT_TASTY","DELIVERY|QUALITY, PRICING, QUALITY",0.0,1
+8.0,PwM4oS2wGobyZnBEu,f8f4d73d-b162-49a3-bf17-73c6bde5d515,ubereats,MEX,Santa Fe,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,uWKLfBssm6JXFtbEq,5764669787565264888,didi,MEX,Polanco,The Egg Spot,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,yCrFM92E36aCfb9YZ,32bef6a2-808c-4967-af4b-cfe415eb21a6,ubereats,MEX,Churubusco,Órale Desayunos,5.0,0,,"RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS",,1.0,0
+8.0,xTHrg9vcWPQcCZXcD,2.439868478E9,rappi,MEX,Jardines,Desayunos de la Abuela,3.0,1,,comment|Comentario,RATINGS,RATINGS,0.0,,1
+8.0,iZnHdvzxrTAE2wejC,183f4814-804f-40c8-912d-56ddd335d06d,ubereats,MEX,Metepec,Avocalia Desayunos,2.0,1,,restaurant_not_tasty|restaurant_not_worth_price,BAD_QUALITY|NOT_WORTH_PRICE,NOT_TASTY|SMALL_PORTIONS,PRICING|QUALITY,0.0,1
+8.0,CYkJsQa3HPTkXNqm5,5764670035318603789,didi,MEX,Iztapalapa,The Breakfast Club,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,Dk3eMMKMnRPP8BwzB,5764669951562547223,didi,MEX,Santa Teresita,The Wrap Company MX,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,nbuf58mqnTXud52W3,6dcc6169-aaad-4d35-870a-cb63dc79c317,ubereats,MEX,Esmeralda,Brunch & Munch,5.0,0,,"RATINGS, RATINGS",,"RATINGS, RATINGS",,1.0,0
+8.0,5SYP5bQYrDrCQEg7q,fdfbcb00-6bbd-4796-a400-7af876f442d6,ubereats,MEX,Santa Teresita,LA PANQUEQUERIA,5.0,0,,"RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS",,1.0,0
+8.0,s2ztojAP3H93yN9r8,d8be64d0-d168-401f-bfb8-1e85f66455a8,ubereats,MEX,Tlaquepaque,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,uFJKTvFX3C5pk4Qao,5764669774520979439,didi,MEX,Lincoln,The Egg Spot,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,cE8YgaBYFooSdbKBd,2.439869637E9,rappi,MEX,Jardines del Valle,Brunch & Munch,5.0,0,,rrs_rest_packaging_rate_5|Buena presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+8.0,J6A5Ah9tsLZziriyJ,5764669802090139642,didi,MEX,Coapa,Desayunos de la Abuela,4.0,0,,Bien empacado,GOOD_PACKAGING,1.0,,,0
+8.0,aEPwJynGLicKwuRgD,2.439869963E9,rappi,MEX,Coapa,Foodhub,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,W3FKSbqu8qn4WoAN6,b523c4b5-6139-4940-a489-f64a5c158a95,ubereats,MEX,Metepec,Órale Desayunos,2.0,1,,restaurant_not_worth_price,NOT_WORTH_PRICE,OTHER,PRICING,0.0,1
+8.0,7GAucEaZ952xapBTH,2.439869944E9,rappi,MEX,Lindavista,LA PANQUEQUERIA,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+8.0,GFnqQQuWEHw3R662f,6175cbcf-3898-45d3-8ae9-60813d9ebb0f,ubereats,MEX,Canek,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,4fxg8DRZ2vPjpswLN,0004c26c-6c69-4bd5-be5b-be3edef58117,ubereats,MEX,Santa Teresita,LA PANQUEQUERIA,4.0,0,,restaurant_store_accommodating,OTHER,OTHER,1.0,,0
+8.0,Y57MgGPZYCuSgmDEb,2ccb1fe8-8281-42e8-ace1-a2c1fcdd40f3,ubereats,MEX,Coapa,Órale Desayunos,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+8.0,srfkTgQcxt4b3Cssw,e1d88ea4-cb3a-4d75-806f-d5c46a2d3a3a,ubereats,MEX,Churubusco,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,LhN5DqwJDK6W7rJet,5764670037461893140,didi,MEX,Tec,Desayunos de la Abuela,5.0,0,,Exactamente como lo pedí|Precios razonables|Buena calidad de la comida|Porciones adecuadas|Menú variado|Bien empacado,GOOD_PACKAGING|HIGH_FOOD_QUALITY|ORDER_COMPLETENESS|ORDER_PRECISION|VARIETY_MENU_OPTIONS,1.0,,,0
+8.0,5diCLSEJ547C2kYyu,5764670034525880335,didi,MEX,Doctores,The Wrap Company MX,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,HxdAjeBifaPSz5oqW,b27c3bb2-b9b8-4cd8-a42f-c06cd56a7b29,ubereats,MEX,Santa Fe,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,HYtnsEjDkNJG93TgW,c5a57d61-b015-4a14-b670-d619d571e2ef,ubereats,MEX,Churubusco,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,tT6aatEGAyTwaBoFH,305ee9a5-f61f-492a-8a81-db9abd72c365,ubereats,MEX,Ciudad Judicial,Brunch & Munch,4.0,0,,restaurant_perfect_portions,ORDER_COMPLETENESS,1.0,,,0
+8.0,Lv7FAMtnDZCWf59BJ,cb85598b-1d58-4329-921a-f22c8c172be1,ubereats,MEX,Doctores,LA PANQUEQUERIA,1.0,1,,RATINGS,,RATINGS,0.0,,1
+8.0,xGjSy5xG6rT9PcAXZ,51ec20c7-dcba-483f-8e74-26c99e2ba4a0,ubereats,MEX,San Ángel,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,3fcwjByzo6paSs9Ki,2.439870945E9,rappi,MEX,Saltillo Centro,Órale Desayunos,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+8.0,8w6PkaWzY6iRCgQSZ,2.439871011E9,rappi,MEX,Tabachines,Avocalia,1.0,1,,rrs_rest_quality_rate_1|Pésima calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+8.0,NunKMQYjryAPT4qkB,5764670094865137681,didi,MEX,Polanco,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,G9i5mjBxxdsDz4Tc5,2.439871393E9,rappi,MEX,Tlaquepaque,Brunch & Munch,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+8.0,8cwyfvRXscXS8nxFG,2.439871109E9,rappi,MEX,Volcanes,Desayunos de la Abuela,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+8.0,9jiAwFw5SPRyLgW38,2.439871564E9,rappi,MEX,Tlaquepaque,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,sDeZfsoMhi594hZW7,5764669956578934810,didi,MEX,Coapa,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,wGpmLW9Ao3kYhvkXi,5764670172191326229,didi,MEX,Cumbres,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,HdKSbSedWR5ESjTbv,6707a940-3a4f-4b2f-82aa-ef8b43223ba4,ubereats,MEX,Lindavista,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,Xgh5DNFfYYhTRbL8H,ef77899a-fe82-4f0f-bfa9-f2d1376de4f6,ubereats,MEX,Jardines del Valle,Brunch & Munch,5.0,0,,"RATINGS, RATINGS",,"RATINGS, RATINGS",,1.0,0
+8.0,KSG8Sn5Y5JnQfCXEq,2.439872037E9,rappi,MEX,Santa Teresita,The Breakfast Club,2.0,1,,rrs_rest_packaging_rate_2|Mala presentación,BAD_PACKAGING,BAD_PRESENTATION,DELIVERY,0.0,1
+8.0,hYdrWZpBqPnXLagm9,5764670001357324290,didi,MEX,Lincoln,The Wrap Company MX,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,CQPZHgNdwv6hcn2id,2.439872152E9,rappi,MEX,San Nicolás,Órale Chilaquiles,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+8.0,LXma7TEBJXmLE4Mcp,5764669941584298003,didi,MEX,Lincoln,Chemaquiles,4.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,mRrWSMK7qz24b3yYN,2.439869657E9,rappi,MEX,Polanco,Desayunos de la Abuela,1.0,1,,rrs_rest_quality_rate_1|Pésima calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+8.0,LuxJSXcvKYo9N3Ssi,3c91c442-4a4f-4821-b42b-958dd9b4201a,ubereats,MEX,Polanco,Brunch & Munch,1.0,1,,"BAD_QUALITY, NOT_WORTH_PRICE, BAD_PACKAGING|BAD_QUALITY",,"NOT_TASTY, SMALL_PORTIONS, SPILLED_PACKAGING|WRONG_TEMPERATURE","QUALITY, PRICING, DELIVERY",0.0,1
+8.0,EHxvkTmQnWyJ269EQ,3656f5fe-10b6-492b-b4c7-388a6c21c5ca,ubereats,MEX,Jardines,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,ScdSWHC8gmSuL5pLM,2.439872345E9,rappi,MEX,Canek,The Breakfast Club,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,WpddxtmZvstn9h8Ka,a436e73e-e464-448a-8361-836e784ccb6b,ubereats,MEX,Ciudad Judicial,Eggy by Chef Eva,5.0,0,,"RATINGS, RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS, RATINGS",,1.0,0
+8.0,XzZiLRfQpKH6yEr2T,8b763bc4-671c-4874-972b-f0d2c4e60aaa,ubereats,MEX,Saltillo Centro,Brunch & Munch,1.0,1,,"RATINGS, RATINGS",,"RATINGS, RATINGS",,0.0,1
+8.0,vJuML6uqMudCtYKJs,2.439872636E9,rappi,MEX,La Calma,Brunch & Munch,2.0,1,,rrs_rest_completeness_rate_2|Faltó un item,ORDER_ACCURACY,MISSING_ITEM,PASE,0.0,1
+8.0,Mh3RMvzz2Q9er2WjT,5764669951298306079,didi,MEX,Tabachines,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,euTxrsZMDgayipWfM,2.439872779E9,rappi,MEX,Saltillo Centro,Desayunos de la Abuela,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,deBZPA7s3jLxET8QW,1fde04e0-4ead-4065-b930-03b4d751f4a6,ubereats,MEX,Saltillo Centro,Órale Desayunos,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+8.0,LygXiXdcYRngCszvu,fbcfa358-bf34-4aca-9ca3-e27c6d50e748,ubereats,MEX,Canek,Brunch & Munch,5.0,0,,restaurant_nicely_presented,HIGH_FOOD_QUALITY,1.0,,,0
+8.0,v59dFZwB66a3oGn5d,15913e37-6345-4315-841d-b7e094bf6bb1,ubereats,MEX,Doctores,Brunch & Munch,5.0,0,,"RATINGS, RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS, RATINGS",,1.0,0
+8.0,LnJKwRfndfPs2dow9,76ce7c96-4d2a-4085-af86-c950f5e44d8d,ubereats,MEX,Polanco,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+8.0,ZiePiR6BFbcEWZbDf,adadf8ca-3549-4790-9195-e32c5080eb71,ubereats,MEX,Satélite,Brunch & Munch,5.0,0,,"RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS",,1.0,0
+8.0,83PYMoywY9Pi7viFv,67c0bba0-0e62-4043-9233-6cbbf1adddba,ubereats,MEX,Iztapalapa,Brunch & Munch,5.0,0,,"RATINGS, RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS, RATINGS",,1.0,0
+8.0,LkRhCv5gXMzHqwYk4,2.439874055E9,rappi,MEX,Del Valle,Brunch & Munch,1.0,1,,rrs_rest_completeness_rate_1|Faltaron algunos items,ORDER_ACCURACY,MISSING_ITEM,PASE,0.0,1
+9.0,urD9Fix7q48s5DbEw,85e4efa4-b4ca-47a1-9c59-6808e9185ff6,ubereats,MEX,Satélite,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,QnG7ceESDvHdyMP3b,18cbd11c-cb83-43c4-82e4-321f6099016e,ubereats,MEX,La Calma,Eggy by Chef Eva,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,TXhWyGDJYP4itN5iY,21bc570d-b526-4d02-852a-492c4b3b2b06,ubereats,MEX,Pedregal,Órale Desayunos,5.0,0,,"RATINGS, RATINGS",,"RATINGS, RATINGS",,1.0,0
+9.0,ETwTePPewF3np2ntZ,e9257d2a-65e3-4f41-87a4-a740e6c3195e,ubereats,MEX,Pedregal,Órale Desayunos,4.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,dEaPPiFKDCDHTe3Yf,7ad13d84-d6ff-4946-9d80-5b8b511ae6b2,ubereats,MEX,San Ángel,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,nnrKndbk57guhaGyE,2.439875756E9,rappi,MEX,Churubusco,Órale Desayunos,1.0,1,,RATINGS,,RATINGS,0.0,,1
+9.0,Rs7ERuuWCA3pg3zHz,a0983afe-1b65-4d69-ac66-eab7f871b76c,ubereats,MEX,Saltillo Centro,Órale Desayunos,1.0,1,,BAD_QUALITY|NOT_WORTH_PRICE,,NOT_TASTY|SMALL_PORTIONS|WRONG_TEMPERATURE,DELIVERY|PRICING|QUALITY,0.0,1
+9.0,YemDoMiNZMisoXCFk,5d9c6ab0-a04e-4ad2-aa7a-f08d653c3678,ubereats,MEX,Lindavista,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,NoxZoD5ejk6gixGt9,2.439876173E9,rappi,MEX,Saltillo Centro,Órale Desayunos,5.0,0,,rrs_rest_completeness_rate_5|Tal como lo pedí,ORDER_COMPLETENESS,ORDER_COMPLETENESS,,1.0,0
+9.0,CYhnBBv3t24QgeNem,2.439875105E9,rappi,MEX,Cumbres,Órale Chilaquiles,1.0,1,,comment|Comentario,RATINGS,RATINGS,0.0,,1
+9.0,ktQYG2WH6umAc439C,18c0047f-6829-4762-b238-2d983071b697,ubereats,MEX,Iztapalapa,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,zj2upRyYPEdBvfk2M,5caedf52-3399-4b1d-b575-efc19cfa72cc,ubereats,MEX,San Ángel,Desayunos de la Abuela,5.0,0,,"RATINGS, RATINGS, RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS, RATINGS, RATINGS",,1.0,0
+9.0,QEWA3ft8v5PXTnHec,5764670061868548142,didi,MEX,Metepec,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,ZdyQsqzu9NGu6gX6u,0865cdf2-956b-4bf6-9fa9-64fe9f632f78,ubereats,MEX,Canek,Órale Desayunos,5.0,0,,"RATINGS, RATINGS",,"RATINGS, RATINGS",,1.0,0
+9.0,un6yxyd8J2kNFMmvQ,8d0031d0-193b-40c5-8bdc-63d1fdc1deca,ubereats,MEX,Pedregal,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,Y8hrsBtJaFenfQy9Z,5764669934546255936,didi,MEX,Lindavista,The Wrap Company MX,1.0,1,,Entregó el producto incorrecto,ORDER_ACCURACY,WRONG_ITEM,PASE,0.0,1
+9.0,MpmiPHyeWiFnzDYzh,5764670099915079739,didi,MEX,Saltillo Centro,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,B4qDMKZbjRp94fK66,2.439877138E9,rappi,MEX,Canek,Órale Chilaquiles,3.0,1,,RATINGS,,RATINGS,0.0,,1
+9.0,KR8NX8T34oo58Sbrx,30ccb619-e89c-4cce-a4c3-afc9525c022e,ubereats,MEX,Del Valle,Brunch & Munch,4.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,a6Pve4RanA6HeAfJP,5764670151714734153,didi,MEX,San Nicolás,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,rpyiyLzcNyFqPri5e,ea6c3235-ec6c-4870-bd23-ff5d0a8d16ff,ubereats,MEX,Jardines del Valle,Chemaquiles,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,Gpx2Q5keXvBRyYsn3,2.43987754E9,rappi,MEX,Lindavista,Órale Desayunos,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+9.0,iHCN6QhNr9H9MPBHw,cf4f3323-bab9-40d8-8120-d56b01937572,ubereats,MEX,Carretera Nacional,Chemaquiles,5.0,0,,restaurant_consistent,OTHER,OTHER,1.0,,0
+9.0,NWjRkLDdAYkm9kMxk,21ad88ad-1795-48a4-94b0-1fcb9e7ba93e,ubereats,MEX,Canek,Órale Desayunos,1.0,1,,RATINGS,,RATINGS,0.0,,1
+9.0,ytDGftQtZTrpyEiLQ,830fb537-16f4-436a-a512-49b675567842,ubereats,MEX,Jardines,Brunch & Munch,1.0,1,,BAD_QUALITY|NOT_WORTH_PRICE,,NOT_TASTY|SMALL_PORTIONS,PRICING|QUALITY,0.0,1
+9.0,Xnf9sG389qiwDJqXL,2.439878364E9,rappi,MEX,Montejo,Desayunos de la Abuela,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+9.0,8xFxXpx7W7NFMweWk,dedf8f48-5aad-43e0-a1de-45c8f806753e,ubereats,MEX,Cumbres,Órale Desayunos,5.0,0,,HIGH_FOOD_QUALITY,,1.0,,,0
+9.0,5cWMnpRRHcaNTgKP9,2.439878577E9,rappi,MEX,Ciudad Judicial,Brunch & Munch,1.0,1,,rrs_rest_quality_rate_1|Pésima calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+9.0,SrzB3z7f27B53gpeZ,2.439878647E9,rappi,MEX,Volcanes,Avocalia,2.0,1,,rrs_rest_quality_rate_2|Mala calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+9.0,7aLuxpsKF4YB7hk9m,cdcaa98e-6a73-45e6-9082-602d385b4606,ubereats,MEX,Satélite,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,3M5qjYuAwzAqAkY6J,5764670015907364926,didi,MEX,Cumbres,Pozórale,5.0,0,,Buena calidad de la comida|Bien empacado|Menú variado|Precios razonables|Exactamente como lo pedí|Porciones adecuadas,GOOD_PACKAGING|HIGH_FOOD_QUALITY|ORDER_COMPLETENESS|ORDER_PRECISION|VARIETY_MENU_OPTIONS,1.0,,,0
+9.0,AfHeq6LMKSJyyQ8TC,2ec1f347-59c1-44e9-8431-5c682e3e7402,ubereats,MEX,Lindavista,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,tre6p3YE3QM9u47PK,2.439878463E9,rappi,MEX,Lincoln,Desayunos de la Abuela,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+9.0,XPDhbQX2rbd6nALYp,2.439879533E9,rappi,MEX,Santa Fe,Foodhub,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+9.0,jcQMqbB2ZbxYQKGYq,2.439878894E9,rappi,MEX,Iztapalapa,The Breakfast Club,2.0,1,,rrs_rest_packaging_rate_2|Mala presentación,BAD_PACKAGING,BAD_PRESENTATION,DELIVERY,0.0,1
+9.0,Hz7vj65mFqhcRDC6n,0f186173-69c3-450b-b13a-6f88f88c6b27,ubereats,MEX,Churubusco,LA PANQUEQUERIA,5.0,0,,HIGH_FOOD_QUALITY,,1.0,,,0
+9.0,aeAa8yRqhhEoLGJej,7cf5c4e5-9274-498a-829e-d3fdb39a1011,ubereats,MEX,Lindavista,LA PANQUEQUERIA,5.0,0,,"RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS",,1.0,0
+9.0,ENfP3sGnAoL3bKLED,2.43987985E9,rappi,MEX,Cumbres,Avocalia,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+9.0,4ug2maHW7ffnA85pZ,2.439879942E9,rappi,MEX,Saltillo Centro,Desayunos de la Abuela,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,kXE5szsKE76jpsfFG,5764669938778308660,didi,MEX,Iztapalapa,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,FdNfkYDSmzNfqRZwE,4028ff2d-686d-4ed5-89ce-412216d7fa21,ubereats,MEX,Lindavista,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,vmeBFeT8Nw5QMW8zw,e9457a7a-f5d1-452a-b771-54772d364ae0,ubereats,MEX,Santa Catarina,Órale Desayunos,4.0,0,,restaurant_perfectly_seasoned,HIGH_FOOD_QUALITY,1.0,,,0
+9.0,D8S5BLw3PEhbo4o8M,95c4a523-2f41-4046-94b3-668dcf539a6c,ubereats,MEX,Satélite,Brunch & Munch,5.0,0,,"RATINGS, HIGH_FOOD_QUALITY",,RATINGS,1.0,,0
+9.0,YJABZD3JMhrne7Tpi,5de5a295-7a3b-4428-b258-7c8487c1ca37,ubereats,MEX,Tec,Órale Desayunos,1.0,1,,BAD_QUALITY,,BAD_PRESENTATION|NOT_TASTY,DELIVERY|QUALITY,0.0,1
+9.0,kEsYWgRqQf3NHtsJB,9f379bbb-780b-419d-b2b9-124c41090519,ubereats,MEX,Iztapalapa,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,7gnvQDNozaQafdnRf,2.439880252E9,rappi,MEX,Coapa,LA PANQUEQUERIA,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+9.0,6q9Xe2jxx5J8T3uAG,5764670089018277966,didi,MEX,Coapa,The Egg Spot,5.0,0,,Well packaged,GOOD_PACKAGING,1.0,,,0
+9.0,z4ZSCC2AL8cEmnpYw,0ee446a5-e975-429e-b35a-9307e2cda0ed,ubereats,MEX,Santa Fe,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,mX9abmRXWpBw9c7E2,5764670125596803130,didi,MEX,Estadio,Brunch & Munch,5.0,0,,Bien empacado,GOOD_PACKAGING,1.0,,,0
+9.0,RXGTE3ycbkYjc99Lu,2.439880849E9,rappi,MEX,Pedregal,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,vJoSkxdYud2rxuE3u,77e4a7e8-fb56-4f2b-8c25-092a0e86d1be,ubereats,MEX,Polanco,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,FTTbXggM2oqA82Y87,f6458832-900c-477c-ba75-ce14ab9c0d38,ubereats,MEX,San Ángel,Órale Desayunos,1.0,1,,RATINGS,,RATINGS,0.0,,1
+9.0,8b6R6yZbrjNqc8Kps,74bde566-f752-4d39-95de-3eb890bb638a,ubereats,MEX,Del Valle,LA PANQUEQUERIA,3.0,1,,restaurant_not_tasty,BAD_QUALITY,NOT_TASTY,QUALITY,0.0,1
+9.0,yivS3Z4pCSEbKYvwa,f77dafc1-9c0a-4671-996a-7c1719e3318f,ubereats,MEX,Polanco,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,c7C9a9qQbMJGaS77G,790c9de6-e2f3-4782-879a-8d7b2ca8500b,ubereats,MEX,Tec,Avocalia Desayunos,1.0,1,,RATINGS,,RATINGS,0.0,,1
+9.0,dB4d4YXiG9RYiDLQa,9ceeb4ba-586a-4905-9e2e-b1b68b6cca54,ubereats,MEX,Polanco,Órale Desayunos,1.0,1,,RATINGS,,RATINGS,0.0,,1
+9.0,yxHu6bXd79naGpTzT,d20d80f2-cd75-436a-8d2d-a18440a8e4d4,ubereats,MEX,Satélite,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,RQBEyETjSBf67CKuX,5764670169309839443,didi,MEX,Santa Catarina,The Wrap Company MX,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,93B4La4gdS9DLpxXz,5764670016431652945,didi,MEX,Esmeralda,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,Nuub4kLcDZtQK8TvB,2.439882509E9,rappi,MEX,Pedregal,Brunch & Munch,5.0,0,,rrs_rest_packaging_rate_5|Buena presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+9.0,m4MzaxFmqyoGP4BNK,2.439882421E9,rappi,MEX,Churubusco,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,gmAPo4HDnXx5ktCmQ,5764669929513091169,didi,MEX,Saltillo Centro,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,Rh4GRukXuHa6C9bta,06efbaee-0a3e-4485-8c9b-6066c40bda7a,ubereats,MEX,Metepec,LA PANQUEQUERIA,1.0,1,,"BAD_QUALITY, BAD_QUALITY",,"NOT_TASTY, NOT_TASTY","QUALITY, QUALITY",0.0,1
+9.0,PXji4CAkRfTLQw7yQ,5764670157171523685,didi,MEX,Jardines del Valle,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,vwJMuNd452bQwRdTM,2.439882562E9,rappi,MEX,Iztapalapa,Brunch & Munch,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+9.0,2syrpJEFERCfRspsY,2.439882736E9,rappi,MEX,Coapa,Órale Desayunos,5.0,0,,rrs_rest_packaging_rate_5|Buena presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+9.0,jNe6afHxcdBjSsJA6,2.439882667E9,rappi,MEX,Metepec,Brunch & Munch,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+9.0,8XtDztzpjqBMSv5hx,2.439882638E9,rappi,MEX,Volcanes,Brunch & Munch,5.0,0,,rrs_rest_completeness_rate_5|Tal como lo pedí,ORDER_COMPLETENESS,ORDER_COMPLETENESS,,1.0,0
+9.0,xyZWMQB3qoChxvjgu,2.439882721E9,rappi,MEX,Coapa,Brunch & Munch,5.0,0,,rrs_rest_accuracy_rate_5|Justo lo que pedí,ORDER_PRECISION,ORDER_PRECISION,,1.0,0
+9.0,wcnDitKo868RmamZw,2.439882681E9,rappi,MEX,Volcanes,Brunch & Munch,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+9.0,Q6eQuX9ySEYhJxkjF,33710c06-3cd8-4013-a835-ba93a8897d57,ubereats,MEX,Iztapalapa,Avocalia Desayunos,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+9.0,8YESapXxSXFp6pZg5,2.439882846E9,rappi,MEX,Coapa,Brunch & Munch,1.0,1,,comment|Comentario,RATINGS,RATINGS,0.0,,1
+9.0,qGZrC6ecWmtDfsJa6,2.439882926E9,rappi,MEX,Estadio,Brunch & Munch,2.0,1,,RATINGS,,RATINGS,0.0,,1
+9.0,7KW4vPF9i8LYFQ3ug,2.439883065E9,rappi,MEX,Pedregal,Brunch & Munch,5.0,0,,rrs_rest_packaging_rate_5|Buena presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+9.0,rR2WbkXENK4ZiA52f,2.439883076E9,rappi,MEX,Doctores,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,BuNPkN7do2KowpM3d,2.439883246E9,rappi,MEX,San Ángel,Brunch & Munch,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+9.0,EMgJxnZZDbnAwrKoM,2.439882741E9,rappi,MEX,Montejo,Brunch & Munch,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+9.0,SoYETt3cmcPmfP7AF,2.439883416E9,rappi,MEX,Del Valle,Brunch & Munch,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+9.0,hnz6yB2cdGi3QRdp9,2.439883361E9,rappi,MEX,Doctores,Brunch & Munch,4.0,0,,rrs_rest_packaging_rate_4|Mejorar la presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+9.0,nccWqTsqRp8GEwNnT,2.439883396E9,rappi,MEX,Azcapotzalco,Brunch & Munch,2.0,1,,comment|Comentario,RATINGS,RATINGS,0.0,,1
+9.0,eyPxjHbffQkGmWvyj,2.439883506E9,rappi,MEX,Churubusco,Brunch & Munch,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+9.0,MfzRB8viqhXEKQ73q,2.439883484E9,rappi,MEX,Doctores,Brunch & Munch,3.0,1,,RATINGS,,RATINGS,0.0,,1
+9.0,kFdLRE76EvK7nmu7F,2.439883458E9,rappi,MEX,Coapa,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,f9QsuCxMXFeKLy83u,2.439883649E9,rappi,MEX,San Ángel,Brunch & Munch,5.0,0,,rrs_rest_packaging_rate_5|Buena presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+9.0,M28kvycasoYH7n29o,2.439883493E9,rappi,MEX,Volcanes,Brunch & Munch,5.0,0,,rrs_rest_accuracy_rate_5|Justo lo que pedí,ORDER_PRECISION,ORDER_PRECISION,,1.0,0
+9.0,EygQWmGyrt6Dw9Tqc,2.439883522E9,rappi,MEX,Volcanes,Brunch & Munch,1.0,1,,RATINGS,,RATINGS,0.0,,1
+9.0,vMWrEDHpXJbyWjXnT,2.439883563E9,rappi,MEX,Lindavista,Brunch & Munch,2.0,1,,rrs_rest_quality_rate_2|Mala calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+9.0,2o9dBuXpB3YLzPJNL,2.439883746E9,rappi,MEX,Churubusco,Brunch & Munch,5.0,0,,rrs_rest_accuracy_rate_5|Justo lo que pedí,ORDER_PRECISION,ORDER_PRECISION,,1.0,0
+9.0,8qtdtnjoRhP9WFfEX,1cc0c5fd-e69a-426f-8dd6-2cfabe174985,ubereats,MEX,La Calma,Órale Desayunos,1.0,1,,"BAD_QUALITY, BAD_QUALITY",,"NOT_TASTY, NOT_TASTY","QUALITY, QUALITY",0.0,1
+9.0,xRBvgTnZA3bifdRk5,8ae51842-8410-4ace-9964-d471dc633c64,ubereats,MEX,Santa Teresita,LA PANQUEQUERIA,3.0,1,,RATINGS,,RATINGS,0.0,,1
+9.0,kc4aAKAmChxE7fqF3,865b3a59-19b8-456a-942b-0a764756b9fc,ubereats,MEX,San Nicolás,Avocalia Desayunos,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+9.0,C5LjW2HThkKGF8SSd,2.439883965E9,rappi,MEX,Volcanes,Brunch & Munch,1.0,1,,rrs_rest_quality_rate_1|Pésima calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+9.0,susWmuNHhog3x8MPk,2.43988391E9,rappi,MEX,Santa Catarina,Brunch & Munch,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+9.0,6dNYFiFkoqEDcnHfu,5764670182832275522,didi,MEX,Coapa,Eggy by Chef Eva,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,DBrXzstABc9ayoppx,2.439884212E9,rappi,MEX,Jardines del Valle,Brunch & Munch,5.0,0,,rrs_rest_completeness_rate_5|Tal como lo pedí,ORDER_COMPLETENESS,ORDER_COMPLETENESS,,1.0,0
+9.0,x2iELqoxgL7CyksT8,2.439884119E9,rappi,MEX,Doctores,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,FJfr9EFfcwgiKtTFd,2.439884116E9,rappi,MEX,Del Valle,Brunch & Munch,4.0,0,,rrs_rest_packaging_rate_4|Mejorar la presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+9.0,GvoBeYzGZCoDDXDPH,2.439881252E9,rappi,MEX,Saltillo Centro,Desayunos de la Abuela,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,W7YLdXvrBqySwMaG6,94bca11a-43a2-4161-bea5-8502914870f3,ubereats,MEX,Polanco,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,HmTEL6vmjkNb3Gscb,b19c7ef1-d219-4bab-86b2-c3483f160fb5,ubereats,MEX,La Calma,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,k3bHdPFGjAXbcPD7S,2.439884232E9,rappi,MEX,Esmeralda,Brunch & Munch,5.0,0,,rrs_rest_accuracy_rate_5|Justo lo que pedí,ORDER_PRECISION,ORDER_PRECISION,,1.0,0
+9.0,JysppXa72ZrdY5a3L,76dcd9f9-f7bf-45bf-ba2d-86a5d2b56508,ubereats,MEX,Churubusco,Órale Desayunos,5.0,0,,"RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS",,1.0,0
+9.0,ksjqM7AaQ88TCPY3g,2.439884408E9,rappi,MEX,Doctores,Brunch & Munch,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+9.0,twu4548FvAj4DfFAL,6e19a0e0-b504-43b6-b9e2-047f414cd6f7,ubereats,MEX,San Jerónimo,Órale Desayunos,5.0,0,,restaurant_large_portions,OTHER,OTHER,1.0,,0
+9.0,GvveNLgaKPPt9yLRK,2.43988444E9,rappi,MEX,Jardines,Brunch & Munch,5.0,0,,rrs_rest_accuracy_rate_5|Justo lo que pedí,ORDER_PRECISION,ORDER_PRECISION,,1.0,0
+9.0,CXdZS5k4r3Zagcjur,2.439884652E9,rappi,MEX,Coapa,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,foF6xxGs2RmBNasLq,2.439884644E9,rappi,MEX,Canek,Brunch & Munch,1.0,1,,rrs_rest_quality_rate_1|Pésima calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+9.0,vHK2gth5AxaCTkbgz,c21444d5-b7f1-46bc-afa3-f064817a4fd9,ubereats,MEX,Esmeralda,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,RcbABcBGux4h9jY2A,2.439884872E9,rappi,MEX,Pedregal,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,LxqkwfTpu5v4NMxRj,7544ecb6-39b6-4659-b0d6-8c81dca1317a,ubereats,MEX,Jardines,Órale Desayunos,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+9.0,kcscv366coFZhZan9,2.439885269E9,rappi,MEX,Canek,Brunch & Munch,3.0,1,,rrs_rest_packaging_rate_3|Mala presentación,BAD_PACKAGING,BAD_PRESENTATION,DELIVERY,0.0,1
+9.0,8ua8qqd6nYsRkEtgD,2.439885321E9,rappi,MEX,Azcapotzalco,Brunch & Munch,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+9.0,BN4XGfStHexhByvnE,e2c9e8cb-dc52-436b-9f60-a6c88f60fb8e,ubereats,MEX,Azcapotzalco,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,3usdnmRByyJhDjKYG,624f62e9-c596-4402-a1e7-f445a35c3d25,ubereats,MEX,Tlaquepaque,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,AkjhZrubMd6gDFiPo,d6aaf399-adcf-4260-9609-3777541865c6,ubereats,MEX,Estadio,LA PANQUEQUERIA,1.0,1,,BAD_PACKAGING|BAD_QUALITY,,BAD_PRESENTATION|WRONG_TEMPERATURE,DELIVERY,0.0,1
+9.0,y5tWQQvoZzBLuBKWs,2.439885814E9,rappi,MEX,Iztapalapa,The Breakfast Club,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+9.0,X4GzGNNRB4F8zRn9P,f0069b3f-684d-43ad-85ec-5d65f31b44a6,ubereats,MEX,Jardines del Valle,Desayunos de la Abuela,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,e9diEKdkRj7HAvBNR,57b1018a-bc3f-4316-820a-d81e89be2572,ubereats,MEX,Pedregal,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,rM4uQnkq7z4jmBp7F,5764670091190927459,didi,MEX,Volcanes,Órale Desayunos,4.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,J35BofaHSqRckM4td,52cf090f-3ba7-4ae5-93e8-1db6b9f47a89,ubereats,MEX,La Calma,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,z222KQwBQs8py6wrs,2.439886809E9,rappi,MEX,Manacar,Brunch & Munch,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+9.0,MQ42NtqvcAh96fdpB,2.439887155E9,rappi,MEX,Lindavista,Orale Chilaquiles Turbo,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+9.0,C4sNDjEb9Ta42iEds,2218fd70-7c35-4067-b2f7-05aa7e2f03ce,ubereats,MEX,Santa Fe,Órale Desayunos,1.0,1,,"RATINGS, RATINGS",,"RATINGS, RATINGS",,0.0,1
+9.0,y5Xt3SituWYpSH8Kq,33cc67be-e3db-4ab3-856c-8fdd2c551bf7,ubereats,MEX,Churubusco,Desayunos de la Abuela,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,svfhBdT4nLgRpnfZn,2.439887647E9,rappi,MEX,Carretera Nacional,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,ZY3MhDQxPN4qB8JMo,4111a52c-40cf-4f93-bafc-d8410860737a,ubereats,MEX,San Ángel,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,jf8a8m2tLfQugri92,2783a77f-27db-4582-87cd-0193ecb05352,ubereats,MEX,Tec,Eggy by Chef Eva,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,qX2SBH9sAD3YxstH6,b31ede34-08eb-4d1a-aa9b-d48779195ced,ubereats,MEX,Del Valle,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,P5fMt3ocnx68uo8MZ,5764669976363466847,didi,MEX,San Ángel,The Wrap Company MX,5.0,0,,Menú variado|Bien empacado|Precios razonables|Exactamente como lo pedí|Buena calidad de la comida|Porciones adecuadas,GOOD_PACKAGING|HIGH_FOOD_QUALITY|ORDER_COMPLETENESS|ORDER_PRECISION|VARIETY_MENU_OPTIONS,1.0,,,0
+9.0,ggCdxgYJ7CsPf3Nh2,be2b3a25-1076-4298-8e01-21634a1e4542,ubereats,MEX,Polanco,Órale Desayunos,5.0,0,,"RATINGS, RATINGS, RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS, RATINGS, RATINGS",,1.0,0
+9.0,Gz6rGYyhbMc5PZ5be,2.439889018E9,rappi,MEX,Azcapotzalco,LA PANQUEQUERIA,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+9.0,QRddHYijEdgmQWEKm,70cdfdfa-e430-46ad-b3c9-26dccb479892,ubereats,MEX,Polanco,Brunch & Munch,1.0,1,,"BAD_QUALITY|NOT_WORTH_PRICE, NOT_WORTH_PRICE",,"BAD_PRESENTATION|SMALL_PORTIONS, SMALL_PORTIONS","DELIVERY|PRICING, PRICING",0.0,1
+9.0,ht6jxs9QttuR7nHDL,2.43988957E9,rappi,MEX,Del Valle,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,dzqxF3WEsa3Qa5neR,c4f27dd0-43f6-40bc-832f-1badba5b0875,ubereats,MEX,Carretera Nacional,Desayunos de la Abuela,4.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,PEk6N4stKPQRzcokX,7f9cc3b1-78ec-4a7a-9595-82ffaa0d7a79,ubereats,MEX,Esmeralda,Brunch & Munch,5.0,0,,restaurant_locally_owned|restaurant_hidden_gem|restaurant_creative_options|restaurant_sustainable_packaging|restaurant_unique_flavors|restaurant_authentic_dishes,OTHER,OTHER,1.0,,0
+9.0,WdGY9FByiW9zrY4cM,82b93f10-354f-48b8-94a9-3881d178987f,ubereats,MEX,Santa Fe,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+9.0,xra4E399qSMqjdESw,fc56e846-b1ec-4f98-be7d-f2488063fa92,ubereats,MEX,Polanco,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,oS9JSgA8ZzWpZH3m7,5764669954376925292,didi,MEX,Coapa,Órale Desayunos,5.0,0,,Precios razonables|Menú variado|Buena calidad de la comida|Exactamente como lo pedí,HIGH_FOOD_QUALITY|ORDER_PRECISION|VARIETY_MENU_OPTIONS,1.0,,,0
+10.0,EWpyYBAHq2Jb7f2Se,32d502ee-2478-48c0-a819-dd1be77b7cca,ubereats,MEX,Volcanes,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,SgPPieSDjnPQawckj,5764670146090172541,didi,MEX,Coapa,Desayunos de la Abuela,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,Z6RpaGGHspCjFTaoL,2e216cd0-a974-44b1-bdfb-02e0ff9d0e8e,ubereats,MEX,San Nicolás,Órale Desayunos,1.0,1,,RATINGS,,RATINGS,0.0,,1
+10.0,dfiJcKb2HL7QTKZnM,2.439891183E9,rappi,MEX,Ciudad Judicial,Pozórale,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+10.0,EdxGMLmmxkx94k28r,a5c76009-d984-4d6a-bd1a-2c935c16eed5,ubereats,MEX,Jardines del Valle,Desayunos de la Abuela,5.0,0,,"RATINGS, RATINGS",,"RATINGS, RATINGS",,1.0,0
+10.0,NpwvRsicn9JzSYKWH,5764670151140114536,didi,MEX,Coapa,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,RrTwRuwoh6suALNRK,5764669982256464006,didi,MEX,Polanco,The Wrap Company MX,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,e4czAbtZmr7titDus,5764670009758515342,didi,MEX,Tlaquepaque,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,McLnFvWw59SkTBEzo,5764669921405501562,didi,MEX,Santa Fe,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,xrJNRLND7NZxygCfn,af4b4428-7322-49b9-b504-8048d9da082d,ubereats,MEX,Azcapotzalco,Brunch & Munch,5.0,0,,HIGH_FOOD_QUALITY,,1.0,,,0
+10.0,LExNqrcvYfZDgnF9J,2.439892001E9,rappi,MEX,Tabachines,Órale Desayunos,1.0,1,,rrs_rest_quality_rate_1|Pésima calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+10.0,aKiSeLFGk4SEvGhWF,7cfe7614-4927-46ec-893d-8ad5a5716367,ubereats,MEX,Estadio,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,beKrtynWaokseKFbv,2.43989132E9,rappi,MEX,Saltillo Centro,Desayunos de la Abuela,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+10.0,r3HqnzAzQK6d2Hmfp,726105ba-af2d-4731-8446-e5ed5aa0da4b,ubereats,MEX,Azcapotzalco,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,uGFrtEnCvNKdP5b2f,2.439892846E9,rappi,MEX,Coapa,Brunch & Munch,5.0,0,,rrs_rest_accuracy_rate_5|Justo lo que pedí,ORDER_PRECISION,ORDER_PRECISION,,1.0,0
+10.0,97AmxuypqcSPHSCFR,2.439892847E9,rappi,MEX,Churubusco,Brunch & Munch,4.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,Tdw6LxESTzxpJonwM,2.439893134E9,rappi,MEX,San Nicolás,The Breakfast Club,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,9deduLrwnJboNuAxS,ee9caa4c-e60b-4644-96ee-72582df1a105,ubereats,MEX,Santa Teresita,Eggy by Chef Eva,5.0,0,,"RATINGS, RATINGS",,"RATINGS, RATINGS",,1.0,0
+10.0,w7HRzjdmhPbrNSygr,2e695ead-7ec6-4434-a284-548d48c5a343,ubereats,MEX,Samara,Avocalia Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,wPutmjx8WmXvt3DDt,2.439893704E9,rappi,MEX,Volcanes,Órale Chilaquiles,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+10.0,rsLvkXowrqtJE7FZx,5764669995296555154,didi,MEX,San Jerónimo,Brunch & Munch,2.0,1,,Mala calidad de la comida|Porciones pequeñas,BAD_QUALITY|NOT_WORTH_PRICE,NOT_TASTY|SMALL_PORTIONS,PRICING|QUALITY,0.0,1
+10.0,qaYmTsJsj4o62kL57,eac0cf79-6beb-4af5-8aaa-7882657e5349,ubereats,MEX,Polanco,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,QxiEKSdejpAYwjFbm,2.439894223E9,rappi,MEX,Polanco,Órale Desayunos Turbo,4.0,0,,rrs_rest_quality_rate_4|La calidad de los ingredientes,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+10.0,3ZKstsx8Anf6CSezv,e82b87a7-b6fb-4622-8ece-88959d62773e,ubereats,MEX,Churubusco,Órale Desayunos,5.0,0,,"RATINGS, RATINGS",,"RATINGS, RATINGS",,1.0,0
+10.0,CEd33KGYREau3h6J3,57a33a50-1fac-485a-a6ba-e9eddbd901cc,ubereats,MEX,Iztapalapa,LA PANQUEQUERIA,1.0,1,,"NOT_WORTH_PRICE, BAD_QUALITY",,"SMALL_PORTIONS, NOT_TASTY","PRICING, QUALITY",0.0,1
+10.0,E7EFgaApoTboCu2on,ca1baffb-ede5-456c-9e47-54584aedc640,ubereats,MEX,Lindavista,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,vgPbdHsQGJyTYbqwG,e4fa809e-8c24-40b9-81fb-a8a643097f8e,ubereats,MEX,Lindavista,The Breakfast Club,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,Q5cKGTNktiPCPstzz,b2d89f91-8546-4075-85ab-1b403e6862a4,ubereats,MEX,San Nicolás,Brunch & Munch,1.0,1,,RATINGS,,RATINGS,0.0,,1
+10.0,im56DDjC3zafhfAiE,607b98c1-625c-4edf-9d81-f2bb2889a781,ubereats,MEX,Del Valle,Desayunos de la Abuela,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,q6ezjq3SRmwi7cyJz,5764670169423085710,didi,MEX,Santa Catarina,The Wrap Company MX,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,nDKjBeKSSTTtp8JN7,5764670183599833230,didi,MEX,Jardines,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,rZ9sNuboEWHuGTaPp,5764670025369714844,didi,MEX,Jardines del Valle,Avocalia,5.0,0,,Bien empacado|Menú variado,GOOD_PACKAGING|VARIETY_MENU_OPTIONS,1.0,,,0
+10.0,CLee9NhHBLir9JHPi,5764670159545499805,didi,MEX,Saltillo Centro,Órale Desayunos,5.0,0,,Bien empacado|Precios razonables|Porciones adecuadas,GOOD_PACKAGING,1.0,,,0
+10.0,8JxEcwwpsPojBz2Ev,5764669929496314028,didi,MEX,Metepec,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,btjW3jkYGgKamTaXt,2.439895897E9,rappi,MEX,Volcanes,Pozórale,1.0,1,,comment|Comentario,RATINGS,RATINGS,0.0,,1
+10.0,eqS2qH3ShZ5fr4E87,d13c7464-d84c-4c9b-8c5e-5d2d710bceff,ubereats,MEX,Estadio,Avocalia Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,HnJEmQiBo8L6yE2Xa,7414b6ae-1625-4552-aae5-140b46946b8d,ubereats,MEX,Volcanes,Órale Desayunos,1.0,1,,"RATINGS, RATINGS",,"RATINGS, RATINGS",,0.0,1
+10.0,3K9QdfKsJbfpiSNM6,20898988-5338-46b0-93d9-0daeb2c3a803,ubereats,MEX,San Nicolás,Órale Desayunos,1.0,1,,"NOT_WORTH_PRICE, BAD_PACKAGING|BAD_QUALITY, BAD_QUALITY, NOT_WORTH_PRICE",,"SMALL_PORTIONS, BAD_PRESENTATION|SPILLED_PACKAGING, NOT_TASTY, SMALL_PORTIONS","PRICING, DELIVERY, QUALITY, PRICING",0.0,1
+10.0,fTbWMjaATcFPZw2Jp,d70f39d1-7380-48a2-977c-74cb00a0dd48,ubereats,MEX,Iztapalapa,Avocalia Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,vTq8Nugxyv6qryRCT,2.43989763E9,rappi,MEX,Doctores,Brunch & Munch,4.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+10.0,ry9ygL39aEQtW8PqK,eb2a6d38-2a93-47de-8250-be4c7e488fe0,ubereats,MEX,Del Valle,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,YTxaAXdQNDoTAXYZr,ccbf5ace-6230-4f71-8f12-732f526a27aa,ubereats,MEX,Doctores,LA PANQUEQUERIA,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+10.0,qkQfTRTrf9eu2ZtMH,4fa68391-6ac2-4a7e-8554-dc11930bbdf3,ubereats,MEX,Montejo,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,ZQyX2ZGRmaaDMnmHC,37c374b6-1f74-46f8-a57e-fdd090632b01,ubereats,MEX,Lincoln,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,eScFfpx2QKn4eRHHG,4ddd2b96-d96e-4e94-82d6-3aeefd3db357,ubereats,MEX,San Ángel,Brunch & Munch,5.0,0,,"RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS",,1.0,0
+10.0,eK2seCgjaBH5TdTHi,5764670034932727944,didi,MEX,Lindavista,Pozórale,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,zQg6qER73KELiS58f,39a798ee-f1d2-4ef9-b1a8-b8716fe5bf3d,ubereats,MEX,San Ángel,Brunch & Munch,5.0,0,,restaurant_perfect_portions,ORDER_COMPLETENESS,1.0,,,0
+10.0,5c2zZ9o6idjfkb2R5,5764670062690631851,didi,MEX,Churubusco,Pozórale,1.0,1,,RATINGS,,RATINGS,0.0,,1
+10.0,AkXPGx2JuzMuKWENn,2.439898877E9,rappi,MEX,Churubusco,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,zhhibsqy2orn2Beeu,52826b7c-0c83-40c0-9639-b80ff7a32375,ubereats,MEX,Metepec,Órale Desayunos,4.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,icqjJ2NT7tqmHXm2t,5764670169016238258,didi,MEX,Lincoln,Desayunos de la Abuela,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,BiSTqq9xZioMAuypQ,13119ed1-1e8a-4294-9b37-7b2a4491b75b,ubereats,MEX,Coapa,Avocalia Desayunos,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+10.0,q3DCfM3hnHsYShgiL,2.439899878E9,rappi,MEX,Saltillo Centro,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,yPF4BhyTtHMuHFcBm,2.439899847E9,rappi,MEX,Iztapalapa,Pozórale,4.0,0,,rrs_rest_quality_rate_4|La calidad de los ingredientes,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+10.0,tup6Gxwa9D9uPTSZw,1dbc0655-3f85-4fbf-939d-659fdd539bc6,ubereats,MEX,Metepec,Green House,5.0,0,,"RATINGS, RATINGS",,"RATINGS, RATINGS",,1.0,0
+10.0,ow23NxG7zDu5NaRbG,5764669947812839597,didi,MEX,Volcanes,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,Q9aruS7tqLazThZyf,e8b0c87f-2b50-4625-89d2-fca06f6945d5,ubereats,MEX,Doctores,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,3ZTLk8E4cLA98BhGk,2.439899533E9,rappi,MEX,Volcanes,Desayunos de la Abuela,3.0,1,,RATINGS,,RATINGS,0.0,,1
+10.0,weH3K4wA9ckke7EXw,5764669946500022437,didi,MEX,Churubusco,Desayunos de la Abuela,1.0,1,,RATINGS,,RATINGS,0.0,,1
+10.0,gLuRMepZRuGSnoo2F,2.439900427E9,rappi,MEX,Tec,Brunch & Munch,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+10.0,n3dePA3f29k58xsnL,3412da45-7801-42bf-842c-a737b5418311,ubereats,MEX,Satélite,Órale Desayunos,5.0,0,,"RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS",,1.0,0
+10.0,qYzuX6HTGKYYaxnFs,19d259fe-0428-4f4d-9496-3c8223673b1a,ubereats,MEX,Azcapotzalco,LA PANQUEQUERIA,5.0,0,,"RATINGS, RATINGS",,"RATINGS, RATINGS",,1.0,0
+10.0,5ySYiAdhG8ew6uwX3,2.439900789E9,rappi,MEX,Metepec,Órale Desayunos,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+10.0,Xmq8GsBuia7SSXZdz,9d329c0b-6af8-4569-bcf8-5f072992cf6a,ubereats,MEX,Ciudad Judicial,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,ueFu2ALzxFvDdJd7w,2f0f7216-c3b1-4ea2-bc01-4b335a8caddf,ubereats,MEX,Coapa,Brunch & Munch,5.0,0,,"RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS",,1.0,0
+10.0,hHF6gkCM7nq8fqhpZ,2.439901134E9,rappi,MEX,Iztapalapa,Brunch & Munch,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+10.0,WtSMmycvcvxvvj7iw,be6940c7-ca07-4555-9bf5-bbd6e6b00213,ubereats,MEX,Santa Catarina,Brunch & Munch,5.0,0,,"RATINGS, RATINGS, HIGH_FOOD_QUALITY",,"RATINGS, RATINGS, BAD_PRESENTATION",DELIVERY,1.0,0
+10.0,EKH34zMjSNDJbaw5P,30c930b7-373c-4dd8-85da-1003dbf54ea6,ubereats,MEX,Lindavista,Órale Desayunos,1.0,1,,restaurant_missed_request,ORDER_ACCURACY,MISSED_ORDER_NOTES,PASE,0.0,1
+10.0,eJSfauMw5TqqQGNjt,2c70685b-8290-4a5d-857a-05a91d63fbc7,ubereats,MEX,Pedregal,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,TcP5yaJ6PMfvSkvvp,2.439901569E9,rappi,MEX,Samara,Brunch & Munch,3.0,1,,rrs_rest_packaging_rate_3|Mala presentación,BAD_PACKAGING,BAD_PRESENTATION,DELIVERY,0.0,1
+10.0,pcpFMcbSJdmwER6E7,5764670162116608159,didi,MEX,Estadio,Brunch & Munch,5.0,0,,Menú variado|Porciones adecuadas|Buena calidad de la comida|Exactamente como lo pedí|Bien empacado,GOOD_PACKAGING|HIGH_FOOD_QUALITY|ORDER_COMPLETENESS|ORDER_PRECISION|VARIETY_MENU_OPTIONS,1.0,,,0
+10.0,tX8DSjXXCN3Tiittn,5764670149193957554,didi,MEX,Pedregal,Brunch & Munch,5.0,0,,Porciones adecuadas|Exactamente como lo pedí,ORDER_COMPLETENESS|ORDER_PRECISION,1.0,,,0
+10.0,RbN8sQFcykgd6L2CQ,da9cd3dd-eee1-495a-8dba-2ff353bdceed,ubereats,MEX,La Calma,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,kSzEE9iXqBo3joapJ,d8088d62-c884-49e4-8370-4b884280e51a,ubereats,MEX,Lindavista,Avocalia Desayunos,1.0,1,,BAD_QUALITY|NOT_WORTH_PRICE,,NOT_TASTY|SMALL_PORTIONS,PRICING|QUALITY,0.0,1
+10.0,9tWr5x2uPZ6deFsDQ,5764670151253360831,didi,MEX,San Jerónimo,The Wrap Company MX,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,LFsqL8SWsFPXr2qfe,2.439902814E9,rappi,MEX,Santa Catarina,Brunch & Munch,3.0,1,,comment|Comentario,RATINGS,RATINGS,0.0,,1
+10.0,u7ZjNuzT2tPQ294cg,df2f419e-8bc4-4de0-b227-2947ae02a023,ubereats,MEX,Tlaquepaque,Órale Desayunos,5.0,0,,restaurant_all-day_breakfast,OTHER,OTHER,1.0,,0
+10.0,mgSYk3jjnYKZJoXJH,5764670052313923767,didi,MEX,Tabachines,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,8RsXuewYKBjip53hW,eecb6dcf-e493-4f53-88ae-1cfd681f7b01,ubereats,MEX,Polanco,Órale Desayunos,5.0,0,,HIGH_FOOD_QUALITY,,1.0,,,0
+10.0,enHz7uP6PZrrgbCR8,2.439903262E9,rappi,MEX,Santa Teresita,Órale Desayunos,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+10.0,WtA8YMG5Kufvyf7E5,0b5259a4-e6f6-4166-8e01-6633a0ec34d4,ubereats,MEX,Tec,Eggy by Chef Eva,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,CqLLXkKnNcAMKR6wQ,6f9e54f9-e494-4642-8c4a-725bc4ece5ea,ubereats,MEX,Estadio,LA PANQUEQUERIA,5.0,0,,"RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS",,1.0,0
+10.0,p3XRBHoHhHj83bGKe,d87fb2c5-c45b-4386-ac21-3ca09fdead22,ubereats,MEX,Churubusco,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,trhfFDaqyECz2RAKp,5764670014225449141,didi,MEX,Canek,House of Salads,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,R4EoYKhHfNT5Zu7tR,5764670041404539075,didi,MEX,Pedregal,Brunch & Munch,3.0,1,,Porciones pequeñas,NOT_WORTH_PRICE,SMALL_PORTIONS,PRICING,0.0,1
+10.0,hi676kAoEPiYCHji4,2.439903571E9,rappi,MEX,Ciudad Judicial,Avocalia,1.0,1,,rrs_rest_accuracy_rate_1|No fue lo que pedí,ORDER_ACCURACY,WRONG_ITEM,PASE,0.0,1
+10.0,YyAeRm68Fu8dbDECa,c757f64e-29f4-405a-8ecb-4f3e0fa7787e,ubereats,MEX,Azcapotzalco,Órale Desayunos,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+10.0,9CKv3SKA8tk475zEw,3135af6e-cc2b-4e85-bee1-a3e8546ef16e,ubereats,MEX,Lindavista,The Breakfast Club,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,3RFSFrDBvZunkzFfD,2.439904541E9,rappi,MEX,Doctores,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,Hqkf9ZijYbAuQG42F,9483514b-f396-45f3-a528-5abfdc2bb8de,ubereats,MEX,Volcanes,The Breakfast Club,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,tEFdH22RCe9covYtd,2.439905008E9,rappi,MEX,Volcanes,The Breakfast Club,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+10.0,obMqdJscRNXAohb8y,2.439905224E9,rappi,MEX,Doctores,Brunch & Munch,3.0,1,,rrs_rest_packaging_rate_3|Mala presentación,BAD_PACKAGING,BAD_PRESENTATION,DELIVERY,0.0,1
+10.0,4xW9xokuDwoWMhPzH,e95a3468-b34e-4219-a4d0-3dc63f1576bd,ubereats,MEX,Del Valle,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,KoCvkFuxjFLJY5cSb,64b134cc-043d-4fc4-99cb-005d5d50d9ed,ubereats,MEX,Polanco,Brunch & Munch,5.0,0,,restaurant_extensive_menu,VARIETY_MENU_OPTIONS,1.0,,,0
+10.0,FzLcaexZ6MW29TZQN,708476f5-1f36-4d52-9596-2a0db14f3537,ubereats,MEX,Doctores,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,2SCnxAe8h7E7kxqs5,b84f8bb7-2856-4622-9c75-4c5dc3e9a3e8,ubereats,MEX,Churubusco,The Breakfast Club,4.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,RAJvDcWkoJoCXnAZv,89d131fb-b90e-4a54-a465-75be7cd8923a,ubereats,MEX,Doctores,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,5cjoRHBk2uA9fvPDW,174d21e4-d6e1-4d8f-8195-3daf7a92747a,ubereats,MEX,Churubusco,Órale Desayunos,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+10.0,CSJvSu699GmuwvQQC,a7869cf2-7c7c-400c-a5d0-20a58195bdff,ubereats,MEX,Saltillo Centro,Órale Chilaquiles,5.0,0,,"RATINGS, RATINGS, RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS, RATINGS, RATINGS",,1.0,0
+10.0,FoJNp3JQRMZ79aNyS,2f63b693-16c6-4578-8b30-dea2e708883a,ubereats,MEX,Doctores,Brunch & Munch,5.0,0,,restaurant_delicious_options,VARIETY_MENU_OPTIONS,1.0,,,0
+10.0,7vpYCs3EZpWwLG6Yj,08aaa0e4-7aec-4f73-b9b4-5eefcb40f508,ubereats,MEX,Tabachines,Órale Desayunos,1.0,1,,"RATINGS, BAD_QUALITY",,"RATINGS, NOT_TASTY",QUALITY,0.0,1
+10.0,ZBmoazomwT3frfoFT,2.43990604E9,rappi,MEX,Lincoln,Órale Chilaquiles,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,wg4YDg5Qw45yeTdwY,5764670093501989076,didi,MEX,Lindavista,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,kKriuL6vmMc3FxbGP,2.439906682E9,rappi,MEX,Saltillo Centro,Avocalia,1.0,1,,rrs_rest_quality_rate_1|Pésima calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+10.0,cdeNAnqSfJmhbdm3b,9b3a0efb-6635-427a-b443-d99da76378b6,ubereats,MEX,Lindavista,Brunch & Munch,5.0,0,,"RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS",,1.0,0
+10.0,4aWkpY3rAwymTAFgG,2.439907222E9,rappi,MEX,Doctores,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,ZT3qd96NrbJGSZGfR,5d308daf-5e1e-43f4-a05a-4149aaf9bbd2,ubereats,MEX,San Nicolás,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,qurtmdSqxmtdSd5gf,bb958d52-a83d-4f75-886e-791d43525719,ubereats,MEX,Saltillo Centro,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,AFkEenAZNrrc5nfg8,5764669974958375116,didi,MEX,Santa Teresita,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,JFdYgEsMTihsNC4px,9d1ba437-fdf1-478d-9629-fa1a8fba7d88,ubereats,MEX,Iztapalapa,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,BSuHAw9gJRdzAfFKd,8027d25e-ecb3-4e5e-925f-c317d116d384,ubereats,MEX,Jardines del Valle,The Egg Spot,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,EsSgCppNCws9dWMsn,ea68d488-dbe9-466a-94e3-23b69c6a0781,ubereats,MEX,Estadio,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,T4sjcCmXEbBvfhuqn,1be109c0-681e-421c-95a4-e601ae4ca42c,ubereats,MEX,Doctores,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,F5vzzPYuZpsvzBToE,2.43990757E9,rappi,MEX,Tlaquepaque,Desayunos de la Abuela,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,ww5KGPqskYK6TSeqb,e38a876f-5583-42a2-b8f8-3522590be7ad,ubereats,MEX,San Ángel,Desayunos de la Abuela,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,LdxayJN2qBWLDnkyT,3913b2a1-d387-4a91-b5f3-88d79cf7045d,ubereats,MEX,San Nicolás,LA PANQUEQUERIA,1.0,1,,restaurant_too_slow,OUT_TIME,DELIVERY_LATE,DELIVERY,0.0,1
+10.0,s5pYkrmjqeySfxxeH,5764670163144212689,didi,MEX,Azcapotzalco,The Wrap Company MX,3.0,1,,RATINGS,,RATINGS,0.0,,1
+10.0,Jo3yk6TakMqKL3CiL,5764670077433610470,didi,MEX,Jardines,The Wrap Company MX,5.0,0,,RATINGS,,RATINGS,1.0,,0
+10.0,3uMMRZGPNMfZhgrYa,32b1b0dc-6247-4b9c-97f3-72d77363c36a,ubereats,MEX,Manacar,Órale Desayunos,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+10.0,szCLvMGxzyhjr7Hor,e4f8a11d-3db7-4028-a081-01f0c6df52c4,ubereats,MEX,San Jerónimo,Avocalia Desayunos,1.0,1,,BAD_PACKAGING|BAD_QUALITY|NOT_WORTH_PRICE,,NOT_TASTY|SMALL_PORTIONS|SPILLED_PACKAGING,DELIVERY|PRICING|QUALITY,0.0,1
+10.0,havxzabkKECbciBKw,2.439909783E9,rappi,MEX,Ciudad Judicial,Brunch & Munch,5.0,0,,rrs_rest_accuracy_rate_5|Justo lo que pedí,ORDER_PRECISION,ORDER_PRECISION,,1.0,0
+11.0,o89agiCgYE9xHbGaK,59e1318a-43d4-47a8-87c1-1c6f4d25837f,ubereats,MEX,Polanco,Eggy by Chef Eva,5.0,0,,"RATINGS, RATINGS",,"RATINGS, RATINGS",,1.0,0
+11.0,XMwwrhiFL2Hqp8fS3,a3aeff65-e95d-4790-976a-f79db40cae1d,ubereats,MEX,Churubusco,Órale Desayunos,1.0,1,,BAD_QUALITY|NOT_WORTH_PRICE,,NOT_TASTY|SMALL_PORTIONS,PRICING|QUALITY,0.0,1
+11.0,YFo4bph3RgeivJkqs,2.439910839E9,rappi,MEX,San Nicolás,Órale Chilaquiles,2.0,1,,rrs_rest_quality_rate_2|Mala calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+11.0,C7JRGvpzYK52Z39Y7,5764670050413904094,didi,MEX,Coapa,The Wrap Company MX,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,sJFc6KgoijyPwowk5,8e552de4-fc0a-42b7-a246-7e4138858ab8,ubereats,MEX,Churubusco,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,ALLhArkHgAuZaoezY,2.439911588E9,rappi,MEX,Canek,Desayunos de la Abuela,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+11.0,XhTyHFmNHeS4ep6Ec,5764670000170336492,didi,MEX,Iztapalapa,Brunch & Munch,5.0,0,,Bien empacado|Porciones adecuadas,GOOD_PACKAGING|ORDER_COMPLETENESS,1.0,,,0
+11.0,LnYBqwNuEacrvoNh3,5764669970663407845,didi,MEX,Lindavista,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,dypcxbXMg48poNmuL,898866c9-6294-45e3-9edc-b72ade12133a,ubereats,MEX,Doctores,The Breakfast Club,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,NG9gMaBYDSQuNHXRa,2.439913471E9,rappi,MEX,Coapa,Órale Desayunos,3.0,1,,rrs_rest_quality_rate_3|Mala calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+11.0,MuwLe7QrQFqN4Ra8M,5764669928925888759,didi,MEX,Polanco,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,G7Qrcc3ihXvNRcfNH,e1308900-f2f4-467d-9551-e811566f2371,ubereats,MEX,Del Valle,Green House,5.0,0,,"RATINGS, RATINGS",,"RATINGS, RATINGS",,1.0,0
+11.0,iAJPjzgnX2cbpq5Rm,6114bcb1-518a-43aa-b716-cb9267f39a4d,ubereats,MEX,Churubusco,Desayunos de la Abuela,5.0,0,,restaurant_sustainable_packaging|restaurant_reliable_service|restaurant_great_selection,GOOD_PACKAGING|QUICK_DELIVERY|VARIETY_MENU_OPTIONS,1.0,,,0
+11.0,S6xGK9ThemhDKxSZr,47270507-e619-4f3d-a525-3fb992a5c1fb,ubereats,MEX,Del Valle,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,DnGTZ8zGFRk2hZzW9,2.439914279E9,rappi,MEX,Metepec,Brunch & Munch,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+11.0,n5jKFLyt3WewiSPQn,397d4e9e-f98f-4764-847a-8126aeab5095,ubereats,MEX,Iztapalapa,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,heNEBiHnGFbSR36CH,2.439912684E9,rappi,MEX,Coapa,LA PANQUEQUERIA,2.0,1,,RATINGS,,RATINGS,0.0,,1
+11.0,xNAFENpoRGxCoNks5,339ea80e-9cc9-49b3-8692-58c9b7e0d138,ubereats,MEX,Doctores,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,DXNRaZnBSHdMdHy3r,2cc0c903-2c1b-443d-8c5a-fbcda3b9c8c4,ubereats,MEX,Jardines del Valle,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,kFFnsSsnd8paBmfn2,2.439913996E9,rappi,MEX,Santa Fe,Órale Chilaquiles,2.0,1,,rrs_rest_quality_rate_2|Mala calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+11.0,GCfhKAMcfS6YdzqC6,809024d7-afab-433f-8fcf-df0ca4b0e6ff,ubereats,MEX,San Ángel,Desayunos de la Abuela,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,8SNFnWHzQgLncPPDQ,b2494200-e94c-4b6f-be52-459aa2eebe1e,ubereats,MEX,Montejo,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,CRDJP4GRaxukkanbg,b3e95b4b-348f-46eb-81fe-9aabaab68b91,ubereats,MEX,Esmeralda,Green House,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,KqXPHJRZXPRaqDCvn,2.43991676E9,rappi,MEX,Saltillo Centro,Brunch & Munch,5.0,0,,rrs_rest_packaging_rate_5|Buena presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+11.0,w7qkcQE6N2WMW6Hat,2.439916505E9,rappi,MEX,Coapa,The Breakfast Club,5.0,0,,rrs_rest_packaging_rate_5|Buena presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+11.0,Arjh2eApGCsRwiChz,bf2221a3-8801-40ce-991e-4914803b3d1a,ubereats,MEX,San Ángel,LA PANQUEQUERIA,5.0,0,,HIGH_FOOD_QUALITY,,1.0,,,0
+11.0,NrhbYmZXwFWzopCKL,bf8edb58-e665-4c53-aa6a-165c2b461595,ubereats,MEX,Doctores,Desayunos de la Abuela,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,PAetHCNYu8RPoMQHS,5764670148803887361,didi,MEX,Tec,Pozórale,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,fbpFTRSTz9A8SC4oB,5764670056873132288,didi,MEX,Tabachines,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,AvzW9C8AxMS7gmGAg,5764670108521791771,didi,MEX,Saltillo Centro,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,W2WbLNuhFQwCWPwFP,5764670101311783188,didi,MEX,San Ángel,The Wrap Company MX,5.0,0,,Exactamente como lo pedí|Precios razonables,NOT_WORTH_PRICE|ORDER_PRECISION,PRICING,,1.0,0
+11.0,LTRR9bSEeAJEvFKft,05cee77b-6289-448f-b124-89dcfa6c7b7f,ubereats,MEX,Azcapotzalco,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,mwYv2xWzJmNzebFR3,2.439919047E9,rappi,MEX,Del Valle,LA PANQUEQUERIA,5.0,0,,rrs_rest_completeness_rate_5|Tal como lo pedí,ORDER_COMPLETENESS,ORDER_COMPLETENESS,,1.0,0
+11.0,uaMXDQ3njY4Mp9G9g,2.439919629E9,rappi,MEX,Polanco,The Wrap Company MX,3.0,1,,RATINGS,,RATINGS,0.0,,1
+11.0,GfqoCk8TXw6MxtWqZ,2.439919535E9,rappi,MEX,Jardines,Desayunos de la Abuela,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,p5NHTCWGnMa4djbFc,2.43991874E9,rappi,MEX,Iztapalapa,LA PANQUEQUERIA,3.0,1,,comment|Comentario,RATINGS,RATINGS,0.0,,1
+11.0,Ydaq2tr9aqFC3XCeg,2.439919961E9,rappi,MEX,Tabachines,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,FFxW8yekFSJXtuKHT,07dfaa91-d48d-4592-a208-cb5222b37c83,ubereats,MEX,Polanco,Brunch & Munch,5.0,0,,"RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS",,1.0,0
+11.0,4cgFceFbcsH5q7Dy3,874995a1-23ea-4fb4-a997-c8b553214a42,ubereats,MEX,Del Valle,Eggy by Chef Eva,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,XrxkrhzE2NCqazgk6,5764670143695225107,didi,MEX,Esmeralda,The Wrap Company MX,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,v3jChswYZkjhkb32g,f8f6807d-c039-404f-804b-0da9024fb922,ubereats,MEX,Churubusco,Órale Desayunos,1.0,1,,NOT_WORTH_PRICE,,SMALL_PORTIONS,PRICING,0.0,1
+11.0,oo2XtD6mPmQQ9znMT,2.439920474E9,rappi,MEX,Carretera Nacional,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,Aby4pYiufy7gxCiWo,2.439920182E9,rappi,MEX,Iztapalapa,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,DQhNyXYFpkX7AwNYv,5764669933933887764,didi,MEX,Metepec,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,kmHECFz5YWBcBeZAF,2.439921685E9,rappi,MEX,La Calma,La Panquequería Turbo,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+11.0,p84Re8i4ct3bKb48m,1de56df8-b9e3-4b39-a7d3-55802f7f7262,ubereats,MEX,Cumbres,LA PANQUEQUERIA,5.0,0,,HIGH_FOOD_QUALITY,,1.0,,,0
+11.0,rWGYofu3yJRnvTWzX,2.439921634E9,rappi,MEX,Doctores,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,rCDsYWirTe3hFDaoC,b8ce2c37-c6f6-42a7-96ac-23112cd05e93,ubereats,MEX,Satélite,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,H7aGTnKoP3gHswsgo,5764669926677741836,didi,MEX,Tlaquepaque,Órale Desayunos,5.0,0,,Buena calidad de la comida|Porciones adecuadas|Bien empacado,GOOD_PACKAGING|HIGH_FOOD_QUALITY|ORDER_COMPLETENESS,1.0,,,0
+11.0,JzxKNjXcWtXCG88qn,320e4110-6c36-404a-a2c4-9a78f89973d2,ubereats,MEX,Del Valle,The Egg Spot,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,X4cMSzYj6wtxFN3gi,2.439922443E9,rappi,MEX,Estadio,Desayunos de la Abuela,3.0,1,,RATINGS,,RATINGS,0.0,,1
+11.0,z7afXNQ6tH2vhwWeF,64c7c2fd-761c-4478-b1ff-9f44a7216acb,ubereats,MEX,Santa Teresita,Desayunos de la Abuela,5.0,0,,"RATINGS, RATINGS",,"RATINGS, RATINGS",,1.0,0
+11.0,aCjZL336bmPAxoBnw,5764669974463447325,didi,MEX,La Calma,Desayunos de la Abuela,5.0,0,,Exactamente como lo pedí|Menú variado|Bien empacado|Buena calidad de la comida,GOOD_PACKAGING|HIGH_FOOD_QUALITY|ORDER_PRECISION|VARIETY_MENU_OPTIONS,1.0,,,0
+11.0,q95Kcj8f3Rs2n9Tv6,2.439920964E9,rappi,MEX,Metepec,Órale Chilaquiles,4.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+11.0,NatQ2uWvDrZ7bH5PY,a95aafc2-1c43-4586-a0ca-491444f76ccc,ubereats,MEX,Esmeralda,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,srTZecBNgPc832KJR,dd40c94e-c300-474f-8de0-b283df3160f3,ubereats,MEX,Esmeralda,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,8XWLkA4nNrsXKPNKg,5764669986073280786,didi,MEX,Montejo,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,qnTbvGjgFtSv7XrF4,e896f306-40b1-4816-81ad-2f01d3c9363b,ubereats,MEX,Churubusco,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,v6ZhwotQ7aswiYaxK,2.439923978E9,rappi,MEX,La Calma,Desayunos de la Abuela,5.0,0,,rrs_rest_completeness_rate_5|Tal como lo pedí,ORDER_COMPLETENESS,ORDER_COMPLETENESS,,1.0,0
+11.0,XqhX7Sv4KEprYmYXZ,2.439924358E9,rappi,MEX,Saltillo Centro,Brunch & Munch,4.0,0,,rrs_rest_quality_rate_4|La calidad de los ingredientes,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+11.0,HckKttBZGLde8Bhft,2.439924343E9,rappi,MEX,Manacar,Brunch & Munch,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+11.0,57aXj54fGRN7RjgMX,bb58976d-4da6-48a1-aa4d-ce33b75d17fa,ubereats,MEX,Metepec,Eggy by Chef Eva,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+11.0,5RxfrPT4d6oB6kB4D,ec3498bf-7a08-4f84-86e3-751a90b206e7,ubereats,MEX,Doctores,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,WQYcqaSD8vrJS7r5C,e8e72df9-45b3-4e85-ab3a-d15acea1c7bf,ubereats,MEX,Pedregal,Órale Desayunos,5.0,0,,restaurant_fresh_ingredients,HIGH_FOOD_QUALITY,1.0,,,0
+11.0,k9EhnDvLhgvYDFdnQ,2.439926091E9,rappi,MEX,Saltillo Centro,Sandwiches & Soups,5.0,0,,rrs_rest_packaging_rate_5|Buena presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+11.0,PQ6e9QeYrFa9Xx2RP,2.439926049E9,rappi,MEX,Tec,Desayunos de la Abuela,1.0,1,,RATINGS,,RATINGS,0.0,,1
+11.0,mTRW6hXirEzgguX6u,2.439926363E9,rappi,MEX,San Ángel,The Egg Spot,4.0,0,,rrs_rest_packaging_rate_4|Mejorar la presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+11.0,kd5p7hosjZyi2499C,c654c8d5-f220-48cd-8952-5cc9acfaa86e,ubereats,MEX,San Nicolás,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,f6otmsqQxZ6H3Ea3Q,2114fb26-e202-489f-bfc2-3b7f4ab843e0,ubereats,MEX,Polanco,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,4pWhBu5Z5QkwftBzS,2.439928446E9,rappi,MEX,Jardines del Valle,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,r6YjSyDXLqL933WT9,d24756e4-e294-4dd5-8df7-b799c8e8d825,ubereats,MEX,San Ángel,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,PchCdTcoGdDzAxZvh,e608c8c5-5ae9-4c51-b693-97e40c9349f6,ubereats,MEX,Volcanes,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+11.0,vN44RRmtisFERwYmc,2.439930077E9,rappi,MEX,Iztapalapa,Desayunos de la Abuela,4.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+11.0,3RpDinR3esfAwof5Q,2.439930554E9,rappi,MEX,Pedregal,Órale Desayunos,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+11.0,APaLBj7h4a6Bm5T8B,5764670088930197834,didi,MEX,Tlaquepaque,Órale Desayunos,5.0,0,,Buena calidad de la comida|Porciones adecuadas|Exactamente como lo pedí|Precios razonables|Bien empacado|Menú variado,GOOD_PACKAGING|HIGH_FOOD_QUALITY|NOT_WORTH_PRICE|ORDER_PRECISION|VARIETY_MENU_OPTIONS,PRICING,,1.0,0
+11.0,9cg5CR7ZqZbZSsDz4,5764670002422677809,didi,MEX,Volcanes,Avocalia,5.0,0,,Bien empacado|Menú variado|Precios razonables|Buena calidad de la comida,GOOD_PACKAGING|HIGH_FOOD_QUALITY|VARIETY_MENU_OPTIONS,1.0,,,0
+12.0,8ACpGDLrtAT96HvwF,5764669972508901713,didi,MEX,Santa Teresita,Avocalia,5.0,0,,Menú variado|Precios razonables|Bien empacado|Buena calidad de la comida|Exactamente como lo pedí|Porciones adecuadas,GOOD_PACKAGING|HIGH_FOOD_QUALITY|ORDER_PRECISION|VARIETY_MENU_OPTIONS,1.0,,,0
+12.0,Bkw3zYchdqu6Sijxh,9750162a-535a-49ee-8b72-d006e10262fa,ubereats,MEX,Jardines,Don Gyros & Kebab,5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,bfXyMiFmKGrLHjjE7,2.439932283E9,rappi,MEX,Azcapotzalco,Brunch & Munch,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+12.0,tGgpfYLHkthTMiPRB,2.439932541E9,rappi,MEX,Esmeralda,Brunch & Munch,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+12.0,SJdt6tSn4fsMJ9HJS,2.439932366E9,rappi,MEX,Esmeralda,Órale Desayunos,1.0,1,,comment|Comentario,RATINGS,RATINGS,0.0,,1
+12.0,fCkp2wafpaMkyHoiX,0f4e772f-8987-4193-99a8-7130eb02a7e2,ubereats,MEX,Saltillo Centro,House of Salads,5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,cb2vmFGeZfTnMy7HM,71630c87-f548-41a1-b8aa-2957ed73edaf,ubereats,MEX,Iztapalapa,Eggy by Chef Eva,5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,YY77W4zwWfi2QzDTT,3bab0908-5a3d-4fbd-a589-8b8060af47cf,ubereats,MEX,Metepec,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,JyZMGv2Jtf2fowRsA,4bceaa51-cf98-4d42-8936-45add963bcfd,ubereats,MEX,Montejo,Green House,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+12.0,6KxWxpcEQqPWu7Ypj,27b23176-9eb3-4a70-8af1-b193284ca65c,ubereats,MEX,Lincoln,Que Chicken,5.0,0,,HIGH_FOOD_QUALITY,,1.0,,,0
+12.0,fCQpvCAz3dBFTEx6J,2.439934469E9,rappi,MEX,Volcanes,The Breakfast Club,3.0,1,,rrs_rest_packaging_rate_3|Mala presentación,BAD_PACKAGING,BAD_PRESENTATION,DELIVERY,0.0,1
+12.0,Kwe9Rxe6Nw7EsYTHp,cccab0ef-5482-4d98-a7d0-f9715d8f9575,ubereats,MEX,Canek,Avocalia,3.0,1,,restaurant_not_worth_price,NOT_WORTH_PRICE,OTHER,PRICING,0.0,1
+12.0,vNr4m4BiTRwKfX5Di,2.439935019E9,rappi,MEX,Tlaquepaque,Brunch & Munch,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+12.0,J4TpbGn6S6k9uZR2J,0d079148-82d0-485e-85f0-8f87355afbcd,ubereats,MEX,Santa Teresita,Avocalia,5.0,0,,"RATINGS, RATINGS, RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS, RATINGS, RATINGS",,1.0,0
+12.0,aXBTBDpEeh7sopZ3j,bf0369c6-98f0-471a-8b48-50d0785a3f7f,ubereats,MEX,Santa Fe,Avocalia,5.0,0,,"RATINGS, RATINGS",,"RATINGS, RATINGS",,1.0,0
+12.0,smjtXEsLFrLB4yvD2,26c11a11-288a-4991-9db2-d660f8612c66,ubereats,MEX,Doctores,LA PANQUEQUERIA,5.0,0,,restaurant_reliable_service,OTHER,OTHER,1.0,,0
+12.0,vrSGEQ6AJ3gjEhEce,2877e782-3545-41f8-992a-a90b511215b9,ubereats,MEX,Tlaquepaque,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,CJLgkX6FnGyfoDHfM,2.43993655E9,rappi,MEX,Saltillo Centro,Órale Desayunos,2.0,1,,rrs_rest_completeness_rate_2|Faltó un item,ORDER_ACCURACY,MISSING_ITEM,PASE,0.0,1
+12.0,f2t6zSCiLYrrFsrFy,2.439936533E9,rappi,MEX,Satélite,Órale Desayunos,3.0,1,,rrs_rest_completeness_rate_3|Falto un item,ORDER_ACCURACY,MISSING_ITEM,PASE,0.0,1
+12.0,YFWanTT3JuEdyiDpJ,2.439937071E9,rappi,MEX,Volcanes,Brunch & Munch,4.0,0,,rrs_rest_packaging_rate_4|Mejorar la presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+12.0,YZz6bd5Xw7TBu2v8J,5764670078415077725,didi,MEX,Pedregal,Avocalia,5.0,0,,Precios razonables|Exactamente como lo pedí|Buena calidad de la comida|Menú variado|Bien empacado|Porciones adecuadas,GOOD_PACKAGING|HIGH_FOOD_QUALITY|ORDER_COMPLETENESS|ORDER_PRECISION|VARIETY_MENU_OPTIONS,1.0,,,0
+12.0,NdvYCyLBzKCwfB84T,4dfaddd3-752a-4cd0-9cb4-212f41e89bab,ubereats,MEX,Satélite,Órale Desayunos,1.0,1,,"RATINGS, RATINGS, RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS, RATINGS, RATINGS",,0.0,1
+12.0,PGWTb45XEEDbw3RDP,70060831-9c4f-4ef5-8a89-e62bf713a966,ubereats,MEX,Doctores,Brunch & Munch,5.0,0,,restaurant_perfect_portions|restaurant_creative_options|restaurant_sustainable_packaging,VARIETY_MENU_OPTIONS,1.0,,,0
+12.0,HPrPDWF3mKw8pe2BZ,5764669920763773280,didi,MEX,Jardines,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,tTQa6DtJZb25YS62Z,7655c51d-36ac-4777-8a1b-1870bc471cac,ubereats,MEX,Lincoln,LA PANQUEQUERIA,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+12.0,p4w5cuzDDWfDb9zCK,5764670074191413625,didi,MEX,Tec,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,SNepZih8htbksv2oH,2.43994053E9,rappi,MEX,Esmeralda,Pozórale,2.0,1,,RATINGS,,RATINGS,0.0,,1
+12.0,EhDL2FLpRdkpnknbS,5764670093573292411,didi,MEX,Polanco,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,jrZRyX99gomFtNyQ6,cdbf91aa-415e-4d02-ad61-7157166d35ec,ubereats,MEX,Esmeralda,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,24hMjALJ2K2HiCkmm,2.439940926E9,rappi,MEX,La Calma,Brunch & Munch,5.0,0,,rrs_rest_completeness_rate_5|Tal como lo pedí,ORDER_COMPLETENESS,ORDER_COMPLETENESS,,1.0,0
+12.0,DYQiZtmdcEm7FJkQM,b9afac35-ecfe-4c54-9554-5d7941dba5df,ubereats,MEX,Esmeralda,Que Chicken,5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,4tbppfcM4BfzdFNZc,2.439940993E9,rappi,MEX,Churubusco,Tender Lovers,5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,fyaAimjRAHp4x8Ehe,1c5a0661-c8d3-4968-acdd-269b2c9848c6,ubereats,MEX,Jardines,LA PANQUEQUERIA,5.0,0,,restaurant_sustainable_packaging|restaurant_reliable_service|restaurant_great_selection,GOOD_PACKAGING|VARIETY_MENU_OPTIONS,1.0,,,0
+12.0,CkAjeooMZAAvW6FZf,2.439941786E9,rappi,MEX,Volcanes,The Wrap Company MX,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+12.0,DPjJpBm9PqPyTe4Rw,2.439941622E9,rappi,MEX,Jardines del Valle,La Neta Burgers (Orale Burgers),5.0,0,,rrs_rest_packaging_rate_5|Buena presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+12.0,mijAbM9og9KpSairL,2.439938842E9,rappi,MEX,Santa Fe,Fonda Local,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+12.0,6AYXGxRssGy7ehZKq,2.43994248E9,rappi,MEX,Metepec,La Neta Burgers (Orale Burgers),5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,5stuChbG4AGXW9hHP,2.43994326E9,rappi,MEX,Saltillo Centro,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,ssa6QxXf43BuX83YE,2.439943657E9,rappi,MEX,San Ángel,Foodhub,5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,5frn2Mima3j2G8Cwk,2.439943827E9,rappi,MEX,Tlaquepaque,Brunch & Munch,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+12.0,gdodMTroaRL5pkpfK,2.439944028E9,rappi,MEX,Volcanes,La Neta Burgers (Orale Burgers),4.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+12.0,394QhboJJmSYs5wHZ,2.439944404E9,rappi,MEX,Azcapotzalco,La Neta Burgers (Orale Burgers),5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,CJS5bvj2pD6nT7s2i,2.439944425E9,rappi,MEX,Montejo,La Neta Burgers (Orale Burgers),1.0,1,,comment|Comentario,RATINGS,RATINGS,0.0,,1
+12.0,Fmf3HMDnRYqpkf5sy,df14856f-61f6-4ae1-ac2c-3a921627217a,ubereats,MEX,Polanco,Green House,5.0,0,,"RATINGS, RATINGS",,"RATINGS, RATINGS",,1.0,0
+12.0,FCoG6o4vqAcgfWpBT,a73df50e-9157-4bc7-a128-cd0b0a7631b1,ubereats,MEX,La Calma,Eggy by Chef Eva,5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,ZtSs7iNeAFv7AqKPn,39fa380a-fdae-42f1-b57e-e3b725216880,ubereats,MEX,Carretera Nacional,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,xew4G8GkTEkmAur6a,2.439944682E9,rappi,MEX,Estadio,Foodhub,1.0,1,,rrs_rest_quality_rate_1|Pésima calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+12.0,qnEzBPEJae7jqCkmm,c940ddcf-e258-43c8-81f9-6eb55e24b6b5,ubereats,MEX,Doctores,Eggy by Chef Eva,5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,TTQYePAS5uWk2ouRp,5764670165270725013,didi,MEX,Canek,Eggy by Chef Eva,2.0,1,,RATINGS,,RATINGS,0.0,,1
+12.0,YHFTDrJ7XqrSrDoi6,2.439946228E9,rappi,MEX,Lincoln,La Neta Burgers (Orale Burgers),5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,p4uaz6KNhGpdjeRKS,2.439946654E9,rappi,MEX,Canek,Honest Food,2.0,1,,rrs_rest_completeness_rate_2|Faltó un item,ORDER_ACCURACY,MISSING_ITEM,PASE,0.0,1
+12.0,9R8EmBSu9tyikuM4j,2.43994673E9,rappi,MEX,San Nicolás,Desayunos de la Abuela,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+12.0,cFbRCh5DPKXGWYwmt,3889158c-01e9-49b5-a9ef-891d4fc0df7a,ubereats,MEX,Ciudad Judicial,Green House,3.0,1,,RATINGS,,RATINGS,0.0,,1
+12.0,KRYHH2SjDtYAZmSDM,9f9b1e31-cd92-4bba-8f91-4998560f50ca,ubereats,MEX,Satélite,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,gWJFbugsDxav6GFHW,2.439943985E9,rappi,MEX,Esmeralda,House of Burgers,5.0,0,,rrs_rest_accuracy_rate_5|Justo lo que pedí,ORDER_PRECISION,ORDER_PRECISION,,1.0,0
+12.0,pZmDEZonJD65k9peS,3b4cdbdd-649f-408c-879e-dd65d8537ff1,ubereats,MEX,Satélite,Avocalia,4.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,FfjW9ySMMqcqvEz6N,5764670004888928664,didi,MEX,San Nicolás,Mr Beast Burger,4.0,0,,Precios razonables|Buena calidad de la comida|Porciones adecuadas|Menú variado|Bien empacado,GOOD_PACKAGING|VARIETY_MENU_OPTIONS,1.0,,,0
+12.0,9t3N3hK2g3mM7z7j9,875c0bfc-2d60-40c1-b997-e9047493fde1,ubereats,MEX,Iztapalapa,Órale Desayunos,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+12.0,SNtRhFgmQnCvcNPpd,5764670022635028888,didi,MEX,Tec,House of Salads,3.0,1,,RATINGS,,RATINGS,0.0,,1
+12.0,WoYwg4ZgSgbNWqxAi,2.439949385E9,rappi,MEX,Volcanes,Chicken Tenders Hub,4.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,pXznR29NfH8wBHLu5,2.439948937E9,rappi,MEX,Ciudad Judicial,Honest Food,5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,skam9Sghmm5GvWv6z,831afc7c-3f7a-488b-a99f-b44e9c817143,ubereats,MEX,Canek,Green House,5.0,0,,restaurant_store_accommodating|restaurant_reliable_service,ORDER_COMPLETENESS|ORDER_PRECISION,1.0,,,0
+12.0,Hz278pj4gBp2xcFFP,9e3f9574-d318-494f-ad57-93021537acee,ubereats,MEX,Polanco,Avocalia,5.0,0,,"RATINGS, RATINGS",,"RATINGS, RATINGS",,1.0,0
+12.0,rAZRciyCMFLBZRv3p,5764670043388445089,didi,MEX,Santa Catarina,Subs & Soups,5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,7JypGZpqt796ZBZvn,2.43995066E9,rappi,MEX,Doctores,Chicken Tenders Hub,3.0,1,,rrs_rest_packaging_rate_3|Mala presentación,BAD_PACKAGING,BAD_PRESENTATION,DELIVERY,0.0,1
+12.0,kir7CMapMu7Kx5nqc,2.43995023E9,rappi,MEX,Estadio,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,goEYMuFTM2wH5JT7q,3221750b-51fb-4bdc-84c7-2453ba159fee,ubereats,MEX,San Ángel,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,rGc7w7do5twgy37mt,5764670013432725905,didi,MEX,Canek,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,BvDLreMaP3wJLFpMB,5764670122069393813,didi,MEX,Del Valle,LA PANQUEQUERIA,4.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,Bhc8YW6pwWx6tsXeG,e14b32ac-5811-495e-a2ca-648f1cd27edb,ubereats,MEX,Pedregal,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,PfNLeihaQXBb2s28r,2.43995276E9,rappi,MEX,Tlaquepaque,Tasty Foods,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+12.0,D8C5e2JzArHHavJTg,2.439954477E9,rappi,MEX,San Jerónimo,Avocalia,1.0,1,,rrs_rest_packaging_rate_1|Mala presentación,BAD_PACKAGING,BAD_PRESENTATION,DELIVERY,0.0,1
+12.0,mfi9kjs7EQTGYHhbc,2.439954628E9,rappi,MEX,Volcanes,Brunch & Munch,5.0,0,,rrs_rest_packaging_rate_5|Buena presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+12.0,rQEQMMyPJwam6B6fz,513faa38-2871-42eb-bc90-5bbc1d6de5a3,ubereats,MEX,Samara,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+12.0,5M8YHsm4JqxeZZWGX,2.439954771E9,rappi,MEX,Tlaquepaque,Fonda Local,4.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,5HYovP32HBnGtHHhN,2.439956995E9,rappi,MEX,Canek,Chicken Shack,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,tpzKLHNRsC5nJjBEP,2.439957413E9,rappi,MEX,Volcanes,Tender Lovers,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+13.0,ura43ZNZKvFFvcmRz,2.439945462E9,rappi,MEX,Ciudad Judicial,Honest Food,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,dNbDJvR7jyqccRvPB,5764670131548520879,didi,MEX,Montejo,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,QfHxGe7Xpozgedcgr,f2529a32-c112-4db6-86af-070d51892bf7,ubereats,MEX,San Nicolás,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,7eyLbCo8fA5QHRp43,d58aca93-a3ed-4ea6-a73f-b5512f1e3806,ubereats,MEX,Tec,Honest Food,5.0,0,,HIGH_FOOD_QUALITY,,1.0,,,0
+13.0,SJFTtFQv6jre7rJNL,2.439958826E9,rappi,MEX,Esmeralda,Desayunos de la Abuela,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+13.0,D7Cs47aDSK6xq762T,5764670128780280250,didi,MEX,Volcanes,Honest Food,5.0,0,,Bien empacado|Exactamente como lo pedí|Buena calidad de la comida|Menú variado|Precios razonables|Porciones adecuadas,GOOD_PACKAGING|HIGH_FOOD_QUALITY|ORDER_PRECISION|VARIETY_MENU_OPTIONS,1.0,,,0
+13.0,XkhDiNjRu5d7BGiR5,082017d2-77de-497a-83a4-2ffe16e3d313,ubereats,MEX,Ciudad Judicial,Numa Cocina Mediterranea,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,pWWXmDn5ePhN58uiv,5764669947536015827,didi,MEX,Santa Teresita,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,jLWpjyS24cLKCnZgm,2.439959376E9,rappi,MEX,Cumbres,Desayunos de la Abuela,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+13.0,K8jmajpBZ7gTSWXrC,dd3a2737-53e3-4125-8d9c-6ba2b259425a,ubereats,MEX,Doctores,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,c3Cg9nHtXMj3dtait,2.439958453E9,rappi,MEX,Tabachines,Mr Beast Burger,4.0,0,,rrs_rest_quality_rate_4|La calidad de los ingredientes,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+13.0,xCdgneC5FLp5KufSF,440c81e9-34ab-4176-8fdb-18d21ffd97cf,ubereats,MEX,Montejo,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,vFGs3nW8pYA7WRDT4,2.439961358E9,rappi,MEX,Lindavista,Avocalia Desayunos,4.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,c9DXcoe3x58EZCguk,4af50504-6934-4d05-b04f-56690328d4d2,ubereats,MEX,Santa Fe,Que Chicken,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,m9EwdMPgXXjyQjLPt,5764670160761848260,didi,MEX,Volcanes,Honest Food,4.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,a2Wpv3exo9DSz3Lu7,2.439949533E9,rappi,MEX,Azcapotzalco,Tasty Foods,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,XHckdtxLCur2wBuus,5764670073000231367,didi,MEX,La Calma,Fonda Local,1.0,1,,Porciones pequeñas,NOT_WORTH_PRICE,SMALL_PORTIONS,PRICING,0.0,1
+13.0,2eYRbN9Sq3DCw9F8p,81fa4726-880f-4e09-920f-a8b51e4c7342,ubereats,MEX,Polanco,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,3XLZFxLJTsNbE75Qy,ba9b05dd-80c1-4051-af8d-0df9fc5db98e,ubereats,MEX,Santa Teresita,Green House,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,44JcuRBE4dK2auj8y,bc12699d-6f05-4416-894a-8ba704c93ba1,ubereats,MEX,Tec,Chicken Tenders Hub,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+13.0,cFf2D3XYQ2ejXqEpu,8bc3c985-63ab-42d0-95c6-11fb7330f773,ubereats,MEX,Santa Teresita,Green House,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,H4aKifrTPK3vcaP3E,2.439965957E9,rappi,MEX,Santa Teresita,Mr Beast Burger,4.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+13.0,xHHoMdtusiyZJ3LuR,2.439965958E9,rappi,MEX,Tlaquepaque,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,hSqpMrbkjTvsf22LT,f541ba63-4094-4cfe-9bc0-ba1943e821d7,ubereats,MEX,Metepec,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,QXxgditrm2QDJsLNc,4f431d55-7096-4d22-adb3-22a9ac6cf500,ubereats,MEX,Canek,Green House,5.0,0,,restaurant_reliable_service,OTHER,OTHER,1.0,,0
+13.0,8G6ohi2sRY8Cyi5XK,5764669946130924011,didi,MEX,Santa Catarina,House of Salads,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,pC47WDsgtvRN3oArv,2.439968069E9,rappi,MEX,Jardines,Órale Desayunos Turbo,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+13.0,Dm4bSPaEnKgsBfbS7,2.439967176E9,rappi,MEX,Canek,Honest Food,5.0,0,,rrs_rest_accuracy_rate_5|Justo lo que pedí,ORDER_PRECISION,ORDER_PRECISION,,1.0,0
+13.0,xmjALW9xHJF5z3TDz,5764670091035738586,didi,MEX,Jardines,Mr Beast Burger,5.0,0,,Well packaged|Exactly as ordered|Great food quality,GOOD_PACKAGING|HIGH_FOOD_QUALITY|ORDER_PRECISION,1.0,,,0
+13.0,HwinpokgJC4ZtnZgM,4d255f3a-225c-4e1a-a8d4-cc06e4d88140,ubereats,MEX,Coapa,Avocalia,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+13.0,S3wfxxH9FYArBcPqF,2.439969043E9,rappi,MEX,Churubusco,Órale Desayunos,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+13.0,z7pYAfoe9GEecr5XC,5764670069183414753,didi,MEX,Santa Fe,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,hFsmHt3vT6BY442W8,2.439969637E9,rappi,MEX,Estadio,Que Chicken,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,Smc87RSSRQFnXThD3,70958247-f06d-461f-988d-5fc7e9e94977,ubereats,MEX,Lindavista,LA PANQUEQUERIA,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,YcgNoPG2vb5E9X97n,2.439969506E9,rappi,MEX,Estadio,La Neta Burgers (Orale Burgers),5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+13.0,cafAjH6AsAcztwRWo,85b8809b-305c-4ff7-bebe-1db9d342a641,ubereats,MEX,Esmeralda,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,pgAQJHNPQ9smiMjL9,77dd10e7-c9da-4ac8-a3db-2285b4211322,ubereats,MEX,Tlaquepaque,Eggy by Chef Eva,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,EYwKcfH92aW7x5SbA,2.439970964E9,rappi,MEX,Metepec,Brunch & Munch,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+13.0,HaKzTjk8dLkLjY9BE,e5428dee-a074-429c-8aef-fa361a39505d,ubereats,MEX,Metepec,House of Burgers,5.0,0,,"RATINGS, RATINGS, RATINGS, RATINGS, HIGH_FOOD_QUALITY",,"RATINGS, RATINGS, RATINGS, RATINGS",,1.0,0
+13.0,P6xhcbGmuWz6Tdqqj,2.439971351E9,rappi,MEX,Saltillo Centro,Numa Cocina Mediterranea,1.0,1,,rrs_rest_completeness_rate_1|Faltaron algunos items,ORDER_ACCURACY,MISSING_ITEM,PASE,0.0,1
+13.0,GWkpbNSqmGENwpGXK,2.439969729E9,rappi,MEX,Metepec,La Neta Burgers (Orale Burgers),1.0,1,,rrs_rest_packaging_rate_1|Mala presentación,BAD_PACKAGING,BAD_PRESENTATION,DELIVERY,0.0,1
+13.0,tRZrSx8k4DSySmv6o,5764669977378488806,didi,MEX,San Jerónimo,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,o8kaiNmYsLWqQnBht,2.439973179E9,rappi,MEX,Azcapotzalco,Desayunos de la Abuela,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+13.0,LpiJdhGHEoN2uWNHk,5764670177874608640,didi,MEX,Manacar,Avocalia,4.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,vM3kfKfQ2dfDnmkWc,2.43997376E9,rappi,MEX,Canek,La Neta Burgers (Orale Burgers),3.0,1,,rrs_rest_packaging_rate_3|Mala presentación,BAD_PACKAGING,BAD_PRESENTATION,DELIVERY,0.0,1
+13.0,SHnRB9TRvmkzHiS4B,2.439972854E9,rappi,MEX,Saltillo Centro,Chicken Tenders Hub,1.0,1,,comment|Comentario,RATINGS,RATINGS,0.0,,1
+13.0,boPPmNCKSmSdtjt5u,a5c573f7-8b25-45e2-bb6d-e2c4d9397e69,ubereats,MEX,Santa Teresita,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,HmE8XMmbmWS2DY3Nm,5764669923720757741,didi,MEX,Coapa,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,EGsKn8eDH2YxARfQm,d566ca17-cd2c-45af-a323-797243519c9a,ubereats,MEX,Canek,House of Salads,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,pDQbaX3ctBCgX8vZ4,2.439972751E9,rappi,MEX,Satélite,Que Chicken,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+13.0,X2x4jJnCkbWZ7S87s,5764670178096906758,didi,MEX,Montejo,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,ei7wadWYL43DnhWCa,2.439974199E9,rappi,MEX,Santa Catarina,Mr Beast Burger,5.0,0,,rrs_rest_accuracy_rate_5|Justo lo que pedí,ORDER_PRECISION,ORDER_PRECISION,,1.0,0
+13.0,jtJPsktfCLxEGCHrd,5764670108563735054,didi,MEX,Tlaquepaque,Subs & Soups,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,EPaTC9ywaHHTgf4Rn,2.439976438E9,rappi,MEX,Canek,La Neta Burgers (Orale Burgers),5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,rqydgat7R7j95nwKF,5764670078679319016,didi,MEX,Santa Catarina,Avocalia,1.0,1,,Mala calidad de la comida|Porciones pequeñas,BAD_QUALITY|NOT_WORTH_PRICE,NOT_TASTY|SMALL_PORTIONS,PRICING|QUALITY,0.0,1
+13.0,FNzBHsbyJkPidcnrm,5764669984508805632,didi,MEX,Polanco,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,eMG2aw9tEMrsqac77,5764669964065767928,didi,MEX,Polanco,Fonda Local,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,3tpgGpeG83X33eD7z,656dd445-eb5b-4538-b7f9-926187a93f1b,ubereats,MEX,Satélite,Green House,5.0,0,,restaurant_sustainable_packaging,GOOD_PACKAGING,1.0,,,0
+13.0,GxJNtEaqFzaKLmrvf,2.439978916E9,rappi,MEX,Jardines del Valle,Honest Food,4.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,BgcoLnDQ37HuFSiBt,32f2bb73-ee74-48d3-8909-c5ff16f63169,ubereats,MEX,Saltillo Centro,Mr Beast Burger,1.0,1,,BAD_QUALITY,,NOT_TASTY|WRONG_TEMPERATURE,DELIVERY|QUALITY,0.0,1
+13.0,LxjL8vPRdJ5kBYJPw,87e4f365-155b-4c5d-b375-bffd326ea270,ubereats,MEX,Saltillo Centro,Avocalia Desayunos,4.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,P3et35RYAW7iE9cBM,2.439975943E9,rappi,MEX,Cumbres,Green House,3.0,1,,RATINGS,,RATINGS,0.0,,1
+13.0,3YhT3S8Jf9nLaf7zD,92085437-1a26-4d4d-a8db-cf52fc14d311,ubereats,MEX,Metepec,Que Chicken,5.0,0,,HIGH_FOOD_QUALITY,,1.0,,,0
+13.0,5rk5tsPC2vKE66cPC,2.439983289E9,rappi,MEX,San Nicolás,Mr Beast Burger,5.0,0,,rrs_rest_accuracy_rate_5|Justo lo que pedí,ORDER_PRECISION,ORDER_PRECISION,,1.0,0
+13.0,W5RH5LLWhmN5fXQFA,2cedf153-ce86-4e35-8d33-7eb6584bf90c,ubereats,MEX,Manacar,Green House,1.0,1,,BAD_QUALITY,,NOT_TASTY,QUALITY,0.0,1
+13.0,zcjZCW7AwEZJzNBsp,5764670025206137364,didi,MEX,Iztapalapa,Mr Beast Burger,5.0,0,,Bien empacado|Menú variado|Porciones adecuadas|Exactamente como lo pedí|Precios razonables|Buena calidad de la comida,GOOD_PACKAGING|HIGH_FOOD_QUALITY|ORDER_COMPLETENESS|ORDER_PRECISION|VARIETY_MENU_OPTIONS,1.0,,,0
+13.0,oLfbMuDdjRX6dDguh,2.439984826E9,rappi,MEX,Santa Teresita,Honest Food,5.0,0,,rrs_rest_completeness_rate_5|Tal como lo pedí,ORDER_COMPLETENESS,ORDER_COMPLETENESS,,1.0,0
+13.0,9cYoL4FpyqLTnGDKt,5764669967094055456,didi,MEX,Volcanes,Órale Desayunos,5.0,0,,Bien empacado,GOOD_PACKAGING,1.0,,,0
+13.0,Z7AZeK6a8SZXsya2Y,2.43998542E9,rappi,MEX,Tlaquepaque,La Neta Burgers (Orale Burgers),5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,gzCcvTn7BNtoRa2TZ,2.43998287E9,rappi,MEX,Churubusco,Chicken Tenders Hub,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+13.0,YvkK8tJMfy3GihTZ5,5764670110639915552,didi,MEX,Lindavista,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,NJK9q8cQi9SHicmTv,403bdc02-6154-4696-87d7-94d4b34dbeff,ubereats,MEX,Lindavista,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,bCjusjsz84x9G9d2P,c6bb2569-ce78-47ad-bb8a-dd00cf1dcf95,ubereats,MEX,Iztapalapa,Green House,5.0,0,,RATINGS,,RATINGS,1.0,,0
+13.0,BcTErNdZz3JEnjBsa,5764670165513994784,didi,MEX,Tabachines,Honest Food,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,k8nsKRbyJKgQc2cBi,2.439986326E9,rappi,MEX,Esmeralda,Chicken Shack,1.0,1,,rrs_rest_completeness_rate_1|Faltaron algunos items,ORDER_ACCURACY,MISSING_ITEM,PASE,0.0,1
+14.0,d9sR98HNTt2Ljqvx4,f3e459de-5ac9-4b78-8cba-eed7f96749ba,ubereats,MEX,Pedregal,Green House,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,Sgo3RPSrdbuvPgAaP,5764670092851872292,didi,MEX,Polanco,Honest Food,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,7A32Eujw9KENruyWp,2.439989674E9,rappi,MEX,Santa Fe,Desayunos de la Abuela,5.0,0,,rrs_rest_packaging_rate_5|Buena presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+14.0,iADoEgtirLLfrn5bT,be9a51f9-4a03-4f05-bc6e-56bb4642f77c,ubereats,MEX,Tlaquepaque,Honest Food,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,SYBa9emLLPTWrJotm,5764670113349435948,didi,MEX,Ciudad Judicial,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,Hn9WwzLMbcbxZvGX8,e5aef1d2-e8ff-4986-86a2-27ccb94f2717,ubereats,MEX,San Nicolás,Honest Food,4.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,f9QugMfqSvcoWLSEd,2.439981267E9,rappi,MEX,Azcapotzalco,Mr Beast Burger,5.0,0,,rrs_rest_packaging_rate_5|Buena presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+14.0,W3yFqR9EMtGRa8At6,8337af2f-8ebe-48a9-9392-b3db5c126f44,ubereats,MEX,Canek,Mr Beast Burger,2.0,1,,restaurant_not_worth_price,NOT_WORTH_PRICE,OTHER,PRICING,0.0,1
+14.0,FnsyYcJArHfzrRrkL,2.439992537E9,rappi,MEX,Santa Teresita,Que Chicken,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+14.0,4YhwC32K9prJ5umfa,5764670185185280560,didi,MEX,Del Valle,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,7KFaDTDnqs8BNnXHc,5764669944792941132,didi,MEX,Coapa,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,PccJMK4wTPiJo8WSh,2.439994041E9,rappi,MEX,San Nicolás,Brunch & Munch,2.0,1,,RATINGS,,RATINGS,0.0,,1
+14.0,5FzCeyfCy3kKzPZyZ,5764670047209456193,didi,MEX,Pedregal,The Egg Spot,4.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,uMT3F6DcytfonKoWA,56019f13-8d2c-42d8-921c-41e2bc90c0e9,ubereats,MEX,San Nicolás,Mr Beast Burger,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+14.0,EhuQd7R9N7gaqkdLJ,4f73b979-ca97-4a47-97da-b2cdd46ca630,ubereats,MEX,Volcanes,Green House,3.0,1,,restaurant_too_slow,OUT_TIME,DELIVERY_LATE,DELIVERY,0.0,1
+14.0,PussfifLNcyfmumTR,2.439995878E9,rappi,MEX,Doctores,Fonda Local turbo,3.0,1,,rrs_rest_packaging_rate_3|Mala presentación,BAD_PACKAGING,BAD_PRESENTATION,DELIVERY,0.0,1
+14.0,7bQgRfcJ7PEDsX9Li,76565f07-a88f-4f37-855c-41b4562513ef,ubereats,MEX,Pedregal,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,g7WoR3eWGHhabb332,f4d04f97-098f-4811-912b-479703277ac1,ubereats,MEX,Esmeralda,Avocalia,4.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,CmLNPRr5NA27wGf7u,9e462555-4a25-4792-a7c6-c8be1993a59b,ubereats,MEX,Del Valle,Avocalia,5.0,0,,HIGH_FOOD_QUALITY,,1.0,,,0
+14.0,GF2EqHJS6NP8TCJ9R,2.439997716E9,rappi,MEX,Estadio,Que Chicken,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+14.0,krvfM7Zu7jrvEyJgd,5764670174317838926,didi,MEX,Azcapotzalco,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,qKZodk76KtERCbdv5,1b6d69ea-5f27-4091-a990-2d094ffbb7a4,ubereats,MEX,San Nicolás,Desayunos de la Abuela,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,3sNQmaPzqqLSaW7f6,2.439999145E9,rappi,MEX,Jardines,Fonda Local,4.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+14.0,C4NnWv2bHMMg7wY76,6550cee8-028a-4dee-8565-de6a0b7cdc79,ubereats,MEX,San Jerónimo,Green House,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,Cp3vZ8y8bXrdY8EGg,349a94dc-0da3-4d7a-8f22-bb7e109443e5,ubereats,MEX,Santa Fe,House of Burgers,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,2EfrJbjnRHM9i7zcD,84b8bff9-2fae-486d-9b76-5349a21169a4,ubereats,MEX,Iztapalapa,Honest Food,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+14.0,2nL92TRhG9RiAupMK,69f673b0-54ef-4339-9936-515ea2b33d54,ubereats,MEX,Ciudad Judicial,Chicken Tenders Hub,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,D34zwqPtnMsEkaRst,aa2ffa53-2bbe-49ca-b84c-cafbd8f25035,ubereats,MEX,Ciudad Judicial,Honest Food,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+14.0,Q3uQMX7vrsoykewzJ,b0edc684-9293-4746-8b4d-1fb5f021f66d,ubereats,MEX,Polanco,Honest Food,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+14.0,eKqtmqiHXbZzsrrNG,5764670049507934820,didi,MEX,Tlaquepaque,Honest Food,5.0,0,,Exactamente como lo pedí|Buena calidad de la comida|Bien empacado|Precios razonables|Menú variado|Porciones adecuadas,GOOD_PACKAGING|HIGH_FOOD_QUALITY|NOT_WORTH_PRICE|ORDER_PRECISION|VARIETY_MENU_OPTIONS,PRICING,,1.0,0
+14.0,zxmoLsAme93zgvwtv,5764670036673364591,didi,MEX,Doctores,Mr Beast Burger,4.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,MYi3kAkRuhDBwyj39,2.439989723E9,rappi,MEX,Azcapotzalco,Numa Cocina Mediterranea,5.0,0,,rrs_rest_accuracy_rate_5|Justo lo que pedí,ORDER_PRECISION,ORDER_PRECISION,,1.0,0
+14.0,tjB6HJr3uxoicjWTE,3a054e5d-9a1c-40ee-949b-7b11fa2b7c53,ubereats,MEX,Iztapalapa,Green House,5.0,0,,restaurant_sustainable_packaging|restaurant_great_selection,VARIETY_MENU_OPTIONS,1.0,,,0
+14.0,GnLMEJfQfWdxz63es,8b88b3de-5b4b-4eee-a734-45931acdc62f,ubereats,MEX,Santa Fe,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,tFo3eZGmLLjutKkpw,2.440003761E9,rappi,MEX,Samara,Avocalia,3.0,1,,rrs_rest_completeness_rate_3|Falto un item,ORDER_ACCURACY,MISSING_ITEM,PASE,0.0,1
+14.0,qraeZSsAWebFQZq3E,8492ae35-60f2-4303-9419-e5ef41ef60b4,ubereats,MEX,Lindavista,Avocalia,4.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,ruz2nWjHFPAr3WtjS,7586326d-4950-40da-8ecf-cec7256f2a1c,ubereats,MEX,San Nicolás,Numa Cocina Mediterranea,3.0,1,,restaurant_poor_packaging,BAD_PACKAGING,OTHER,DELIVERY,0.0,1
+14.0,e9gjg6Rx6LmHsYaJC,5764670112216973910,didi,MEX,Pedregal,Mr Beast Burger,5.0,0,,Bien empacado|Buena calidad de la comida,GOOD_PACKAGING|HIGH_FOOD_QUALITY,1.0,,,0
+14.0,oyQspsuAJqHikMBnv,5764669921959150200,didi,MEX,Jardines del Valle,Numa Cocina Mediterranea,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,DdztjC5BeTTEN4ftS,56581ba6-4f52-40bb-ae33-b572833f9851,ubereats,MEX,Azcapotzalco,Avocalia,5.0,0,,restaurant_creative_menu|restaurant_sustainable_packaging,GOOD_PACKAGING|VARIETY_MENU_OPTIONS,1.0,,,0
+14.0,xrrCBsQ2XoQFmHJEL,d014ad54-85be-4462-8e9b-753627ace610,ubereats,MEX,Manacar,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,2rFxbNz63N5o6zJHG,2.440007596E9,rappi,MEX,Estadio,Chicken Tenders Hub,3.0,1,,comment|Comentario,RATINGS,RATINGS,0.0,,1
+14.0,SgJbphfDrMzTSEfJ8,5764669972890583640,didi,MEX,Jardines,Honest Food,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,5yyARoP4KmNeLiQaz,5764669957895946856,didi,MEX,Tec,Mr Beast Burger,5.0,0,,Buena calidad de la comida,HIGH_FOOD_QUALITY,1.0,,,0
+14.0,aBZqXik49j6omwkpr,2.44000662E9,rappi,MEX,Canek,La Neta Burgers (Orale Burgers),5.0,0,,rrs_rest_packaging_rate_5|Buena presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+14.0,3u2nk8Tbou9E3j5RD,2.440010616E9,rappi,MEX,Esmeralda,Don Gyros & Kebab,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+14.0,zd4bv8WgKY7qZ5kkL,2.44001244E9,rappi,MEX,Churubusco,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,5GmHhbEWZkBaR6HJk,2.440013219E9,rappi,MEX,San Jerónimo,Fonda Local,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,Y2HfXYaKR2Edne8Wv,5764670084974969486,didi,MEX,Tabachines,Que Chicken,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,Tto6YZDrJmLN7pgcR,5764669942020506233,didi,MEX,Doctores,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,jvr676FJ6bXfzAXGA,5764670100393230955,didi,MEX,Azcapotzalco,Honest Food,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,ciM9LGq3guXf9bcTw,2.440002251E9,rappi,MEX,Tlaquepaque,Honest Food,4.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+14.0,Dx6joyh7S3QRD3BcT,2.440015381E9,rappi,MEX,Iztapalapa,Brunch & Munch,4.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,hREcGxhXG6iSbNBya,3d796b23-a05d-44cf-9936-49df4c5f4fd7,ubereats,MEX,Polanco,Avocalia,5.0,0,,HIGH_FOOD_QUALITY,,1.0,,,0
+14.0,dEhuXGAe4Tf37ReRs,2.440015654E9,rappi,MEX,Montejo,Mr Beast Burger,4.0,0,,rrs_rest_completeness_rate_4|Incluir todos los items,ORDER_COMPLETENESS,ORDER_COMPLETENESS,,1.0,0
+14.0,Hajdf7AzoJq7TsWTZ,2.440016127E9,rappi,MEX,Churubusco,Tastyfoods turbo,3.0,1,,rrs_rest_quality_rate_3|Mala calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+14.0,wBTpQpyv2WoFLC8oW,2.440016561E9,rappi,MEX,Tec,Don Gyros & Kebab,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,ASXbhYGzTfKXwvhC2,2.440018035E9,rappi,MEX,Santa Catarina,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,oPMRaXrEueNtSgr2S,5764670002225545900,didi,MEX,Tlaquepaque,Signature Salads,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,BSDXyYdgZgaAmdatT,2.440019181E9,rappi,MEX,Volcanes,Brunch & Munch,3.0,1,,rrs_rest_quality_rate_3|Mala calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+14.0,uZAKi5jx9RD8D38ZD,3f950f6c-288d-4f02-b4e8-b8b06cf064cc,ubereats,MEX,Azcapotzalco,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,6S5A2yJrd6GEEF4Eb,5764670042482475697,didi,MEX,Churubusco,Mr Beast Burger,4.0,0,,RATINGS,,RATINGS,1.0,,0
+14.0,ntPFvZ44iNxc9uxpX,2.440019431E9,rappi,MEX,Tabachines,LA PANQUEQUERIA,5.0,0,,rrs_rest_accuracy_rate_5|Justo lo que pedí,ORDER_PRECISION,ORDER_PRECISION,,1.0,0
+14.0,bRiWctuu7ejZ3dyhk,2.44002008E9,rappi,MEX,Churubusco,Honest Food Turbo,5.0,0,,rrs_rest_accuracy_rate_5|Justo lo que pedí,ORDER_PRECISION,ORDER_PRECISION,,1.0,0
+15.0,KnmrhWEjSyQSsTowF,823dc580-190e-4639-aed3-28969633724c,ubereats,MEX,Doctores,Que Chicken,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,mjTP3b9JHt5vy2btR,2.44001941E9,rappi,MEX,San Nicolás,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,t2BvNXG4eWyFZ2z6z,2.440021808E9,rappi,MEX,Doctores,Honest Food,5.0,0,,rrs_rest_completeness_rate_5|Tal como lo pedí,ORDER_COMPLETENESS,ORDER_COMPLETENESS,,1.0,0
+15.0,r6K3KBdAdagG7RZ6N,d3888f75-c82b-493f-8a86-7212bc135e7e,ubereats,MEX,La Calma,Órale Desayunos,5.0,0,,HIGH_FOOD_QUALITY,,1.0,,,0
+15.0,hnfznwqw6xpkjrj7B,5764669990267585184,didi,MEX,Doctores,Don Gyros & Kebab,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,qSdDfjs5wkFcAxRfu,b83a83d7-a18d-4613-bfba-c6e43e197afd,ubereats,MEX,La Calma,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,N3QiAXgJrYjxhfeux,9d9328bd-b0c4-486c-abe6-535b1fdf2c3d,ubereats,MEX,Lindavista,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,raMADmgndQAexJNme,90c2b477-31aa-4424-8add-b45f7b271ef8,ubereats,MEX,Lindavista,Honest Food,5.0,0,,restaurant_convenient|restaurant_store_accommodating|restaurant_reliable_service|restaurant_great_selection|restaurant_consistent,VARIETY_MENU_OPTIONS,1.0,,,0
+15.0,CcYLTKWEzC65SPmZe,2.440023988E9,rappi,MEX,Iztapalapa,Pozórale,4.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+15.0,nBZgwRNCoh3ETQYS5,2.440024133E9,rappi,MEX,Saltillo Centro,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,sc5huSgM4dZSoenZA,2.440021346E9,rappi,MEX,Iztapalapa,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,dK7uzntushwgoqixQ,2.44002486E9,rappi,MEX,Lincoln,Mr Beast Burger Turbo,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+15.0,CbAm9TB42WKemL42Q,2.440024602E9,rappi,MEX,Coapa,Fonda Local,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+15.0,Frzz2hvb79RQwHMKt,2.440022227E9,rappi,MEX,Azcapotzalco,Honest Food,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+15.0,NDk6fK856urjD3uMG,2.440024423E9,rappi,MEX,Estadio,Tender Lovers,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,uBZ597pqYJGSs7MdL,847a7e8a-18cf-4168-b281-94735baa413f,ubereats,MEX,Tlaquepaque,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,2dcFEQxbPBE6L554S,5764670054687900345,didi,MEX,Doctores,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,cPyDhSA3prd4nKFLt,2.440027802E9,rappi,MEX,Doctores,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,7qWX8FgJ7sjPcxkpb,5764670029027148462,didi,MEX,Jardines del Valle,Honest Food,3.0,1,,RATINGS,,RATINGS,0.0,,1
+15.0,8yM48otBvMQLwaf2X,2.440025996E9,rappi,MEX,Iztapalapa,The Breakfast Club,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,NTwSpNiwQasN6EzCA,ed15bed5-7355-4268-a79d-cd59b6f3517a,ubereats,MEX,Metepec,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,ACvadPxNnpGcDfHNB,9c0ab065-ab66-450a-b4aa-a9d09baa3069,ubereats,MEX,Churubusco,Mr Beast Burger,1.0,1,,RATINGS,,RATINGS,0.0,,1
+15.0,X5GSQpvXrukfZ2XB8,2.440028582E9,rappi,MEX,Tlaquepaque,Tender Lovers,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,JkPw7tWAsksZZsTZB,2.440031403E9,rappi,MEX,Lincoln,The Egg Spot Turbo,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,qeRDaWchD5vmWK9oC,2.440031165E9,rappi,MEX,Estadio,Don Gyros & Kebab,5.0,0,,rrs_rest_packaging_rate_5|Buena presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+15.0,9YMR5Sf4XxBooaYTF,2.440031039E9,rappi,MEX,Jardines del Valle,Foodhub,1.0,1,,RATINGS,,RATINGS,0.0,,1
+15.0,JmF3xxuF5sccMnMcx,b6a004e5-3169-47a0-bf26-bdbf64756da9,ubereats,MEX,Azcapotzalco,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,k7mRXBAN2P7u2Kbqg,9bc11383-206e-4889-8646-316b4bde8137,ubereats,MEX,Lindavista,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,r8b5nTeLRvQ6t3aye,2.440033318E9,rappi,MEX,Canek,Mr Beast Burger,3.0,1,,RATINGS,,RATINGS,0.0,,1
+15.0,T8HZtCtjc7G532x5Y,5764669965512803037,didi,MEX,Azcapotzalco,Que Chicken,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,4tpNbQifJFxq5vf39,93dad126-a8ed-45cb-bdf1-8eea4e84282c,ubereats,MEX,Metepec,Honest Food,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,7YRHAgkbWEFXTWqX2,2.44003165E9,rappi,MEX,Tec,Tasty Foods,4.0,0,,rrs_rest_completeness_rate_4|Incluir todos los items,ORDER_COMPLETENESS,ORDER_COMPLETENESS,,1.0,0
+15.0,SYH8uPoYS6LssbEf3,5764669975629464284,didi,MEX,San Ángel,Honest Food,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,BrEBxfm8pBzj8Xwiq,5764670040532124367,didi,MEX,San Ángel,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,hyYzfj8SPPSg4udGh,5764669952208470736,didi,MEX,Coapa,Honest Food,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,4u84vKzHcjBHjZm4M,5764670144102073052,didi,MEX,Volcanes,Brunch & Munch,4.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,RLyFao9qccvu4Y57a,2.440035769E9,rappi,MEX,Coapa,Mr Beast Burger Turbo,5.0,0,,rrs_rest_accuracy_rate_5|Justo lo que pedí,ORDER_PRECISION,ORDER_PRECISION,,1.0,0
+15.0,AGP2FJMF4diMTojSE,2.44003589E9,rappi,MEX,Lindavista,Que Chicken,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,jK2XYkaQod8xssPzy,5764670161273553636,didi,MEX,Estadio,Don Gyros & Kebab,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,z52bNwrsph5d7S2Lx,2.44003243E9,rappi,MEX,Tlaquepaque,Chicken Tenders Hub,4.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+15.0,EcQcX8WNPPFr4HhSh,5764670119829635823,didi,MEX,Lincoln,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,yvtHySxf27mTd3byP,1f97d6aa-493c-4738-97e2-638fc24c0c3d,ubereats,MEX,Ciudad Judicial,Green House,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,6Kz9D2uehgfuipQpq,2.440037832E9,rappi,MEX,Ciudad Judicial,La Neta Burgers (Orale Burgers),5.0,0,,rrs_rest_packaging_rate_5|Buena presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+15.0,2tMnSjb3LBQWtgtPG,2.44001843E9,rappi,MEX,Polanco,Mr Beast Burger,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+15.0,w6bG6GrTkNCR5H3na,5764670037327676129,didi,MEX,Estadio,Fonda Local,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,SnjFhWyM5KygsWGpv,5764670133196882701,didi,MEX,Santa Catarina,La Neta Burgers (Orale Burgers),4.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,TiqWHbS2guxyNGYgm,2.440033163E9,rappi,MEX,Jardines del Valle,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,f4bXmotTxCB6j8te6,2.440040551E9,rappi,MEX,Tlaquepaque,La Neta Burgers (Orale Burgers),5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+15.0,AsNw3wcAjkeDR4fR2,69a40721-4627-48dd-b151-55d9f42a1448,ubereats,MEX,Volcanes,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,hawMtRbr65xHy6w74,6a0a1db6-77a9-4bac-ae16-f87d993a54a4,ubereats,MEX,Pedregal,The Salad Project,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,m9C2aRgSYq55RBda4,2.440042404E9,rappi,MEX,La Calma,House of Salads Turbo,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,w2ns4zjSZmNrwGXC9,2.440042739E9,rappi,MEX,Estadio,Que Chicken,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+15.0,K2rwyjXfM8vabufni,944b1441-eef3-431d-bae9-8f416ae2f04f,ubereats,MEX,Lindavista,Fonda Local,5.0,0,,HIGH_FOOD_QUALITY,,1.0,,,0
+15.0,CkrMfF9GdfZtd9TKe,757d78a1-4ec8-4a4d-8b98-349b42839009,ubereats,MEX,Tec,Honest Food,5.0,0,,"RATINGS, HIGH_FOOD_QUALITY",,RATINGS,1.0,,0
+15.0,N35v4nNqyL4p4BCft,5764669945254314756,didi,MEX,Iztapalapa,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,A6Cb7BposkbmkZ9i7,2.44004376E9,rappi,MEX,Iztapalapa,House of Burgers,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,JRzHbmWkfJwYwP95X,661eef62-c6ec-45b1-afdd-cda9c302b161,ubereats,MEX,Volcanes,Numa Cocina Mediterranea,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+15.0,83rA7JtMWtaMeg735,d9d0673b-aa68-4565-b112-45d97e233f12,ubereats,MEX,Ciudad Judicial,Green House,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+15.0,Rf5Wtx5H5nvS6uaQW,5764670021112496938,didi,MEX,Polanco,Fonda Local,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,HrS5JJ92NQhCnGWmz,3ccff275-2e6e-454c-928c-4504fadbbd4b,ubereats,MEX,Metepec,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,9gGANyaWvdXs7C7om,5764669999046263604,didi,MEX,Iztapalapa,Fonda Local,5.0,0,,Precios razonables|Exactamente como lo pedí|Buena calidad de la comida|Porciones adecuadas|Menú variado|Bien empacado,GOOD_PACKAGING|HIGH_FOOD_QUALITY|ORDER_COMPLETENESS|ORDER_PRECISION|VARIETY_MENU_OPTIONS,1.0,,,0
+15.0,W2ad7FSnXxtJ5XBEo,2.440049199E9,rappi,MEX,Santa Teresita,Que Chicken,3.0,1,,comment|Comentario,RATINGS,RATINGS,0.0,,1
+15.0,fjsSS377WpLpqhjJS,0fbe969e-7005-46e7-a1aa-b51d27157e87,ubereats,MEX,Metepec,Numa Cocina Mediterranea,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,bQAvJnEvLE6Nh4Swh,2.440048545E9,rappi,MEX,Estadio,Honest Food,3.0,1,,rrs_rest_completeness_rate_3|Falto un item,ORDER_ACCURACY,MISSING_ITEM,PASE,0.0,1
+15.0,krZwyvtZzZtSLupzi,5764669996236079903,didi,MEX,Doctores,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,C7z9dePPPdyAiXfEw,19781532-50fa-449d-9c05-82193fc09bd2,ubereats,MEX,Lindavista,House of Salads,5.0,0,,"RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS",,1.0,0
+15.0,WRDDYr6B4ZmRj6HZW,f4ead313-3186-4952-b42d-d19e77583974,ubereats,MEX,Churubusco,Avocalia,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+15.0,9Dj6Dt4dyefNyYGus,5764669947053671231,didi,MEX,Tlaquepaque,The Wrap Company MX,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,uBzvdqZ74b8xe3x3m,2.440052641E9,rappi,MEX,Lincoln,Fonda Local turbo,2.0,1,,rrs_rest_quality_rate_3|Mala calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+15.0,6hEkjTAM7mRo8Qqe9,5764670158052328255,didi,MEX,Volcanes,Foodhub,5.0,0,,Buena calidad de la comida,HIGH_FOOD_QUALITY,1.0,,,0
+15.0,PzxYXeQth7vrbMNX8,5764669982164190028,didi,MEX,Iztapalapa,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,H9PvuivBLq83uwKGM,0e276046-3318-4483-bcab-742768f1f4b5,ubereats,MEX,Volcanes,Green House,5.0,0,,RATINGS,,RATINGS,1.0,,0
+15.0,owcXvNiDBnAKfasRD,61ba525c-ae6a-409c-a871-58d64b166330,ubereats,MEX,Montejo,Numa Cocina Mediterranea,5.0,0,,"RATINGS, HIGH_FOOD_QUALITY",,RATINGS,1.0,,0
+15.0,wDfEdmrM5gpJNdPPt,cc32f027-ea07-4fa1-97d3-5cfa5dab5dc5,ubereats,MEX,Ciudad Judicial,Honest Food,5.0,0,,"RATINGS, HIGH_FOOD_QUALITY",,RATINGS,1.0,,0
+15.0,zF2ppwSYDKSxEdAvm,5764670156647236416,didi,MEX,San Nicolás,Pozórale,3.0,1,,RATINGS,,RATINGS,0.0,,1
+15.0,Z9qkLrueKj6Axf322,5764670131305251637,didi,MEX,Montejo,Fonda Local,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,aJzrbNEwwLWjniJGb,2.440051144E9,rappi,MEX,Coapa,Honest Food,1.0,1,,rrs_rest_quality_rate_1|Pésima calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+16.0,ja7ShwE9rvW9Cdu2G,0dcc7f8e-ae7b-4141-bc4f-21e62bc96d2a,ubereats,MEX,Doctores,Numa Cocina Mediterranea,1.0,1,,RATINGS,,RATINGS,0.0,,1
+16.0,44aZALXqJu9nSDCYp,b32f76d0-46fd-4590-906e-83d05a4c5d42,ubereats,MEX,Doctores,Numa Cocina Mediterranea,4.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,6dZjQhmRrjjcjv6xP,2.440056588E9,rappi,MEX,Tabachines,Numa Cocina Mediterranea,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,bLgRcGmJDE2fxZDHb,ef0d1a15-598f-466d-9889-d4566bc7fb41,ubereats,MEX,Esmeralda,Mr Beast Burger,4.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,7ywZts3n84dbEvF8c,2.440056893E9,rappi,MEX,Jardines,Green House,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+16.0,9YY23WftR3PcLXywN,2d464ba4-96da-4b02-b101-4911bd7640d2,ubereats,MEX,Azcapotzalco,Honest Food,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,oiHMWKsgLMWBMwRwk,2.440058289E9,rappi,MEX,San Nicolás,Fonda Local,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+16.0,5h8Ra3bYnLZmrqTRf,08061db8-9049-4e00-ac29-7672d6054590,ubereats,MEX,Doctores,Don Gyros & Kebab,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,Y2ji6supb92W8zQ9j,2.440055598E9,rappi,MEX,Santa Fe,Chicken Tenders Hub,4.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,tNggEFRm56viNZbAA,5764670121293448030,didi,MEX,Doctores,Avocalia,3.0,1,,RATINGS,,RATINGS,0.0,,1
+16.0,TYcMXzjgJ7QhnXvPu,2.440057431E9,rappi,MEX,Lincoln,La Neta Burgers (Orale Burgers),5.0,0,,rrs_rest_accuracy_rate_5|Justo lo que pedí,ORDER_PRECISION,ORDER_PRECISION,,1.0,0
+16.0,icaq2vEi6e3yL6tEt,2.440060357E9,rappi,MEX,Saltillo Centro,Que Chicken,3.0,1,,rrs_rest_completeness_rate_3|Falto un item,ORDER_ACCURACY,MISSING_ITEM,PASE,0.0,1
+16.0,uxEZ6X6e8uXSFJWdD,e1653cbb-e726-4e14-8550-4dbcbdd8bb26,ubereats,MEX,Ciudad Judicial,Numa Cocina Mediterranea,5.0,0,,"RATINGS, RATINGS",,"RATINGS, RATINGS",,1.0,0
+16.0,MSWYpHnWqJCu8rt9t,9e311f45-a933-48b1-9642-69a26614ce00,ubereats,MEX,San Nicolás,Honest Food,5.0,0,,HIGH_FOOD_QUALITY,,1.0,,,0
+16.0,iSowFzzX2JQmp2hF9,39b54835-832e-4134-81ce-ca27b873ed4f,ubereats,MEX,San Ángel,Que Chicken,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,augxRm9zNZvvZMJMx,0846c18b-2840-4f8d-90ab-6b2809dc5087,ubereats,MEX,Santa Fe,Que Chicken,5.0,0,,restaurant_great_selection,VARIETY_MENU_OPTIONS,1.0,,,0
+16.0,Cnw8vnMeT4arfaZmB,2.440056598E9,rappi,MEX,Estadio,Tender Lovers,5.0,0,,rrs_rest_completeness_rate_5|Tal como lo pedí,ORDER_COMPLETENESS,ORDER_COMPLETENESS,,1.0,0
+16.0,E6uANGLeJuZPotkn9,2794d25b-9679-4d06-bb66-09f2608623fb,ubereats,MEX,Volcanes,Numa Cocina Mediterranea,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,b8fQRNetT3LtcNPyx,2.440063623E9,rappi,MEX,Tec,Honest Food,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,nzEqbozQBjWriPLh3,558f3628-3dfb-4106-9c5a-77832030b96a,ubereats,MEX,La Calma,Avocalia,4.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,CTSFmvGwRLDwHWmxc,2.440068461E9,rappi,MEX,Polanco,Tender Lovers,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,GFxjw9CtBZmbodndm,2.440068675E9,rappi,MEX,Tabachines,Honest Food,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,bsXPTtQfaziLL6z8o,2.440068068E9,rappi,MEX,Tabachines,Honest Food,2.0,1,,rrs_rest_quality_rate_2|Mala calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+16.0,37Px4RsW3cdeBCQGf,2.440064668E9,rappi,MEX,Santa Fe,Honest Food,4.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,BSQ3TdLygydnPBDKg,2.440070476E9,rappi,MEX,La Calma,Don Gyros & Kebab,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+16.0,hLBTwKhMfaJY4M3DT,5764670051886105525,didi,MEX,Doctores,Honest Food,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,ayE9GtmbyiXSQxdW5,2.440072917E9,rappi,MEX,La Calma,Foodhub,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,MvMLgqJuaa577him2,4c6bee90-e869-4ed8-8110-21cd3a0a3224,ubereats,MEX,Azcapotzalco,Green House,5.0,0,,HIGH_FOOD_QUALITY,,1.0,,,0
+16.0,e9vXkiKsMwPxgxsiQ,5764670005924922267,didi,MEX,Del Valle,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,GqL4gZJcLstDfm47t,28c510de-3cf6-4ea3-965d-14277bfbd89e,ubereats,MEX,Coapa,Honest Food,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+16.0,JRPQZr64m9ETiRucJ,2.440074606E9,rappi,MEX,Del Valle,Chicken Tenders Hub,1.0,1,,comment|Comentario,RATINGS,RATINGS,0.0,,1
+16.0,MjDPkMubfZiCW4rXn,2.440073483E9,rappi,MEX,Estadio,LA PANQUEQUERIA,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+16.0,ZLu2N42MSYzgXY2tH,2.440075809E9,rappi,MEX,Jardines del Valle,Mr Beast Burger,4.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+16.0,kA2SPQNuLRNLKcWh7,2.440076076E9,rappi,MEX,Canek,Foodhub,4.0,0,,rrs_rest_quality_rate_4|La calidad de los ingredientes,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+16.0,pZNnT7JYJcasq65es,2.440072929E9,rappi,MEX,Polanco,Que Chicken,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+16.0,CsAgAei4c3FRZcxkx,dc489fd8-b157-4e0d-a6fa-3a56af0742bb,ubereats,MEX,La Calma,Avocalia,1.0,1,,NOT_WORTH_PRICE,,SMALL_PORTIONS,PRICING,0.0,1
+16.0,MBYjeZ23s2tqKxXLF,2.440077143E9,rappi,MEX,Estadio,The Egg Spot,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,WS88q4RGZ3HqtJcZp,ac021184-6bd1-4d83-9ada-a9cf73dd3329,ubereats,MEX,Churubusco,Green House,5.0,0,,"RATINGS, RATINGS",,"RATINGS, RATINGS",,1.0,0
+16.0,PBi8eMCtRvripFDbH,f8890f16-6487-4752-b9bf-7d8a49964b0d,ubereats,MEX,Doctores,Honest Food,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,z2mRq5w92w3tayAaZ,2.440077711E9,rappi,MEX,La Calma,Fonda Local,1.0,1,,RATINGS,,RATINGS,0.0,,1
+16.0,rMCzGg34QmMPcHih7,2.440078813E9,rappi,MEX,San Ángel,Foodhub,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+16.0,HdHGh8xoHvYYKsPgf,42959617-9930-4bbc-8f84-7560f533d4dc,ubereats,MEX,Churubusco,Honest Food,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,PEYKZ7C4G3oyZ7vtj,5764670132626457532,didi,MEX,Volcanes,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,5vgd36rbZzWHw9aFW,6ea6d889-6fc1-4e7d-aa04-2a965ef88b7b,ubereats,MEX,Jardines del Valle,Foodhub,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,jpA2oZ2ggxkuYJDc6,5764670007376151515,didi,MEX,Estadio,The Wrap Company MX,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,rb6KQGhhYC2c69tF8,1ac743e3-72b2-4ab4-a12e-f89c08f19c04,ubereats,MEX,Azcapotzalco,La Neta Burgers (Orale Burgers),5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,jALra3i7one5GQW9Q,2.440079141E9,rappi,MEX,Carretera Nacional,La Neta Burgers (Orale Burgers),5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+16.0,oXpase7hBeETriY7z,5764670022941213682,didi,MEX,Doctores,Fonda Local,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,KvvnBqTGRZ7ke48L4,5764670140427862994,didi,MEX,Santa Fe,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,ymePDYTahg9Hh5f3p,7457d143-a87e-4424-bf95-cb07cdc7a130,ubereats,MEX,Coapa,Honest Food,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,9SBjNxihqmHhCmMLB,2.440079473E9,rappi,MEX,Tlaquepaque,Foodhub,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+16.0,qe2zjF2mexRZgGjwc,2.440080992E9,rappi,MEX,Volcanes,La Neta Burgers (Orale Burgers),1.0,1,,rrs_rest_quality_rate_1|Pésima calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+16.0,myZzx2bSdbpBio8DQ,2.440081824E9,rappi,MEX,Satélite,Mr Beast Burger,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+16.0,qALRCWGkw7tpfoSPS,2.440081733E9,rappi,MEX,Santa Teresita,Mr Beast Burger,3.0,1,,comment|Comentario,RATINGS,RATINGS,0.0,,1
+16.0,ehsMg47jobB2zNma8,2.440081762E9,rappi,MEX,Canek,Mr Beast Burger,2.0,1,,rrs_rest_quality_rate_2|Mala calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+16.0,9vk3ynLwpgfgGNQLz,6b098bdf-38fb-40d3-9db0-6e79b051a776,ubereats,MEX,Santa Teresita,Fonda Local,1.0,1,,NOT_WORTH_PRICE,,SMALL_PORTIONS,PRICING,0.0,1
+16.0,siyeingKLiJ9KmGi8,2.440081809E9,rappi,MEX,Del Valle,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,JXdqDRSfJ6eifzfX8,2.440081913E9,rappi,MEX,Tabachines,Mega Greens (Super Ensaladas),4.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,GhiP4y5t23Xdfh97J,2.44008217E9,rappi,MEX,Del Valle,Mr Beast Burger Turbo,4.0,0,,rrs_rest_quality_rate_4|La calidad de los ingredientes,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+16.0,4adaTqwnZZBnMRS4j,2.4400822E9,rappi,MEX,Tlaquepaque,La Neta Burgers (Orale Burgers),5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,c5dmXSyWLJwWYoPgN,2.44008128E9,rappi,MEX,Coapa,Mr Beast Burger,5.0,0,,rrs_rest_packaging_rate_5|Buena presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+16.0,tjgsE9BGNoQPoimku,2.440082581E9,rappi,MEX,Santa Teresita,Mr Beast Burger,5.0,0,,rrs_rest_packaging_rate_5|Buena presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+16.0,4RcN9oYshtp5JnMsC,2.440082548E9,rappi,MEX,Del Valle,Mr Beast Burger,3.0,1,,RATINGS,,RATINGS,0.0,,1
+16.0,Scukx8oQCNcpxm7B6,2.440082323E9,rappi,MEX,Saltillo Centro,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,ahGMbxmLA8nrfhitw,2.440081699E9,rappi,MEX,Volcanes,Mr Beast Burger,5.0,0,,rrs_rest_completeness_rate_5|Tal como lo pedí,ORDER_COMPLETENESS,ORDER_COMPLETENESS,,1.0,0
+16.0,3qg2Cc62xfTZwFMvf,2.440083304E9,rappi,MEX,Del Valle,Mr Beast Burger,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+16.0,Wr9x6J8RqpiBk2Dsw,2.440083201E9,rappi,MEX,Lincoln,Mr Beast Burger,5.0,0,,rrs_rest_packaging_rate_5|Buena presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+16.0,pt3gbfbhb6nSLtxvK,5764670042289538047,didi,MEX,Ciudad Judicial,Avocalia,5.0,0,,Exactamente como lo pedí|Porciones adecuadas|Precios razonables|Menú variado|Bien empacado|Buena calidad de la comida,GOOD_PACKAGING|HIGH_FOOD_QUALITY|NOT_WORTH_PRICE|ORDER_COMPLETENESS|ORDER_PRECISION|VARIETY_MENU_OPTIONS,PRICING,,1.0,0
+16.0,KLYA5CBtWTtKzCdbG,2.440083784E9,rappi,MEX,Doctores,Mr Beast Burger,1.0,1,,rrs_rest_quality_rate_1|Pésima calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+16.0,RmGwHrMeMfWo5bzTt,2.440075274E9,rappi,MEX,Volcanes,Chicken Shack,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+16.0,N6DC6xkoBzci2RReq,2.440084305E9,rappi,MEX,Santa Teresita,Mr Beast Burger,5.0,0,,rrs_rest_accuracy_rate_5|Justo lo que pedí,ORDER_PRECISION,ORDER_PRECISION,,1.0,0
+16.0,h25enSL59KeFG5cCA,5764670101919958001,didi,MEX,Churubusco,Fonda Local,1.0,1,,Porciones pequeñas|Mala calidad de la comida,BAD_QUALITY|NOT_WORTH_PRICE,NOT_TASTY|SMALL_PORTIONS,PRICING|QUALITY,0.0,1
+16.0,ED2tfcpDxegkJxkDG,2.440084541E9,rappi,MEX,Doctores,Mr Beast Burger,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+16.0,EdShwsy2QtSp9uNh6,2.440084734E9,rappi,MEX,Saltillo Centro,Mr Beast Burger Turbo,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,cg3CNKPiE7ucTAEjT,2.440082218E9,rappi,MEX,Volcanes,Mr Beast Burger,5.0,0,,rrs_rest_accuracy_rate_5|Justo lo que pedí,ORDER_PRECISION,ORDER_PRECISION,,1.0,0
+16.0,ar5vDtfBPGkpeRKWC,2.440083679E9,rappi,MEX,Volcanes,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,FSp8AMX8EBSGGjdsg,2.440082006E9,rappi,MEX,Santa Catarina,Mr Beast Burger,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+16.0,jqoS7n64bKJ7sQsZ7,2.440084396E9,rappi,MEX,Azcapotzalco,Mr Beast Burger,3.0,1,,RATINGS,,RATINGS,0.0,,1
+16.0,hGaic9oYN5NZMurGR,612f65c4-4e13-4d0a-94d2-2f72b6bd4789,ubereats,MEX,Doctores,Green House,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,vzgb3GwD9KLvZw6LD,2.440083974E9,rappi,MEX,Santa Catarina,Mr Beast Burger,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+16.0,4nmoEFASEipZhbrEY,2.440085839E9,rappi,MEX,Canek,Mr Beast Burger,3.0,1,,rrs_rest_quality_rate_3|Mala calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+16.0,to5dPP5YzFZCjFeBZ,2.440084853E9,rappi,MEX,Metepec,Mr Beast Burger,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+16.0,te4mQpGzCqKFBMXpt,2.440086369E9,rappi,MEX,Jardines,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+16.0,AbExZRpyXyDWJXN5D,5ea78c33-3bc1-4719-89e4-8722f54a9fb0,ubereats,MEX,Metepec,Que Chicken,5.0,0,,restaurant_reliable_service,OTHER,OTHER,1.0,,0
+16.0,wTpbgmxLEywFdKAC6,4e1cdb80-fe37-4a94-8bcd-f9de355145a0,ubereats,MEX,Montejo,House of Salads,5.0,0,,"RATINGS, RATINGS",,"RATINGS, RATINGS",,1.0,0
+16.0,tzHZexGniEtj9m2x2,2.440085714E9,rappi,MEX,Esmeralda,Mr Beast Burger,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+16.0,q4vdEmzREviFsNcYq,2.440085281E9,rappi,MEX,Jardines del Valle,Mr Beast Burger,2.0,1,,rrs_rest_quality_rate_2|Mala calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+16.0,A4YttDud65KneHRX2,2.440085695E9,rappi,MEX,Coapa,Mr Beast Burger,4.0,0,,rrs_rest_packaging_rate_4|Mejorar la presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+16.0,BNMHHTEc4ueucoMXE,2.440085635E9,rappi,MEX,Santa Fe,Mr Beast Burger,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+16.0,6Q6aJ2AaQdtRBCHe3,2.440088029E9,rappi,MEX,Del Valle,Mr Beast Burger,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+16.0,gTQ3vB3JNcsH3bNWt,2.44008709E9,rappi,MEX,Azcapotzalco,Mr Beast Burger,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+16.0,6kvkJAcriYqiGKrZ2,2.440089868E9,rappi,MEX,Santa Teresita,Mr Beast Burger Turbo,3.0,1,,RATINGS,,RATINGS,0.0,,1
+17.0,pvBzaZKpFhvANwm37,2.440090001E9,rappi,MEX,Esmeralda,Green House,1.0,1,,rrs_rest_completeness_rate_1|Faltaron algunos items,ORDER_ACCURACY,MISSING_ITEM,PASE,0.0,1
+17.0,upgJDanYCdHJFCKmj,2.440089551E9,rappi,MEX,Santa Catarina,Mr Beast Burger,4.0,0,,RATINGS,,RATINGS,1.0,,0
+17.0,wARfoDGwjoDohnvd7,2cd9f7bd-8d3e-464d-b445-4b73ddefb3c5,ubereats,MEX,Doctores,Avocalia,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+17.0,zauKpu2WQWwxz2iyC,2.440088785E9,rappi,MEX,La Calma,Mr Beast Burger,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+17.0,jwWT3bDES9ZXbYGg7,2.440086855E9,rappi,MEX,Azcapotzalco,Mr Beast Burger,4.0,0,,rrs_rest_packaging_rate_4|Mejorar la presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+17.0,8JBzCzT6JMvfHjsGN,2.440088637E9,rappi,MEX,Azcapotzalco,Mr Beast Burger,3.0,1,,comment|Comentario,RATINGS,RATINGS,0.0,,1
+17.0,CakR3XcBqxzyj3zB4,2.440088748E9,rappi,MEX,Azcapotzalco,Mr Beast Burger,5.0,0,,rrs_rest_completeness_rate_5|Tal como lo pedí,ORDER_COMPLETENESS,ORDER_COMPLETENESS,,1.0,0
+17.0,4Z6DesDzsapesB3uf,2.440090866E9,rappi,MEX,Doctores,Chicken Tenders Hub,3.0,1,,rrs_rest_quality_rate_3|Mala calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+17.0,ABqWydtHWdXn92gsi,c1588541-d4bb-492b-8e2b-fa1a650f3800,ubereats,MEX,Del Valle,Que Chicken,5.0,0,,RATINGS,,RATINGS,1.0,,0
+17.0,iKx3mbbm4LBm9FpkA,2.44008289E9,rappi,MEX,Churubusco,Mr Beast Burger,3.0,1,,RATINGS,,RATINGS,0.0,,1
+17.0,faeGnAdSS3cfnveyK,5764670108333048882,didi,MEX,La Calma,Fonda Local,5.0,0,,Bien empacado|Exactamente como lo pedí|Porciones adecuadas|Precios razonables,GOOD_PACKAGING|ORDER_PRECISION,1.0,,,0
+17.0,PP5bJayLy8Sw9vK9b,e9fa47c3-dcf6-44a0-b37f-b3fdf4cc2957,ubereats,MEX,Volcanes,Green House,5.0,0,,RATINGS,,RATINGS,1.0,,0
+17.0,YfZpyDSpuJjNWApDS,2.44009252E9,rappi,MEX,Doctores,Mr Beast Burger,5.0,0,,rrs_rest_accuracy_rate_5|Justo lo que pedí,ORDER_PRECISION,ORDER_PRECISION,,1.0,0
+17.0,GEEMDTBKMJqBp6hYH,2.440087539E9,rappi,MEX,Polanco,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+17.0,2Gp2PrXfQsuiYh4AX,2.440085307E9,rappi,MEX,La Calma,Mr Beast Burger,3.0,1,,rrs_rest_accuracy_rate_3|No fue lo que pedí,ORDER_ACCURACY,WRONG_ITEM,PASE,0.0,1
+17.0,iK9c8uspY28Xe522i,2.44009462E9,rappi,MEX,Polanco,Mr Beast Burger Turbo,5.0,0,,RATINGS,,RATINGS,1.0,,0
+17.0,TbNSjEAe9YfiP8aYQ,5764670063927952435,didi,MEX,Tlaquepaque,The Wrap Company MX,5.0,0,,RATINGS,,RATINGS,1.0,,0
+17.0,3LHuwAfWqk9So4AYE,2.440090471E9,rappi,MEX,Polanco,Mr Beast Burger,3.0,1,,RATINGS,,RATINGS,0.0,,1
+17.0,DnSfSSPD8A7PA5BqQ,5764669947842200657,didi,MEX,Tlaquepaque,Mr Beast Burger,5.0,0,,Bien empacado|Exactamente como lo pedí,GOOD_PACKAGING|ORDER_PRECISION,1.0,,,0
+17.0,qiiYeGkuT5MsC4aDF,2.440097772E9,rappi,MEX,Tlaquepaque,Brunch & Munch,5.0,0,,rrs_rest_packaging_rate_5|Buena presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+17.0,JSzXdJwdZGRGciMnL,5764669930821715023,didi,MEX,Santa Teresita,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+17.0,pe6wYzisyjHBDvf44,2.440099168E9,rappi,MEX,Montejo,La Neta Burgers (Orale Burgers),5.0,0,,rrs_rest_packaging_rate_5|Buena presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+17.0,xcY9epTkokzTfzZg2,2.440098964E9,rappi,MEX,Churubusco,Brunch & Munch,3.0,1,,rrs_rest_quality_rate_3|Mala calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+17.0,DbMMZzRuLauQoyA66,2.440100071E9,rappi,MEX,Ciudad Judicial,Foodhub,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+17.0,Kvd7KSuyNg2z5BtxF,2.440099438E9,rappi,MEX,Lincoln,La Neta Burgers (Orale Burgers),5.0,0,,RATINGS,,RATINGS,1.0,,0
+17.0,7DmMhWTpGRaxmGw3w,f9c14847-3240-4a3c-a91e-e1421bb2e38d,ubereats,MEX,Canek,House of Salads,3.0,1,,RATINGS,,RATINGS,0.0,,1
+17.0,DYjywMY8p9ySeaJpN,2.440097188E9,rappi,MEX,Esmeralda,Mr Beast Burger,1.0,1,,RATINGS,,RATINGS,0.0,,1
+17.0,8t8AfoPjLnxgayHpX,1fd30ec9-7d17-4bc1-97bc-6aa6229e4851,ubereats,MEX,Coapa,Honest Food,5.0,0,,RATINGS,,RATINGS,1.0,,0
+17.0,qqq8nBdM34KihC2kf,2.440082653E9,rappi,MEX,Polanco,Mr Beast Burger,1.0,1,,rrs_rest_quality_rate_1|Pésima calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+17.0,BgDdagKWXfHcYFztQ,2.440104944E9,rappi,MEX,Santa Teresita,LA PANQUEQUERIA,1.0,1,,rrs_rest_packaging_rate_1|Mala presentación,BAD_PACKAGING,BAD_PRESENTATION,DELIVERY,0.0,1
+17.0,AFsYHKzHvPn7pJbxp,2.440102953E9,rappi,MEX,Churubusco,Que Chicken,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+17.0,yrxrA82gndopKWyna,5b108158-36ca-4e74-8eeb-d1edce5f3c12,ubereats,MEX,Metepec,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+17.0,3ovXaMFwgNCCtH5pP,2.440086801E9,rappi,MEX,La Calma,Mr Beast Burger,3.0,1,,comment|Comentario,RATINGS,RATINGS,0.0,,1
+17.0,o64KtpJSMSrXtKXnG,5764670148837442711,didi,MEX,Tabachines,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+17.0,xjRKzYhHPzNniri5o,2.440103405E9,rappi,MEX,Canek,La Neta Burgers (Orale Burgers),5.0,0,,RATINGS,,RATINGS,1.0,,0
+17.0,PrfNCZjJ5nFogsoFJ,2.440105253E9,rappi,MEX,Volcanes,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+17.0,dTSpcoTZDXCt7mKiF,1e1a4ea3-5c2e-42a2-acc8-14a27270d9fc,ubereats,MEX,Lincoln,House of Salads,5.0,0,,RATINGS,,RATINGS,1.0,,0
+17.0,siBHXNZfMHfyiqQLo,2.440111127E9,rappi,MEX,Churubusco,Brunch & Munch,1.0,1,,RATINGS,,RATINGS,0.0,,1
+17.0,z4ZoSDhk2Gzpgpmh2,0460cbfd-0a2d-4a8b-abf8-ca01ea8a3d5f,ubereats,MEX,Lincoln,Honest Food,5.0,0,,RATINGS,,RATINGS,1.0,,0
+17.0,FAmh2jDH3Rm4wRBBv,ee396eaa-f20a-4c5b-8936-3a84b3cff498,ubereats,MEX,Metepec,Avocalia,1.0,1,,NOT_WORTH_PRICE,,SMALL_PORTIONS,PRICING,0.0,1
+17.0,FTFZieh7KJ5W9cQ6D,5764670087726433463,didi,MEX,Coapa,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+17.0,bsT3263sdMbsCk5Qd,2.440112249E9,rappi,MEX,San Nicolás,Foodhub,5.0,0,,rrs_rest_accuracy_rate_5|Justo lo que pedí,ORDER_PRECISION,ORDER_PRECISION,,1.0,0
+17.0,s3fNRgNyuqZKasjo9,2.440113016E9,rappi,MEX,La Calma,Avocalia Desayunos,3.0,1,,RATINGS,,RATINGS,0.0,,1
+17.0,DGhhA6gJD2KhWdpri,2341488f-e722-4647-9c6c-de8c05154213,ubereats,MEX,Esmeralda,Que Chicken,5.0,0,,restaurant_sustainable_packaging|restaurant_reliable_service|restaurant_great_selection|restaurant_consistent,VARIETY_MENU_OPTIONS,1.0,,,0
+17.0,L6yWCXN6dbWRceA6o,2.44011419E9,rappi,MEX,Tabachines,Chicken Tenders Hub,5.0,0,,rrs_rest_accuracy_rate_5|Justo lo que pedí,ORDER_PRECISION,ORDER_PRECISION,,1.0,0
+17.0,z6Wj8YdbatHX9X2ZY,2.440082153E9,rappi,MEX,Churubusco,Mr Beast Burger,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+17.0,W87NyMotbx942dxej,2.440111332E9,rappi,MEX,Tlaquepaque,Foodhub,5.0,0,,RATINGS,,RATINGS,1.0,,0
+17.0,AkESGQithnt2fJKZC,5764669954704082136,didi,MEX,Churubusco,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+17.0,vJPHoKZHYWE9R8Yqh,32375a4d-0009-44cb-923d-76fe5f41c132,ubereats,MEX,Azcapotzalco,Honest Food,5.0,0,,"RATINGS, RATINGS, RATINGS",,"RATINGS, RATINGS, RATINGS",,1.0,0
+18.0,Cv5Gvx6yZbK6G9tk9,8e82b3fa-2ef7-4738-b49c-ab2d00b5f05d,ubereats,MEX,Esmeralda,Honest Food,5.0,0,,RATINGS,,RATINGS,1.0,,0
+18.0,Dowty6hBKPZZ8zPFT,570ad2b7-5c85-408a-af69-667c3f71e4f9,ubereats,MEX,Coapa,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+18.0,KGZF34g6yPfLACTKp,e0d9d80d-c96d-465e-bf7f-2ac82c3cba81,ubereats,MEX,Montejo,LA PANQUEQUERIA,4.0,0,,RATINGS,,RATINGS,1.0,,0
+18.0,xfTmLRGvKbRzgS63q,2.440123628E9,rappi,MEX,Manacar,House of Salads,5.0,0,,RATINGS,,RATINGS,1.0,,0
+18.0,xMBzKdCQGrsfa2JBA,5764670019686434055,didi,MEX,Cumbres,Mr Beast Burger,5.0,0,,Bien empacado,GOOD_PACKAGING,1.0,,,0
+18.0,Fi9A2rdea6vYqsNt6,3f929391-de51-404e-9348-221b8854a5db,ubereats,MEX,San Nicolás,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+18.0,fSBTHonvB64LhzX2s,5764670067073680634,didi,MEX,Polanco,The Wrap Company MX,5.0,0,,RATINGS,,RATINGS,1.0,,0
+18.0,9L7G9DSzMf768rFf7,69e409dc-0a97-4a96-b32e-350f487cc100,ubereats,MEX,Azcapotzalco,Avocalia,5.0,0,,"RATINGS, RATINGS",,"RATINGS, RATINGS",,1.0,0
+18.0,tuzt2wEGSu8AAmRjF,2.440108158E9,rappi,MEX,San Nicolás,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+18.0,X7E5hYgXCNLjJvDxu,0e86cefc-7464-4adb-8fc9-37e94e1e1018,ubereats,MEX,Coapa,Green House,5.0,0,,RATINGS,,RATINGS,1.0,,0
+18.0,B4sjbd6PovAYTvtKB,a087d676-9605-4a11-b571-e4da2318d146,ubereats,MEX,Santa Fe,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+18.0,RDuj5wTGFN4gPd42c,2.440131933E9,rappi,MEX,Polanco,Mr Beast Burger,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+18.0,PjiYquwevuKGp8e5n,5764670072341726527,didi,MEX,Canek,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+18.0,oCustxDDkPvRogLN8,2.440131726E9,rappi,MEX,Estadio,House of Salads,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+18.0,gixqKqnfKGpinb6jo,5764670183415285044,didi,MEX,Saltillo Centro,Mr Beast Burger,5.0,0,,Exactamente como lo pedí|Porciones adecuadas|Bien empacado|Buena calidad de la comida|Precios razonables|Menú variado,GOOD_PACKAGING|HIGH_FOOD_QUALITY|NOT_WORTH_PRICE|ORDER_COMPLETENESS|ORDER_PRECISION|VARIETY_MENU_OPTIONS,PRICING,,1.0,0
+18.0,DPF9fzwAjnbTtmYnW,2.440131458E9,rappi,MEX,Volcanes,Mr Beast Burger,4.0,0,,RATINGS,,RATINGS,1.0,,0
+18.0,ERboDraeEik5brkag,5764670007875274059,didi,MEX,Montejo,The Wrap Company MX,5.0,0,,Porciones adecuadas|Menú variado|Buena calidad de la comida|Exactamente como lo pedí|Bien empacado,GOOD_PACKAGING|HIGH_FOOD_QUALITY|ORDER_COMPLETENESS|ORDER_PRECISION|VARIETY_MENU_OPTIONS,1.0,,,0
+18.0,fXF5eXRE96EKSRGRR,fdf6a093-d3e5-4161-84e2-098bb62f35bc,ubereats,MEX,San Ángel,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+18.0,23ESkrBwP7SFa2DvA,0ca34294-be58-480a-aa0d-22301ed6f04f,ubereats,MEX,Metepec,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+18.0,p5jR88SjGARc38NyY,2.440136965E9,rappi,MEX,Tlaquepaque,La Neta Burgers (Orale Burgers),5.0,0,,RATINGS,,RATINGS,1.0,,0
+18.0,9RvHyxGS9MhpniSc9,c80aff3c-a535-44a0-a2c7-fe005c11832e,ubereats,MEX,Canek,Green House,5.0,0,,restaurant_sustainable_packaging|restaurant_reliable_service|restaurant_great_selection|restaurant_consistent,VARIETY_MENU_OPTIONS,1.0,,,0
+18.0,E2MNcz6ofER8TG66Q,2.440129714E9,rappi,MEX,Tlaquepaque,Chicken Tenders Hub,2.0,1,,rrs_rest_packaging_rate_2|Mala presentación,BAD_PACKAGING,BAD_PRESENTATION,DELIVERY,0.0,1
+18.0,gqF4xw6TiGThsGi7u,5764670144722830669,didi,MEX,Volcanes,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+18.0,QPkcwZGA77waT3B4D,2.440138053E9,rappi,MEX,Volcanes,Mr Beast Burger,2.0,1,,rrs_rest_packaging_rate_2|Mala presentación,BAD_PACKAGING,BAD_PRESENTATION,DELIVERY,0.0,1
+18.0,SCEzvvNmQx8nqykaB,2.440141154E9,rappi,MEX,Canek,La Neta Burgers (Orale Burgers),5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+18.0,sXPTPPZkPFm8Wp9t5,2.440142006E9,rappi,MEX,Coapa,La Neta Burgers (Orale Burgers),4.0,0,,rrs_rest_quality_rate_4|La calidad de los ingredientes,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+18.0,o3vnswhrdDpd58WYy,2.440133127E9,rappi,MEX,Azcapotzalco,Mr Beast Burger,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+18.0,CYqbAx9Y8AWpcXLso,8183fc86-8b11-4554-b7af-5c03b3ffe64e,ubereats,MEX,Doctores,Desayunos de la Abuela,5.0,0,,RATINGS,,RATINGS,1.0,,0
+18.0,6LYF7GemfrgJ64AwM,2.440144678E9,rappi,MEX,Doctores,Que Chicken,3.0,1,,comment|Comentario,RATINGS,RATINGS,0.0,,1
+18.0,SsdvhYn6Zg9xZCQan,c4868a20-7f93-4b4c-9725-2942728af212,ubereats,MEX,Volcanes,Honest Food,5.0,0,,restaurant_sustainable_packaging,GOOD_PACKAGING,1.0,,,0
+18.0,jHBRqN3t8WTm2Ktaq,2.440143329E9,rappi,MEX,Churubusco,Mr Beast Burger,3.0,1,,comment|Comentario,RATINGS,RATINGS,0.0,,1
+18.0,rGcBDnnKpRW7uxQ4a,2.440145822E9,rappi,MEX,La Calma,La Neta Burgers (Orale Burgers),5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+18.0,Kn9hRAmz2KvpwzXkt,2.440145909E9,rappi,MEX,La Calma,Tasty Foods,5.0,0,,RATINGS,,RATINGS,1.0,,0
+18.0,Xngi3oxxQ2cNQkLPd,5764670090712778116,didi,MEX,Saltillo Centro,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+18.0,FHwXmAvfhSwFPPvvo,98aaa7cf-aa28-4ba0-9bc2-9b4ddc20d873,ubereats,MEX,Doctores,House of Salads,5.0,0,,RATINGS,,RATINGS,1.0,,0
+18.0,HmusvZSDPRAxksXDe,5764670185302721943,didi,MEX,Tabachines,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+18.0,H2msG8qWY7TM9cc46,d261d560-caf0-481f-870a-d53487f855f7,ubereats,MEX,Churubusco,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+19.0,Fx4gQpBbQBAqDjuJr,5764669960483833228,didi,MEX,Churubusco,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+19.0,AB5LnQXrJhxcmh7Nw,2.440147607E9,rappi,MEX,Santa Fe,Mr Beast Burger,4.0,0,,RATINGS,,RATINGS,1.0,,0
+19.0,ac5DJcMW4tmdhBSLE,ef703fc7-83cd-4222-81e2-a9b05ba837b8,ubereats,MEX,Montejo,Brunch & Munch,5.0,0,,RATINGS,,RATINGS,1.0,,0
+19.0,pHtR9kLgSRFfzoBYF,2.440148153E9,rappi,MEX,Volcanes,Mr Beast Burger,5.0,0,,rrs_rest_packaging_rate_5|Buena presentación,GOOD_PACKAGING,GOOD_PACKAGING,,1.0,0
+19.0,hRAwwXgnnmqSs5Epu,2.440148215E9,rappi,MEX,Ciudad Judicial,Don Gyros & Kebab,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+19.0,riF9ExiyvZqPjXuJw,2.440149825E9,rappi,MEX,Saltillo Centro,Mr Beast Burger Turbo,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+19.0,dpsiThYpZRtP7zq55,2.44014943E9,rappi,MEX,Montejo,Brunch & Munch,5.0,0,,rrs_rest_completeness_rate_5|Tal como lo pedí,ORDER_COMPLETENESS,ORDER_COMPLETENESS,,1.0,0
+19.0,bAi4bJa6acwYL4KNK,5764669942473491867,didi,MEX,Coapa,Fonda Local,5.0,0,,RATINGS,,RATINGS,1.0,,0
+19.0,AbyHYTgPc33J7hb4Z,5764670109801055637,didi,MEX,Ciudad Judicial,Mr Beast Burger,3.0,1,,RATINGS,,RATINGS,0.0,,1
+19.0,WtLW3px7G3H7DbHzw,2.440153896E9,rappi,MEX,Montejo,Mr Beast Burger,5.0,0,,rrs_rest_accuracy_rate_5|Justo lo que pedí,ORDER_PRECISION,ORDER_PRECISION,,1.0,0
+19.0,jW9urSj5utTQ56QEe,2.440154542E9,rappi,MEX,Doctores,La Neta Burgers (Orale Burgers),5.0,0,,RATINGS,,RATINGS,1.0,,0
+19.0,eAzpLBhka5FJ7tYEC,2.440149358E9,rappi,MEX,Volcanes,Honest Food,5.0,0,,rrs_rest_completeness_rate_5|Tal como lo pedí,ORDER_COMPLETENESS,ORDER_COMPLETENESS,,1.0,0
+19.0,Ko9kZhSCFEXqjdfjD,2.440154846E9,rappi,MEX,Esmeralda,Honest Food,5.0,0,,RATINGS,,RATINGS,1.0,,0
+19.0,mYG5E4mRNyYWn4teK,5764670019732571584,didi,MEX,Churubusco,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+19.0,qmp72y7kmkuhsg6iF,da561ebe-da92-4900-80db-916e8523c1b6,ubereats,MEX,Metepec,Honest Food,5.0,0,,HIGH_FOOD_QUALITY,,1.0,,,0
+19.0,XW5t8X5w2GGxgQE9p,2.440149878E9,rappi,MEX,La Calma,Honest Food,5.0,0,,RATINGS,,RATINGS,1.0,,0
+19.0,Tk25vLu8zGFdght9c,2.440157827E9,rappi,MEX,Doctores,Mr Beast Burger,4.0,0,,RATINGS,,RATINGS,1.0,,0
+19.0,a3FMnecg2T5iMZmbB,91990057-fbcd-4fa7-8f46-a6c5f2f40902,ubereats,MEX,Churubusco,Green House,4.0,0,,RATINGS,,RATINGS,1.0,,0
+19.0,KyYy4bkd4MHkdB5bk,2.440159336E9,rappi,MEX,Del Valle,House of Burgers,5.0,0,,RATINGS,,RATINGS,1.0,,0
+19.0,KhWhqdi7F2RLkWW9E,2.440159615E9,rappi,MEX,Santa Teresita,Órale Desayunos,3.0,1,,rrs_rest_quality_rate_3|Mala calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+19.0,wy9W2R7tcAd6bG6C5,ed915ffd-4104-4c2d-b1d5-9307a8f29a0d,ubereats,MEX,Estadio,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+19.0,8rxJHiTWczDhzpCdx,5d9ac541-713b-4bb4-a9f3-ae1f667597d4,ubereats,MEX,Esmeralda,Freshlab,5.0,0,,RATINGS,,RATINGS,1.0,,0
+19.0,zQTmdk7JuzyDgurpS,931979fa-6035-4a69-bb9b-cae6167e8bbf,ubereats,MEX,Metepec,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+19.0,dj4c9GYzcoNhfsZL3,2.440153493E9,rappi,MEX,Volcanes,Mr Beast Burger,4.0,0,,rrs_rest_quality_rate_4|La calidad de los ingredientes,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+19.0,BC56442NJKMdnZoyW,5764670006587622883,didi,MEX,San Nicolás,Green House,5.0,0,,RATINGS,,RATINGS,1.0,,0
+19.0,FZZx4RjwSr39CdkZM,5764669966100006351,didi,MEX,Saltillo Centro,House of Salads,5.0,0,,RATINGS,,RATINGS,1.0,,0
+19.0,ZPQoufk8JvjSpf9MK,78126583-5963-463c-93f8-52dfd18961f9,ubereats,MEX,Santa Teresita,Avocalia,1.0,1,,RATINGS,,RATINGS,0.0,,1
+19.0,4NCGBSoKp4GLgxXQZ,5764670172006778320,didi,MEX,Lincoln,Pozórale,5.0,0,,RATINGS,,RATINGS,1.0,,0
+19.0,ggTQu2j79G5WCnNEB,2.440164266E9,rappi,MEX,Esmeralda,Desayunos de la Abuela,5.0,0,,RATINGS,,RATINGS,1.0,,0
+19.0,HTHf3eCDPGNiCY7Km,2.440165693E9,rappi,MEX,Santa Teresita,La Neta Burgers (Orale Burgers),5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+19.0,uBJG7zKnw82CM5TPB,5764669958936135137,didi,MEX,Volcanes,House of Salads,5.0,0,,RATINGS,,RATINGS,1.0,,0
+19.0,yF2gJmhj2iQLvwiuo,cbed8e94-bee1-41c7-98e2-3573375aaf5e,ubereats,MEX,Doctores,Green House,3.0,1,,restaurant_too_slow,OUT_TIME,DELIVERY_LATE,DELIVERY,0.0,1
+19.0,TNFqpM5J3EoSS6Hfi,02dabb1a-f7a1-44d6-b453-ea502fca113b,ubereats,MEX,La Calma,Que Chicken,5.0,0,,RATINGS,,RATINGS,1.0,,0
+19.0,behPrCXrQ7qDe6DSF,2.440166695E9,rappi,MEX,San Ángel,Mr Beast Burger Turbo,4.0,0,,rrs_rest_completeness_rate_4|Incluir todos los items,ORDER_COMPLETENESS,ORDER_COMPLETENESS,,1.0,0
+19.0,sJn6tpp7RD7bZaq2N,33aa0246-4965-48b1-8c08-75c33a31cdfc,ubereats,MEX,Tabachines,Green House,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+19.0,dyCMePHt9BXDngXnQ,703ad37b-b186-4522-ad9b-1cfa0b9a906c,ubereats,MEX,Volcanes,Honest Food,5.0,0,,RATINGS,,RATINGS,1.0,,0
+19.0,uuukdpng5swDxsQmB,6ca0f986-bbd8-4838-9555-feecff82bf61,ubereats,MEX,Metepec,House of Salads,5.0,1,,"NOT_WORTH_PRICE, HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,SMALL_PORTIONS|SPILLED_PACKAGING,DELIVERY|PRICING,0.0,1
+19.0,RugwxeKRg9jmYjiLA,2.440170196E9,rappi,MEX,Polanco,Honest Food Turbo,4.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+19.0,NS5TRFEeRC4mWuDkZ,250cb2f0-ad7d-4fff-b0e7-474525c5e813,ubereats,MEX,Lincoln,Don Gyros & Kebab,5.0,0,,RATINGS,,RATINGS,1.0,,0
+19.0,GepJXiq3SFPBkufH2,2.440165318E9,rappi,MEX,Tlaquepaque,Que Chicken,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+19.0,evCtYmE5uH8jv5to8,5764669968914384402,didi,MEX,Santa Fe,Mr Beast Burger,5.0,0,,Precios razonables|Buena calidad de la comida|Exactamente como lo pedí|Menú variado|Bien empacado|Porciones adecuadas,GOOD_PACKAGING|HIGH_FOOD_QUALITY|ORDER_COMPLETENESS|ORDER_PRECISION|VARIETY_MENU_OPTIONS,1.0,,,0
+19.0,dX3MZLurtyo6tCWSH,2.440170535E9,rappi,MEX,La Calma,La Neta Burgers (Orale Burgers),5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+19.0,kpSdPanq5MNanpYij,2.440172023E9,rappi,MEX,Cumbres,Que Chicken,2.0,1,,comment|Comentario,RATINGS,RATINGS,0.0,,1
+19.0,DsRLbn3Rrt3KCvh9p,5764669961389803027,didi,MEX,Doctores,Cocina Corrida,5.0,0,,RATINGS,,RATINGS,1.0,,0
+19.0,PycPZmqLFLNw7CfE2,5764669963910579726,didi,MEX,Tabachines,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+19.0,QrATd8c9G4LJmBmqC,145d17cd-bf01-4fbc-ab26-f22caf8f39f5,ubereats,MEX,Coapa,House of Salads,5.0,0,,RATINGS,,RATINGS,1.0,,0
+20.0,pbou9Nt4TXHrnaYHN,2.440176542E9,rappi,MEX,La Calma,Mr Beast Burger Turbo,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+20.0,pHwchPXHLpcvdpss3,ea230621-db43-48dc-929a-71937733ae50,ubereats,MEX,Santa Teresita,House of Salads,5.0,0,,RATINGS,,RATINGS,1.0,,0
+20.0,JG8BssWo2pHjR6AC2,0f78e0ab-4b4a-4def-88d4-fc95a9ccdd90,ubereats,MEX,Tec,Honest Food,5.0,0,,RATINGS,,RATINGS,1.0,,0
+20.0,SJMwfd2Q5G4FuWRwW,f3f95705-cae7-40da-896b-0730efade5c2,ubereats,MEX,Tec,Honest Food,5.0,0,,HIGH_FOOD_QUALITY,,1.0,,,0
+20.0,X88WdGZmwuCRdqzC7,a136342c-f3e0-473a-909f-054132a3be6f,ubereats,MEX,Ciudad Judicial,Green House,5.0,0,,HIGH_FOOD_QUALITY,,1.0,,,0
+20.0,PaDWWryQDDeqMpqwo,2.440178128E9,rappi,MEX,Volcanes,Don Gyros & Kebab,3.0,1,,RATINGS,,RATINGS,0.0,,1
+20.0,Ednjm9ZShsF9nJAHo,5764670148292183593,didi,MEX,Tabachines,Mr Beast Burger,5.0,0,,Buena calidad de la comida|Bien empacado,GOOD_PACKAGING|HIGH_FOOD_QUALITY,1.0,,,0
+20.0,whaxJdNfBwCMHQ55u,2.440178508E9,rappi,MEX,Tabachines,Don Gyros & Kebab,3.0,1,,rrs_rest_quality_rate_3|Mala calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
+20.0,zfhg6TGdxdJMXDzQj,5764670035473794570,didi,MEX,La Calma,Honest Food,5.0,0,,RATINGS,,RATINGS,1.0,,0
+20.0,G5p2FSDBAfCQmKuWj,3b96e096-cfc2-440f-9547-e36a91118e67,ubereats,MEX,Metepec,La Neta Burgers (Orale Burgers),5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+20.0,oxdkEkPgYWtCkB585,2.440173399E9,rappi,MEX,La Calma,La Neta Burgers (Orale Burgers),3.0,1,,RATINGS,,RATINGS,0.0,,1
+20.0,AidnG9CxjskF9AzMh,60475c15-41fa-48e8-99f7-32ccbbbae62a,ubereats,MEX,Coapa,Que Chicken,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+20.0,weDfjwWLs8XWnJw5r,5764669944474174993,didi,MEX,Doctores,Fonda Local,5.0,0,,Precios razonables|Bien empacado|Menú variado|Porciones adecuadas|Buena calidad de la comida|Exactamente como lo pedí,GOOD_PACKAGING|HIGH_FOOD_QUALITY|ORDER_PRECISION|VARIETY_MENU_OPTIONS,1.0,,,0
+20.0,7GcCpu2v22xgN9vny,2.440181644E9,rappi,MEX,Volcanes,Don Gyros & Kebab,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+20.0,iu6AyN3Po4Qz2z7We,7d0c13b1-5e15-45fa-8aea-db1fa754561c,ubereats,MEX,Jardines,Don Gyros & Kebab,1.0,1,,BAD_QUALITY,,WRONG_TEMPERATURE,DELIVERY,0.0,1
+20.0,oZd8DxSN9fPhJ9FbC,5764670164532528666,didi,MEX,Doctores,Brunch & Munch,4.0,0,,Porciones adecuadas|Bien empacado,GOOD_PACKAGING|ORDER_COMPLETENESS,1.0,,,0
+20.0,4Kx5kWXn6QMENkijw,22f31dae-a897-4486-97aa-7ceb6e542291,ubereats,MEX,Churubusco,House of Salads,4.0,0,,RATINGS,,RATINGS,1.0,,0
+20.0,SHqWnNH3ZEPSixFkh,25cdb232-08de-4e6a-a3d4-d5aa23a46adf,ubereats,MEX,Tabachines,Mr Beast Burger,5.0,0,,restaurant_great_selection,VARIETY_MENU_OPTIONS,1.0,,,0
+20.0,YWmAA2nQJWQC5REgL,0ab74032-133a-4cbc-a650-b58ed6c1cff5,ubereats,MEX,Doctores,The Salad Project,5.0,0,,RATINGS,,RATINGS,1.0,,0
+20.0,v2YX2micv9bonCSZC,68414076-bac7-4863-9009-204bcf305029,ubereats,MEX,La Calma,House of Salads,5.0,0,,RATINGS,,RATINGS,1.0,,0
+20.0,x7onTRsFWQGawvchm,18d1d745-f164-4962-a7b4-cd46bceb3cab,ubereats,MEX,Tlaquepaque,Órale Desayunos,5.0,0,,RATINGS,,RATINGS,1.0,,0
+20.0,fAGCRabTzGNt3nS6p,5764670039600989775,didi,MEX,Doctores,Avocalia,5.0,0,,Exactamente como lo pedí|Porciones adecuadas|Menú variado|Bien empacado|Buena calidad de la comida,GOOD_PACKAGING|HIGH_FOOD_QUALITY|ORDER_COMPLETENESS|ORDER_PRECISION|VARIETY_MENU_OPTIONS,1.0,,,0
+20.0,f3jGzs8E4QKRx7uEi,2.440188019E9,rappi,MEX,Polanco,AVOCALIA TURBO,5.0,0,,comment|Comentario,RATINGS,RATINGS,1.0,,0
+20.0,TpnqDwRe5SMgNGien,5764670125076710968,didi,MEX,Azcapotzalco,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+20.0,spuHWhDAfLkRDpfYn,983e1711-3f4c-4095-b160-39cac871ea0b,ubereats,MEX,Ciudad Judicial,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+20.0,o6uRzpr8GuuS8wBfE,5764670126322419306,didi,MEX,Metepec,Chemaquiles,5.0,0,,RATINGS,,RATINGS,1.0,,0
+21.0,WuX3tR8ZgXaxBk5Mw,2826cc93-cf36-487d-85a3-1b89d91a90ca,ubereats,MEX,San Ángel,House of Salads,5.0,0,,RATINGS,,RATINGS,1.0,,0
+21.0,msBrQpSmcXZDBnZpb,aa9b9c1a-50b1-4335-8ce8-f331607786b6,ubereats,MEX,Doctores,Green House,5.0,0,,RATINGS,,RATINGS,1.0,,0
+21.0,iNkj6AqJFf64bkhDu,5764670003903268469,didi,MEX,Volcanes,Fonda Local,3.0,1,,RATINGS,,RATINGS,0.0,,1
+21.0,5CZmMGGzRZoj8gNQ8,2.440199797E9,rappi,MEX,Volcanes,Que Chicken,4.0,0,,RATINGS,,RATINGS,1.0,,0
+21.0,bicDMgDQSivsaogzY,9ff071af-3b95-4e96-8290-c6cbf32818ae,ubereats,MEX,Coapa,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+21.0,sBabrGNXqkzPYAhvN,4df7824c-d14f-4b67-a608-b3573763595d,ubereats,MEX,Polanco,Avocalia,5.0,0,,restaurant_delicious_options,VARIETY_MENU_OPTIONS,1.0,,,0
+21.0,HmvTCNFr6Kkrf2AA5,de42353b-ec8a-40e8-bcfa-a1a797c85bba,ubereats,MEX,Polanco,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+21.0,CpSRfdKqqAPBsTawN,5764670044759983750,didi,MEX,Azcapotzalco,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+21.0,Smc9rqstgcRhszmTN,5764670090620503686,didi,MEX,Del Valle,House of Salads,5.0,0,,Precios razonables|Bien empacado,GOOD_PACKAGING,1.0,,,0
+21.0,bQjg7GENtoMPFS49B,5764670027492034192,didi,MEX,Tlaquepaque,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+21.0,chnjnW4zYxNQGh6EY,8946a16a-84eb-4f23-9448-556513941528,ubereats,MEX,Satélite,Brunch & Munch,4.0,0,,restaurant_fresh_ingredients,HIGH_FOOD_QUALITY,1.0,,,0
+21.0,6CaM9aJRDCZoJtnkL,e5e0e07f-0a86-4167-af72-b81caf15c4ea,ubereats,MEX,Tlaquepaque,House of Salads,5.0,0,,restaurant_convenient|restaurant_store_accommodating|restaurant_reliable_service|restaurant_great_selection,VARIETY_MENU_OPTIONS,1.0,,,0
+21.0,vMsw68L8qu87F6fgu,1ea80e23-f96b-4227-8c72-65cb6f810f6e,ubereats,MEX,Doctores,Eggy by Chef Eva,5.0,0,,RATINGS,,RATINGS,1.0,,0
+21.0,ZK3vwZJhJDLqyJzhz,2.440209497E9,rappi,MEX,Doctores,Desayunos de la Abuela,5.0,0,,RATINGS,,RATINGS,1.0,,0
+21.0,edt3xmXtCzbfadxS7,2.440209486E9,rappi,MEX,Azcapotzalco,Avocalia,4.0,0,,rrs_rest_completeness_rate_4|Incluir todos los items,ORDER_COMPLETENESS,ORDER_COMPLETENESS,,1.0,0
+21.0,MESxRiGKm5434Fbig,2.44021035E9,rappi,MEX,Montejo,The Wrap Company MX,5.0,0,,RATINGS,,RATINGS,1.0,,0
+21.0,Jjh4W8yirHuQLApNT,94f73d6a-ba62-4135-a756-4d6bff865518,ubereats,MEX,Churubusco,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+21.0,aJGBaMPwfdH62BKiM,2.440211594E9,rappi,MEX,La Calma,Desayunos de la Abuela,5.0,0,,RATINGS,,RATINGS,1.0,,0
+21.0,wFg94chQstmsRtdus,a4fcd023-8874-4942-9091-7d2359eb078e,ubereats,MEX,Santa Teresita,Fonda Local,5.0,0,,RATINGS,,RATINGS,1.0,,0
+21.0,oLasscsmGSktNeyJL,986225c6-0ee8-48eb-9cbc-fcf6988b0865,ubereats,MEX,Metepec,Mr Beast Burger,5.0,0,,"HIGH_FOOD_QUALITY, HIGH_FOOD_QUALITY",,1.0,,,0
+21.0,PPGkmRtbymsLwzgrc,b123b6ca-5a02-4aab-ae0d-64860bc9371b,ubereats,MEX,San Ángel,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+21.0,38QYeTgN4ruefhxbx,2.440213644E9,rappi,MEX,Del Valle,Mr Beast Burger,5.0,0,,rrs_rest_quality_rate_5|Calidad de la comida,HIGH_FOOD_QUALITY,HIGH_FOOD_QUALITY,,1.0,0
+21.0,uzuKbHgGHrQ3wnB8s,cee3e40e-2d25-4111-b6d9-103f92d1646b,ubereats,MEX,Doctores,Avocalia,5.0,0,,RATINGS,,RATINGS,1.0,,0
+21.0,FSyzWhC6ZiN85baSo,5764669971590350499,didi,MEX,Volcanes,Mr Beast Burger,5.0,0,,Bien empacado|Porciones adecuadas|Buena calidad de la comida,GOOD_PACKAGING|HIGH_FOOD_QUALITY|ORDER_COMPLETENESS,1.0,,,0
+21.0,sXr4DxFhec2PujzGL,565cd158-a1aa-4c2a-8c41-cd905b882b86,ubereats,MEX,Volcanes,Que Chicken,5.0,0,,RATINGS,,RATINGS,1.0,,0
+22.0,uTPCqBQoRE8aHMt3G,5764670153430206143,didi,MEX,San Ángel,Fonda Local,5.0,0,,RATINGS,,RATINGS,1.0,,0
+22.0,9Xwk3n6rqwiTEqEZp,2.440215709E9,rappi,MEX,Volcanes,House of Burgers,5.0,0,,RATINGS,,RATINGS,1.0,,0
+22.0,tL2tQpq3rLrGGjAjs,5764670087051151047,didi,MEX,San Ángel,Que Chicken,5.0,0,,RATINGS,,RATINGS,1.0,,0
+22.0,WDFfCyg87fEXPphFG,5764670098115724996,didi,MEX,Azcapotzalco,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+22.0,v96RHmMXJ3sL7KLDk,2.440219144E9,rappi,MEX,San Ángel,La Neta Burgers (Orale Burgers),4.0,0,,RATINGS,,RATINGS,1.0,,0
+22.0,AuKv6Gd29PQpp2LmZ,01dc6252-80d8-47b9-8123-2ad2e5fb8a32,ubereats,MEX,Canek,Green House,5.0,0,,RATINGS,,RATINGS,1.0,,0
+22.0,iXjmqXwCh3WJLcwpM,2b653921-0510-4b6a-9ca0-7368bf986cbf,ubereats,MEX,Metepec,Mr Beast Burger,5.0,0,,RATINGS,,RATINGS,1.0,,0
+22.0,5yXJceJGFsbBk3JtE,5764669968557868726,didi,MEX,Doctores,Avocalia,5.0,0,,Exactamente como lo pedí|Bien empacado|Porciones adecuadas,GOOD_PACKAGING|ORDER_PRECISION,1.0,,,0
+22.0,GtXF2QQPfGWRyavAY,2595aa98-6bee-4823-982c-9e7b516926e7,ubereats,MEX,Canek,House of Salads,5.0,0,,RATINGS,,RATINGS,1.0,,0
+22.0,xDnSxgEWYmgHxepRe,2.440221567E9,rappi,MEX,La Calma,Que Chicken,3.0,1,,comment|Comentario,RATINGS,RATINGS,0.0,,1
+22.0,k8gucJdSfGWyxYBXB,2.440222342E9,rappi,MEX,Cumbres,Mr Beast Burger,2.0,1,,rrs_rest_quality_rate_2|Mala calidad,BAD_QUALITY,OTHER,QUALITY,0.0,1
