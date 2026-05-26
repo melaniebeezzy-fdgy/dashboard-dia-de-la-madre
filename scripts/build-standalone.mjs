@@ -13,8 +13,6 @@ const dataFiles = {
   "/data/gmv.csv": "data/gmv.csv",
   "/data/orders-comparison.csv": "data/orders-comparison.csv",
   "/data/protocolos.csv": "data/protocolos.csv",
-  "/data/if.csv": "data/if.csv",
-  "/data/quejas.csv": "data/quejas.csv",
   "/data/suggested-mep-all.csv": "data/suggested-mep-all.csv",
 };
 
